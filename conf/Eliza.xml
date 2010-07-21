@@ -1,0 +1,360 @@
+<!-- Predefined answers for the Eliza Plugin, each consist of a regex to match and the answer text -->
+<Eliza>
+
+	<!-- Greetings will be printed when a player connects. -->
+	<!-- Match will go top down, the first match wins. -->
+	<Greetings>
+	
+		<!-- me -->
+		<Greeting>
+			<Match>^DSA_Tailgnnr_SGT$</Match>
+			<Message>Welcome master.</Message>
+			<Message>Ready for your wish master.</Message>
+			<Message>Waiting orders master.</Message>
+		</Greeting>
+		
+		<!-- matches officers -->
+		<Greeting>
+			<Match>^DSA_.+_(COL|CO|MAJ|XO|RBC)$</Match>
+			<Message>Welcome Sir! Im glad you join us %player.</Message>
+			<Message>Attention!! Officer in the room!</Message>
+		</Greeting>
+		
+		<!-- ordinary clan members -->
+		<Greeting>
+			<Match>^DSA</Match>
+			<Message>Welcome DarkStar Alliance member.</Message>
+			<Message>A DSA member joined the server.</Message>
+		</Greeting>
+
+		<!-- empty 'Player' tag matches everbody -->
+		<Greeting>
+			<Player></Player>
+			<Message>Hello %player, I am the %botname.</Message>
+			<Message>Hello %player.</Message>
+			<Message>Hi %player.</Message>
+		</Greeting>
+	</Greetings>
+
+	<Questions>
+		<Question>
+			<Subject>(DSA_)?Howell</Subject>
+			<Answers>
+				<Answer>Kudos to Howell, Home of the dedicated server.</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>(DSA_)?Ranger</Subject>
+			<Answers>
+				<Answer>Anni-Pilot. 'nuff said.</Answer>
+				<Answer>Don't fall down in front of him.</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>(DSA_)?Tailgnne?r</Subject>
+			<Answers>
+				<Answer>Praise! He wrote me.</Answer>
+				<Answer>Deadly at close range. Ignore him at 800. Well, mostly.</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>(DSA_)?Warhorse</Subject>
+			<Answers>
+				<Answer>Our Leader, show some respect.</Answer>
+				<Answer>Fear his whicker!</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>DSA</Subject>
+			<Answers>
+				<Answer>The DarkStar Alliance Merc Regiment! We do MWWL.</Answer>
+				<Answer>DarkStar Alliance Mercenaries Force! We are recruiting.</Answer>
+				<Answer>DarkStar Alliance Mercenaries Force! Elite Firepower for good money.</Answer>
+				<Answer>DarkStar Alliance. We are Mercs and proud of it.</Answer>
+				<Answer>DarkStar Alliance! 'cause money rules the world.</Answer>
+				<Answer>DSA FTW!</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>Perl</Subject>
+			<Answers>
+				<Answer>The coolest programming language in the world. I am written in it!</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>Puretech</Subject>
+			<Answers>
+				<Answer>IS weapons only allowed on IS mechs and Clan weapons only allowed on Clan mechs.</Answer>
+			</Answers>
+		</Question>
+		<Question>
+			<Subject>Mixtech</Subject>
+			<Answers>
+				<Answer>Mixtech means that any weapon is allowed on any mech.</Answer>
+			</Answers>
+		</Question>
+	</Questions> 
+	<Opinions>
+		<Opinion>
+			<Subject>(jump ?)?sniper</Subject>
+			<Statements>
+				<Statement>You have to get along with snipers, though you don't have to like them.</Statement>
+				<Statement>A good jump sniper is worth his weight in Teflon.</Statement>
+			</Statements>
+		</Opinion>
+		<Opinion>
+			<Subject>poptart</Subject>
+			<Statements>
+				<Statement>Stop arguing about poptarts. They have their uses. Sometimes.</Statement>
+				<Statement>Oh no, not that discussion.</Statement>
+			</Statements>
+		</Opinion>
+		
+		<!-- Weapon and mech opinions from http://trm.mektek.net -->
+		<Opinion>
+			<Subject>(SSRM|CSTRK)\d*</Subject>
+			<Statements>
+				<Statement>Clan Streaks are extremely agile, locking quickly onto a target and tracking it until impact.</Statement>
+				<Statement>If the targeting reticule is red when SSRM's are launched, they will track accurately.</Statement>
+				<Statement>SSRMS generate more heat than Standard SRM's but inflict greater damage.!</Statement>
+			</Statements>
+		</Opinion>
+
+		<Opinion>
+			<Subject>Flea</Subject>
+			<Statements>
+				<Statement>FLEA: IS tech, 20T. Very small shape, high speed, low firepower, very low threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Osiris</Subject>
+			<Statements>
+				<Statement>OSIRIS: IS tech, 30T. High speed, energy capable, low threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Raven</Subject>
+			<Statements>
+				<Statement>RAVEN: IS tech, 35T. High speed, full electronic, low firepower, low direct threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Owens</Subject>
+			<Statements>
+				<Statement>OWENS: IS tech, 35T. High speed but low firepower, low threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Wolfhound</Subject>
+			<Statements>
+				<Statement>WOLFHOUND: IS tech, 35T. Good speed, good electronic, good energy loadout, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Chimera</Subject>
+			<Statements>
+				<Statement>CHIMERA: IS tech, 40T. Good speed, JJ capable, mixed loadout, fragile, low threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Hellspawn</Subject>
+			<Statements>
+				<Statement>HELLSPAWN: IS tech, 45T. Good speed, ECM and JJ capable, low firepower, low threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Hunchback</Subject>
+			<Statements>
+				<Statement>HUNCHBACK: IS tech, 50T. Good speed, ECM capable, good firepower, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Uziel</Subject>
+			<Statements>
+				<Statement>UZIEL: IS tech, 50T. Good speed, JJ capable, medium thread.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Bushwacker</Subject>
+			<Statements>
+				<Statement>BUSHWACKER: IS tech, 55T. Small shape, strong structure, good firepower, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Argus</Subject>
+			<Statements>
+				<Statement>ARGUS: IS tech, 60T. Small shape and good firepower, no electronic, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Dragon</Subject>
+			<Statements>
+				<Statement>DRAGON: IS tech, 60T. Fast, good firepower, ECM capable, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Catapult</Subject>
+			<Statements>
+				<Statement>CATAPULT: IS tech, 65T. Support missile platform, JJ and BAP capable, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Thanatos</Subject>
+			<Statements>
+				<Statement>THANATOS: IS tech, 75T. Dangerous from medium to close range, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>BlackKnight</Subject>
+			<Statements>
+				<Statement>BLACK KNIGHT: IS tech, 75T. Omnimech, full electronic, JJ capable, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Awesome</Subject>
+			<Statements>
+				<Statement>AWESOME: IS tech, 80T. Energy mech, no electronic, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Victor</Subject>
+			<Statements>
+				<Statement>VICTOR: IS tech, 80T. Dangerous at any range, ECM and JJ capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Zeus</Subject>
+			<Statements>
+				<Statement>ZEUS: IS tech, 80T. Good weapons loadout but big shape, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Templar</Subject>
+			<Statements>
+				<Statement>TEMPLAR: IS tech, 85T. Good long range firepower, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Longbow</Subject>
+			<Statements>
+				<Statement>LONGBOW: IS tech, 85T. Missile platform, BAP capable, slow and easy target, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Mauler</Subject>
+			<Statements>
+				<Statement>MAULER: IS tech, 90T. Highly armored, mixed loadout, low payload for the weight, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Highlander</Subject>
+			<Statements>
+				<Statement>HIGHLANDER: IS tech, 90T. Dangerous at any range, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Sunder</Subject>
+			<Statements>
+				<Statement>SUNDER: IS text, 90T. Very capable omnimech, ECM capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Hauptmann</Subject>
+			<Statements>
+				<Statement>HAUPTMANN: IS tech, 95T. Heavy weapon loadout but slow and no electronic, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Atlas</Subject>
+			<Statements>
+				<Statement>ATLAS: IS tech, 100T. Big shape, high long range firepower, full electronic, slow, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Fafnir</Subject>
+			<Statements>
+				<Statement>FAFNIR: IS tech, 100T. Very powerful but extremly slow and easy target, ECM, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Uller</Subject>
+			<Statements>
+				<Statement>ULLER: Clan tech, 30T. Very small shape, low threat</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Cougar</Subject>
+			<Statements>
+				<Statement>COUGAR: Clan tech, 35T. Fast and good firepower, BAP and JJ capable, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Puma</Subject>
+			<Statements>
+				<Statement>PUMA: Clan tech, 35T. Not fast for a light but good firepower, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>ArcticFox</Subject>
+			<Statements>
+				<Statement>ARCTICFOX: Clan tech, 40T. Fast missiles capable omnimech, it can carry BAP, medium threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>ShadowCat</Subject>
+			<Statements>
+				<Statement>SHADOWCAT: Clan tech, 45T. Fast and agile omnimech, jets capable, good firepower, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Hellhound</Subject>
+			<Statements>
+				<Statement>Hellhound: Clan tech, 50T. Fast and versatile mech, ECM capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Ryoken</Subject>
+			<Statements>
+				<Statement>RYOKEN: Clan tech, 55T. Powerful omnimech, BAP and JJ capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Vulture</Subject>
+			<Statements>
+				<Statement>VULTURE: Clan tech, 60T. Omnimech but mainly a missile platform, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>CauldronBorn</Subject>
+			<Statements>
+				<Statement>CAULDRONBORN: Clan tech, 65T. Good and strong omnimech, BAP capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Loki</Subject>
+			<Statements>
+				<Statement>LOKI: Clan tech, 65T. Very versatile omnimech, top electronic, very fast, good firepower, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Thor</Subject>
+			<Statements>
+				<Statement>THOR: Clan tech, 70T. Strong omnimech, dangerous at any range, ECM and JJ capable, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>NovaCat</Subject>
+			<Statements>
+				<Statement>NOVACAT: Clan tech, 70T. Omnimech but commonly seen with energy loadouts, weak arms, BAP capable, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>MadCat</Subject>
+			<Statements>
+				<Statement>MADCAT: Clan tech, 75T. Versatile omnimech, dangerous at long range, BAP capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Masakari</Subject>
+			<Statements>
+				<Statement>MASAKARI: Clan tech, 85T. Omnimech, very capable at any range, BAP capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>MadcatMK2</Subject>
+			<Statements>
+				<Statement>MADCAT MK2: Clan tech, 90T. Omnimech, BAP and JJ capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Gladiator</Subject>
+			<Statements>
+				<Statement>GLADIATOR: Clan tech, 95T. Powerful omnimech, ECM, JJ and high loadout, very high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Daishi</Subject>
+			<Statements>
+				<Statement>DAISHI: Clan tech, 100T. Very high loadout but slow and easy target, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>Kodiak</Subject>
+			<Statements>
+				<Statement>KODIAK: Clan tech, 100T. Powerful, high armor but easy target, ECM and JJ capable, high threat.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>ecm</Subject>
+			<Statements>
+				<Statement>The ECM reduces enemy detection range.</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>bap</Subject>
+			<Statements>
+				<Statement>The BAP Increases your detection range and reduces the missiles lock time</Statement>
+			</Statements>
+		</Opinion><Opinion>
+			<Subject>lams</Subject>
+			<Statements>
+				<Statement>Anti missile laser turret, protects against guided missiles</Statement>
+			</Statements>
+		</Opinion>
+	</Opinions>
+</Eliza>

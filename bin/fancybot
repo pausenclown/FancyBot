@@ -1,0 +1,14 @@
+use lib qw( ./lib );
+
+use FancyBot;
+
+
+my $bot = FancyBot->new;
+$bot->local_hello;
+$bot->start_server;
+
+use sigtrap 'handler' => sub { 
+	open my $out, '>', 'stop_bot'; print $out 'stopped.'; close $out;
+	$bot->shutdown if $bot->server_proc; 
+	exit; 
+}, 'INT';

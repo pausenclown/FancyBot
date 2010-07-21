@@ -1,0 +1,9 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/FancyBot.pm
+lib/FancyBot/GUI.pm
+lib/FancyBot/Plugins/BasicCommands.pm
+lib/FancyBot/Plugins/Logger.pm
+t/00-load.t
