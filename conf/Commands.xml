@@ -1,0 +1,264 @@
+<Commands>
+	<Command>
+		<Name>launch</Name>
+		<Help>Starts the mission immedeatly.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>start</Alias>
+	</Command>
+	<Command>
+		<Name>stop</Name>
+		<Help>Stops the mission immedeatly.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>halt</Alias>
+	</Command>
+	<Command>
+		<Name>drop</Name>
+		<Arguments>maxdiff?</Arguments>
+		<Help>Starts the mission immedeatly, but only when all players are ready and the weight difference is smaller or equal to maxdiff (in tons). Syntax is '-drop [max. weight diff].'</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>cold-drop</Name>
+		<Arguments>maxdiff?</Arguments>
+		<Arguments>wavescount?</Arguments>
+		<Help>Starts the mission immedeatly, but only when all players are ready and the weight difference is smaller or equal to maxdiff (in tons) Also ensures frags are set and the server gets locked. Syntax is '-drop [max. weight diff]? [no. of waves]?'.  </Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>help</Name>
+		<Arguments>topic?</Arguments>
+		<Help>Haha. Funny!</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>info</Alias>
+	</Command>
+	<Command>
+		<Name>commands</Name>
+		<Help>Shows a list of available commands.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>list-players</Name>
+		<Arguments>search?</Arguments>
+		<Help>Shows a short info about players. Syntax is '-list-players [search term]?'. The search term is optional. If ommitted lists all players.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>list players</Alias>
+	</Command>
+	<Command>
+		<Name>list-maps</Name>
+		<Arguments>search?</Arguments>
+		<Help>Shows a list of available maps or players. Syntax is '-list maps [search term]?'. The search term is optional. If ommitted lists all maps.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>list maps</Alias>
+	</Command>
+	<Command>
+		<Name>map</Name>
+		<Arguments>search?</Arguments>
+		<Help>Selects a map. Syntax is '-map [search term]'. The search must lead to a unique result or be exactly equiv. to a map name.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>		
+	<Command>
+		<Name>restart</Name>
+		<Help>Restarts the server, taking config changes per -config into account.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>reboot</Alias>
+	</Command>
+	<Command>
+		<Name>shutdown</Name>
+		<Help>Shuts the server down.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>shutdown</Alias>
+	</Command>
+	<Command>
+		<Name>hello</Name>
+		<Help>Makes the bot say hi.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>hi</Alias>
+	</Command>
+	<Command>
+		<Name>version</Name>
+		<Help>Prints the bot version number.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>balance</Name>
+		<Help>Prints a small overview of team weights and mechs.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>admin</Name>
+		<Arguments>name,status</Arguments>
+		<Help>Grants or revokes admin status to a player. Syntax is '-admin [playername] off|on'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+
+	<Command>
+		<Name>vote</Name>
+		<Help>Starts a vote to execute a admin command.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>visibility</Name>
+		<Help>Sets the visibility. Syntax is '-visibility (default|clear|lightfog|heavyfog)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>weather</Name>
+		<Help>Sets the weather. Syntax is '-weather (on|off)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>daylight</Name>
+		<Help>Sets day or night. Syntax is '-daylight (on|off)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>time</Name>
+		<Help>Sets the time for map. Syntax is '-time [no. of mintes]'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>frags</Name>
+		<Help>Sets the frag limit. Syntax is '-frags [no. of lives per wave]'. Using a value of zero deactivates frags.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>waves</Name>
+		<Help>Sets the waves limit. Syntax is '-waves [no. of waves]'. Using a value of zero deactivates waves.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>radar</Name>
+		<Help>Sets the radar. Syntax is '-radar (advanced|simple|team|off)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>lock</Name>
+		<Help>(Un)locks the game. Syntax is '-lock (on|off)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>stock</Name>
+		<Help>Enforces stock configs. Syntax is '-stock (on|off)'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>bots</Name>
+		<Help>(De)activates bots the game. Syntax is '-bots [no. of bots]'. Using a value of zero deactivates bots.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>kick</Name>
+		<Help>Kicks the specified player. Syntax is '-kick [player name]'. Using a value of zero deactivates bots.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>ban</Name>
+		<Help>Kicks the specified player. Syntax is '-kick [player name]'. Using a value of zero deactivates bots.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>comstar</Name>
+		<Help>Looks in the ComStar Data for a term and prints information about it. Syntax is '-comstar [search term]'.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+</Commands>
+
+<!--
+	Ideas
+	<Command>
+		<Name>weather</Name>
+		<Arguments>postalcode?,location?</Arguments>
+		<Help>Prints a little weather report.</Help>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	-home <postalcode> <location> # fetches geoinfo about next bigger place and queries wikipedia
+-->
