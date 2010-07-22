@@ -9,11 +9,11 @@ AppId={{06E6212D-1EDC-4CB1-9FD6-7173FB3148AE}
 AppName=FancyBot
 AppVersion=0.01
 ;AppVerName=FancyBot 1.5
-AppPublisher=DSA Development Studio
+AppPublisher=DSA Development Studios
 AppPublisherURL=http://dark-star-alliance.clangroups.com
-AppSupportURL=
-AppUpdatesURL=
-DefaultDirName={pf}\FancyBot
+AppSupportURL=http://github.com/pausenclown/FancyBot
+AppUpdatesURL=http://github.com/pausenclown/FancyBot
+DefaultDirName=\Mercs\FancyBot
 DefaultGroupName=FancyBot
 OutputBaseFilename=setup
 Compression=lzma
@@ -46,11 +46,14 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "F:\Mercs\FancyBot\FancyBot.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "F:\Mercs\FancyBot\bin\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "F:\Mercs\FancyBot\lib\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "F:\Mercs\FancyBot\strawberry\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "F:\Mercs\FancyBot\conf\main.xml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "\Mercs\FancyBot\FancyBot.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "\Mercs\FancyBot\WebShell.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "\Mercs\FancyBot\bin\*"; DestDir: "{app}\bin"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "\Mercs\FancyBot\lib\*"; DestDir: "{app}\lib"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "\Mercs\FancyBot\conf\*.xml"; DestDir: "{app}\conf"; Flags: ignoreversion
+Source: "\Mercs\FancyBot\root\*"; DestDir: "{app}\root"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "\Mercs\FancyBot\tmp\.exists"; DestDir: "{app}\tmp"; Flags: ignoreversion recursesubdirs createallsubdirs
+
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
