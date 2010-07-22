@@ -1,0 +1,13 @@
+[% INCLUDE header.tt %]
+	<h1>Dedicated Server Admin Login</h1>
+	<form method="POST" action="/login">
+		<div>Player Name</div>
+		<input type="text" name="name" value="[% c.stash.name %]"/><br/><br/>
+		
+		<div>Password</div>
+		<input type="password" name="password" /><br/>
+		<input type="submit" name="submit" value="login" />
+	</form>
+	<br/>
+	<div style="color: red;">[% c.stash.error %]</div>
+[% INCLUDE footer.tt %]

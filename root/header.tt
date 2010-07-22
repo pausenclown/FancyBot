@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<style type="text/css">
+			body { 
+				background: black;
+				background-image: url(/static/images/background.jpg);
+				font-family: Arial;
+				color: white;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div><img src="/static/images/DSA.png"></div>

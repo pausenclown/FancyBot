@@ -16,6 +16,11 @@ has is_admin =>
 	is      => 'rw',
 	default => 0;
 
+has is_authorized =>
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 0;
+
 has times_connected =>
 	isa     => 'Int',
 	is      => 'rw',
@@ -72,14 +77,18 @@ has stash =>
 	default => sub {{}};
 	
 sub is_allowed_to {
-	my $self    = shift;
-	my $command = shift;
+	my $self     = shift;
+	my $command  = shift;
+	my $paranoia = shift;
 	
 	return 
 		if $command->{IsSuperAdminCommand} && !$self->is_super_admin;
 
 	return 
 		if $command->{IsAdminCommand} && !$self->is_admin;
+
+	return
+		if $paranoia && !$self->is_authorized;
 
 	return 1;
 }

@@ -1,0 +1,10 @@
+[% INCLUDE header.tt %]
+	<h2>Welcome [% c.stash.name %]</h2>
+	<div>Copy and paste the text below and paste it into the game chat in order to gain admin privileges.</div>
+	<br/>
+	<div style="color: blue; border: solid blue 2px; padding: 6px;">
+	<form><input type="text" name="cookie" style="width:30%" value="[% c.stash.cookie %]" />
+	</div>
+	<br/>
+	<div style="color: red;">[% c.stash.error %]</div>
+[% INCLUDE footer.tt %]

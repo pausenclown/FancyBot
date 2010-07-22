@@ -129,13 +129,29 @@
 	<Command>
 		<Name>admin</Name>
 		<Arguments>name,status</Arguments>
-		<Help>Grants or revokes admin status to a player. Syntax is '-admin [playername] off|on'.</Help>
+		<Help>Grants or revokes admin status to a player. Syntax is '-admin [playername] (off|on)'.</Help>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>1</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 	</Command>
-
+	<Command>
+		<Name>login</Name>
+		<Arguments>token</Arguments>
+		<Help>logs the player in as admin, if the token is valid.Syntax is '-login [token]'.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>webshell</Name>
+		<Help>Shows the IP where to access the webshell.</Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
 	<Command>
 		<Name>vote</Name>
 		<Help>Starts a vote to execute a admin command.</Help>

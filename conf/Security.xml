@@ -1,0 +1,27 @@
+<!-- Administrator settings -->	
+<Security>
+
+	<!-- When activated every admin MUST login -admin TOKEN -->	
+	<!-- Otherwise the bot just relies on player names which can easily be faked. -->	
+	<Paranoia>1</Paranoia>
+
+	<!-- List of Administrators -->	
+	<!-- You can specify a password for every admin if you want. All other admins use the AdminPassword -->	
+	<Admins>
+		<Admin>DSA_Warhorse</Admin>
+		<Admin password="tailgunner">DSA_Tailgunner</Admin>
+	</Admins>
+	
+	<AdminPassword>admin</AdminPassword>
+	
+	<!-- Timeout for the admins rights after the player has left the room. -->	
+	<!-- Keep it small, as big values make it easier for someone to hijack the rights. -->	
+	<!-- (By changing their player name to an admins name) -->	
+	<AdminSessionTimeout>60</AdminSessionTimeout>
+	
+	<!-- List of Super Administrators, this must contain the player name of the bot, otherwise you cannot type commands in the bot shell -->	
+	<SuperAdmins>
+		<Admin>S7</Admin>
+	</SuperAdmins>
+
+</Security>

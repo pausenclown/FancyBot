@@ -52,7 +52,7 @@ has events =>
 			my $user = $bot->user( $args->{user} );
 			
 			# Check if user is authorized for the command
-			if ( $user->is_allowed_to( $cmd ) )
+			if ( $user->is_allowed_to( $cmd, $bot->config->{Security}->{Paranoia} ) )
 			{
 				# If so, fetch the FancyBot::Plugin::Command object
 				my $co = $cmd->{CommandObject};

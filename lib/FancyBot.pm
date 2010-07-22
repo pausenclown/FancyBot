@@ -108,10 +108,10 @@ sub start_server
 		if $self->is_server_alive;
 		
 	# read configuration file
-	$self->{config} = XMLin( 'conf/main.xml' );
+	$self->{config} = XMLin( 'conf/FancyBot.xml' );
 	# print Dumper( $self->config->{ComStar}->{Mech} );
-	my ($c, $ad, $sa, $u);
-	$c = $self->command( 'shutdown' );
+	# my ($c, $ad, $sa, $u);
+	# $c = $self->command( 'shutdown' );
 	# $sa = $self->user( 'DSA_Tailgnnr_SGT' ); print $sa->is_admin, $sa->is_super_admin;
 	# $ad = $self->user( 'DSA_Warhorse_CO' );  print $ad->is_admin, $ad->is_super_admin;
 	# $u  = $self->user( 'DSA_X' ); print $u->is_admin, $u->is_super_admin;
@@ -173,6 +173,7 @@ sub load_plugins
 			use FancyBot::Plugins::$plugin_name;
 			\$plugin = FancyBot::Plugins::$plugin_name->new();
 		";
+
 		print "Loading Plugin: $plugin_name\n";
 		eval $code;
 
@@ -180,6 +181,16 @@ sub load_plugins
 			if $@;
 		
 		$self->register_events( $plugin );
+		
+		if ( -e "conf/${plugin_name}.xml" )
+		{
+			my $lconfig = XMLin( "conf/${plugin_name}.xml" );
+			
+			for ( keys %$lconfig )
+			{
+				$self->config->{ $plugin_name }->{ $_ } = $lconfig->{ $_ };
+			}
+		}
 	}
 }
 
