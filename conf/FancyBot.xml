@@ -68,6 +68,9 @@
 	<!-- Webshell settings -->
 	<WebShell>
 
+		<!-- Host name to access the webshell FROM THE INTERNET. If empty, defaults to IP -->
+		<Host>darkstar-alliance.kicks-ass.net</Host>
+
 		<!-- Port the webshell server shall listen. -->
 		<Port>3000</Port>
 		
@@ -100,6 +103,8 @@
 		<PlugIn>Logger</PlugIn>
 		<PlugIn>Commands</PlugIn>
 		<PlugIn>Security</PlugIn>
+		<PlugIn>Stats</PlugIn>
+		<PlugIn>Annotator</PlugIn>
 	</PlugIns>	
 	
 	<!-- Logfile settings, setting on of the values to blank stops the log from being written to disk. -->

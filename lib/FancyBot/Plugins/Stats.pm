@@ -48,26 +48,72 @@ has events =>
 	default => sub {{
 		'chatter' => sub 
 		{
-			my $self   = shift;
-			my $bot    = shift;
-			my $user   = shift;
-			my $text   = shift;
+			# Fetch args from @_
+			my $args   = shift;
 			
-			if ( $text =~ /^(.+) has connected\.$/ )
+			# Make sure we got a bot reference
+			my $bot    = $args->{bot}      || die "No bot reference";
+			
+			# Make sure we got a message to parse
+			my $text   = $args->{message}  || die "No message";
+			
+			# Fetch info about the user- and botname
+			my $user   = $args->{user};
+
+			return 1 if $args->{user};
+			
+			
+			if ( $text =~ /^(.+) has connected/ )
 			{
-				$bot->raise_event( 'player_connect', { bot => $bot, player => $1 } );
+				my $player = $bot->user( $1 ); 
+				$player->times_connected( $player->times_connected + 1 );
+				
+				$bot->raise_event( 'player_connect', { bot => $bot, player => $player } );
 			}
-			elsif ( $text =~ /^(.+) has joined\.$/ )
+			elsif ( $text =~ /^(.+) has joined/ )
 			{
-				$bot->raise_event( 'player_join', { bot => $bot, player => $1 } );
+			
+				return 1 if $bot->config->{'Server'}->{'BotName'} eq $1;
+				
+				my $player = $bot->user( $1 );
+				$player->times_joined_this_match( $player->times_joined_this_match + 1 );
+				$player->times_joined( $player->times_joined + 1 );
+				
+				$bot->raise_event( 'player_join', { bot => $bot, player => $player } );
 			}
-			elsif ( $text =~ /^(.+) has commited suicide\.$/ )
+			elsif ( $text =~ /^(.+) Committed Suicide/ )
 			{
-				$bot->raise_event( 'player_suicide', { bot => $bot, player => $1 } );
+				my $player = $bot->user( $1 );
+				$player->suicides_this_match( $player->suicides_this_match + 1 );
+				$player->suicides_overall( $player->suicides_overall + 1 );
+				
+				$bot->raise_event( 'player_suicide', { bot => $bot, player => $player } );
 			}
-			elsif ( $text =~ /^(.+) has killed (.+)\.$/ )
+			elsif ( $text =~ /^(.+) Destroyed (.+)/ )
 			{
-				$bot->raise_event( 'player_kill', { bot => $bot, player => $1, victim => $2 } ); # or team_kill
+				my $player = $bot->user( $1 );
+				
+				$player->kills_this_match( $player->kills_this_match + 1 );
+				$player->kills_overall( $player->kills_overall + 1 );
+				$player->current_death_streak( 0 );
+				
+				if ( $player->current_kill_streak > $player->longest_kill_streak )
+				{
+					$player->longest_kill_streak( $player->current_kill_streak );
+				}
+				
+				
+				my $victim = $bot->user( $2 );
+				$victim->deaths_this_match( $victim->deaths_this_match + 1 );
+				$victim->deaths_overall( $victim->deaths_overall + 1 );
+				$victim->current_kill_streak( 0 ); 
+				
+				if ( $victim->current_death_streak > $victim->longest_death_streak )
+				{
+					$victim->longest_death_streak( $victim->current_death_streak );
+				}
+				
+				$bot->raise_event( 'player_kill', { bot => $bot, player => $player, victim => $victim } ); # or team_kill
 			}
 			
 			return 1;

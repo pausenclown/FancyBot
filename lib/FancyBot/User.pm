@@ -1,6 +1,7 @@
 package FancyBot::User;
 
 use Moose;
+use Data::Dumper;
 
 has name =>
 	isa     => 'Str',
@@ -31,12 +32,27 @@ has times_joined =>
 	is      => 'rw',
 	default => 0;
 	
+has times_joined_this_match =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+	
 has kills_overall =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;
 
 has kills_this_match =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+	
+has suicides_overall =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+
+has suicides_this_match =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;
@@ -81,14 +97,15 @@ sub is_allowed_to {
 	my $command  = shift;
 	my $paranoia = shift;
 	
+	
 	return 
 		if $command->{IsSuperAdminCommand} && !$self->is_super_admin;
 
 	return 
 		if $command->{IsAdminCommand} && !$self->is_admin;
-
+		
 	return
-		if $paranoia && !$self->is_authorized;
+		if $paranoia && ( $command->{IsSuperAdminCommand} || $command->{IsAdminCommand} ) && !$self->is_authorized;
 
 	return 1;
 }

@@ -108,6 +108,7 @@ sub update_gui
 sub host
 {
 	my $self = shift;
+	
 	while ( !(GetChildWindows( $self->bot->main_hwnd ))[79] )
 	{
 		SetForegroundWindow( $self->bot->main_hwnd );
@@ -115,7 +116,7 @@ sub host
 		sleep(5);
 	}
 	
-	
+	$self->bot->raise_event( 'notice', { message =>  "Initializing screen 3/3..." } );
 	$self->bot->screen( FancyBot::GUI::Lobby->new( bot => $self->bot ) );
 	$self->bot->update_gui;
 }

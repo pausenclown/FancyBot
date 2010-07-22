@@ -28,6 +28,7 @@ is responsible to parse them out of that string on its own.
 package FancyBot::Plugins::Commands;
 
 use Moose;
+use Data::Dumper;
 
 # Declare the events we listen to, here: command
 has events =>
@@ -50,21 +51,24 @@ has events =>
 			
 			# Fetch a FancyBot::User Object from the bot
 			my $user = $bot->user( $args->{user} );
-			
+
 			# Check if user is authorized for the command
 			if ( $user->is_allowed_to( $cmd, $bot->config->{Security}->{Paranoia} ) )
 			{
 				# If so, fetch the FancyBot::Plugin::Command object
 				my $co = $cmd->{CommandObject};
 
-				# Execute the command...
-				eval { $co->execute( $bot, $user, $args->{params} ) };
+				if ( $co )
+				{
+					# Execute the command...
+					eval { $co->execute( $bot, $user, $args->{params} ) };
 
-				# and complain if there is an error.
-				$_ = "Error executing command '". $cmd->{Name}. "': $@",
-				$bot->send_chatter( $_ ),
-				$bot->raise_event( 'notice', { bot => $bot, message => $_ } )
-					if $@;
+					# and complain if there is an error.
+					$_ = "Error executing command '". $cmd->{Name}. "': $@",
+					$bot->send_chatter( $_ ),
+					$bot->raise_event( 'notice', { bot => $bot, message => $_ } )
+						if $@;
+				} 
 			}
 			else
 			{

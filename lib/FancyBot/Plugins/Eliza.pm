@@ -98,6 +98,43 @@ has events =>
 	isa     => 'HashRef',
 	is      => 'ro',
 	default => sub {{
+		# Player has joined# %player #
+		'player_connect' => sub 
+		{
+			my $args  = shift;
+			
+			# Make sure we got a bot reference
+			my $bot       = $args->{bot}      || die "No bot reference";
+			my $player    = $args->{player}   || die "No player reference";
+
+			my @greetings = ref $bot->config->{Eliza}->{Greetings}->{Greeting} eq "ARRAY" ? 
+			                @{ $bot->config->{Eliza}->{Greetings}->{Greeting} } :
+							( bot->config->{Eliza}->{Greetings}->{Greeting} );
+							
+			for my $greeting ( @greetings )
+			{
+				# See if the question matches the configured subject
+				my $re = $greeting->{Match}; if ( $player->name =~ /${re}/ )
+				{
+					# Depending on the XML we sometimes get a string or an array
+					my $messages = ref $greeting->{Message} ? 
+								   $greeting->{Message}     : 
+								   [ $greeting->{Message} ] ;
+					
+					# Choose a random answer
+					my $msg = $messages->[ int( rand( scalar @$messages ) ) ];
+					$msg =~ s/%player/$player->name/eg;
+																	
+					# Say Hi
+					sleep(5);
+					$bot->screen->send_chatter( $msg ); 
+					
+					return 1;
+				}
+			}
+
+			return 1;			
+		},
 
 		# React to all chat
 		'chatter' => sub 
@@ -116,10 +153,10 @@ has events =>
 			my $botn  = $bot->config->{'Server'}->{'BotName'} || 'Fancy';
 			
 			# no user chat, most likely from MOTD.TXT
-			return unless $user;
+			return 1  unless $user;
 			
 			# ignore non intentional self chatter
-			return if $user eq $botn && $txt !~ /^!!!/;
+			return 1 if $user eq $botn && $txt !~ /^!!!/;
 
 			# Someone asks Eliza a question
 			if ( $txt =~ s/\?$// )

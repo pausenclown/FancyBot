@@ -56,7 +56,7 @@
 			<Message>Too bad master, next time.</Message>
 			<Message>Ah no! Cheating!!</Message>
 		</Kill>
-						
+												
 		<!-- clan member kills -->
 		<Kill>
 			<Killer>^DSA</Killer>
@@ -64,7 +64,7 @@
 			<Message>Another mech destroyed %killer, money for DSA unit.</Message>
 			<Message>%killer's %killer_mech terminated %victim's %victim_mech.</Message>
 			<Message>Another entry in the DSA kill statistics.</Message>
-		</Greeting>
+		</Kill>
 
 		<!-- clan member gets killed -->
 		<Kill>
@@ -72,7 +72,7 @@
 			<Victim>^DSA</Victim>
 			<Message>%victim, DSA's accountant will keep %victim_cbills cbills from your wage!</Message>
 			<Message>Ah no! Cheating!!</Message>
-		</Greeting>
+		</Kill>
 
 		<!-- empty 'Killer' or 'Victim' tags match everbody -->
 		<Kill>
@@ -163,11 +163,17 @@
 			<Message>Too much heat?</Message>
 		</Suicide>
 
+		<!-- me -->
+		<Join>
+			<Player>^DSA_Tailgnnr_SGT$</Player>
+			<Message>Poor them, Master.</Message>
+		</Join>
+		
 		<!-- clan member -->
 		<Join>
 			<Player>^DSA_</Player>
 			<Message>Go kick their ass %player! Remember your training.</Message>
-		</Suicide>
+		</Join>
 
 		<!-- empty 'Player' tags match everbody -->
 		<Join>
@@ -185,7 +191,7 @@
 		<Rejoin>
 			<Player></Player>
 			<Message>%player join #%player_joins, all other players THANK YOU for JOIN LAG</Message>
-		</Suicide>
+		</Rejoin>
 
 		<!-- clan member -->
 		<KillStreak>

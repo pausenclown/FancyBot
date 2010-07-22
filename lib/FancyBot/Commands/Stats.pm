@@ -4,9 +4,10 @@ use Moose;
 
 sub execute 
 {
-	my $self  = shift;
-	my $bot   = shift;
-	my $player = shift;
+	my $self    = shift;
+	my $bot     = shift;
+	my $chatter = shift;
+	my $player  = shift;
 	
 	if ( my $user = $bot->user( $player ) )
 	{
@@ -29,8 +30,6 @@ sub execute
 		
 		while ( my ($key,$sub) = each %map )
 		{
-			next unless $bot->config->{main}->{"UserStats.$key"} && $bot->config->{main}->{"UserStats.$key"} =~ /1|true/i;
-			
 			push @stats, " $key = ". $user->$sub();
 		}
 		

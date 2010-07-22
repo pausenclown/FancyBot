@@ -147,7 +147,7 @@
 		<Name>login</Name>
 		<Help>Grants administrator priviliges, if the token is valid. Token can be aquired by visiting the WebShell (See -webshell). Syntax is '-login [token]'.</Help>
 		<Example>-login 76198A508CDD42879D9E7A3458018DF7</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
@@ -156,7 +156,7 @@
 		<Name>webshell</Name>
 		<Help>Shows the IP where to access the webshell.</Help>
 		<Example>-webshell</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
@@ -307,6 +307,15 @@
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 	</Command>
+	<Command>
+		<Name>stats</Name>
+		<Help>Lists some statistical data about a player. Syntax is '-config [player name]'.</Help>
+		<Example>-stats DSA_Tailgnnr_SGT</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>	
 
 	<Command>
 		<Name>config</Name>
@@ -314,16 +323,6 @@
 		<Example>-config</Example>
 		<Example>-config ForceFirstPersonView</Example>
 		<Example>-config ForceFirstPersonView 1</Example>
-		<IsImplemented>0</IsImplemented>
-		<IsAdminCommand>0</IsAdminCommand>
-		<IsSuperAdminCommand>0</IsSuperAdminCommand>
-		<IsVotableCommand>0</IsVotableCommand>
-	</Command>
-
-	<Command>
-		<Name>webshell</Name>
-		<Help>Shows the IP address to connect to the WebShell.</Help>
-		<Example>-webshell</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>

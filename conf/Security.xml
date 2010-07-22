@@ -8,8 +8,8 @@
 	<!-- List of Administrators -->	
 	<!-- You can specify a password for every admin if you want. All other admins use the AdminPassword -->	
 	<Admins>
-		<Admin>DSA_Warhorse</Admin>
-		<Admin password="tailgunner">DSA_Tailgunner</Admin>
+		<Admin>DSA_Warhorse_CO</Admin>
+		<Admin password="tailgunner">DSA_Tailgnnr_SGT</Admin>
 	</Admins>
 	
 	<AdminPassword>admin</AdminPassword>
@@ -21,7 +21,9 @@
 	
 	<!-- List of Super Administrators, this must contain the player name of the bot, otherwise you cannot type commands in the bot shell -->	
 	<SuperAdmins>
-		<Admin>S7</Admin>
+		<Admin password="superPW123">S7</Admin>
 	</SuperAdmins>
+	
+	<SuperAdminPassword>admin</SuperAdminPassword>
 
 </Security>

@@ -6,6 +6,7 @@ use strict;
 
 use FancyBot::GUI;
 use FancyBot::User;
+use Text::Diff;
 
 use Moose;
 use Config::Simple;
@@ -109,19 +110,11 @@ sub start_server
 		
 	# read configuration file
 	$self->{config} = XMLin( 'conf/FancyBot.xml' );
-	# print Dumper( $self->config->{ComStar}->{Mech} );
-	# my ($c, $ad, $sa, $u);
-	# $c = $self->command( 'shutdown' );
-	# $sa = $self->user( 'DSA_Tailgnnr_SGT' ); print $sa->is_admin, $sa->is_super_admin;
-	# $ad = $self->user( 'DSA_Warhorse_CO' );  print $ad->is_admin, $ad->is_super_admin;
-	# $u  = $self->user( 'DSA_X' ); print $u->is_admin, $u->is_super_admin;
-	
-	# print Dumper( $c, $sa );
 	
 	# load plugins as configured
 	$self->load_plugins;
 	
-	$self->raise_event( 'notice', { message =>  "Starting Dedicated Server...\n" } );
+	$self->raise_event( 'notice', { message =>  "Starting Dedicated Server..." } );
 	$self->raise_event( 'starting_server', { bot =>  $self } );
 
 	# create a process object for the server
@@ -138,27 +131,27 @@ sub start_server
 	# TODO: probably better solved with WaitForWindow or somesuch
 	sleep( $self->config->{'Monitor'}->{'ServerTimeout'} || 10 );
 	
-	$self->raise_event( 'fatal', { message => "Cannot start server. Check path_to_mercs and or server_start_timeout in the settings file.\n" } ) 
+	$self->raise_event( 'fatal', { message => "Cannot start server. Check path_to_mercs and or server_start_timeout in the settings file." } ) 
 		unless $process && $self->main_hwnd( $self->find_main_hwnd );
 		
-	$self->raise_event( 'notice', { message =>  "Started.\n" } );
+	$self->raise_event( 'notice', { message =>  "Started." } );
 
 	# store starting time and the process
 	$self->server_start_time( time );
 	$self->server_proc($process);
 		
-	$self->raise_event( 'notice', { message =>  "Fancybot is up and running." } );
-
 	$self->raise_event( 'server_started', { bot => $self } );
 	
+	$self->raise_event( 'notice', { message =>  "Initializing screen 1/3..." } );
 	$self->screen( FancyBot::GUI->new( bot => $self )->start_screen );
+
+	$self->raise_event( 'notice', { message =>  "Initializing screen 2/3..." } );
 	$self->screen->next;
+
+	$self->raise_event( 'notice', { message =>  "Waiting for host..." } );
 	$self->screen->host;
-	sleep 5;
 	
-	# $self->raise_event( 'command', { command =>  "shutdown", bot => $self } );
-	# $self->screen->quit;
-	
+	$self->raise_event( 'notice', { message =>  "Fancybot is up and running." } );
 
 	$self->watch_loop;
 }
@@ -241,7 +234,7 @@ sub instantiate_command_object
 	my $self = shift;
 	my $cfg  = shift;
 	my $name = ucfirst( $cfg->{Name} );  $name =~ s/-(.)/uc($1)/ge; 
-	my $mod  = "FancyBot::Commands::$name"; print "/// $name\n";
+	my $mod  = "FancyBot::Commands::$name";
 	my $code = "use $mod; \$cfg->{CommandObject} = $mod->new;";
 
 	eval $code;
@@ -264,8 +257,6 @@ sub register_events {
 	}
 }
 	
-use Text::Diff;
-
 sub watch_loop
 {
 	my $self = shift;
@@ -276,6 +267,8 @@ sub watch_loop
 	{
 		if ( $self->is_server_alive )
 		{
+			$self->raise_event( 'pulse', { bot => $self } );
+			
 			# my $i = 0;
 			# for ( GetChildWindows($self->main_hwnd) ) { 
 				# print $i++, ' ', $self->main_hwnd, " ! ", WMGetText($_), '==', GetClassName($_), "\n" ;
@@ -287,14 +280,9 @@ sub watch_loop
 				my $last    = $self->last_chatter;
 				my $chatter = WMGetText( ( GetChildWindows($self->main_hwnd) )[172] ); 
 				my $new     = diff \$last, \$chatter; 
-				#print 'L1 ', length($new), "\n";
-				#chop $new;
-				#print 'L2 ', length($new), "\n";
-				#for (split //, $new) { print $_, '(', ord($_), ') '  };
-				#print "\n";
+
 				for my $msg ( split /(\x0D\x0A|\x0D|\x0A)/, $new )
 				{
-					
 					next unless $msg =~ /^\+/;
 
 					my ($user, $text) = $msg =~ /^\+(.*):> (.*)/; $user ||= '';
@@ -355,15 +343,16 @@ sub raise_event
 	my $events = shift;
 	my $args   = shift;
 
-	# print Dumper( $events );
+	print Dumper( [ $events ] ) unless $events eq 'pulse';
 	# print ref( $events ), "\n";
 	for my $event ( ref( $events ) ? (@$events) : ($events) )
 	{
-		# print "EV $event\n";
+		print "EV $event\n" unless $event eq 'pulse';;
 		if ( $self->listeners->{ $event } )
 		{
 			for my $listener ( @{ $self->listeners->{ $event } } )
 			{
+				print "LS $listener\n";
 				return 
 					unless $listener->( $args );
 			}
@@ -383,7 +372,11 @@ sub user
 {
 	my $self = shift;
 	my $name = shift;
-	return FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) );
+	
+	$self->users->{ $name } = FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) )
+		unless defined $self->users->{ $name };
+
+	return $self->users->{ $name };
 }
 
 sub is_admin
@@ -394,9 +387,9 @@ sub is_admin
 	return 1 if $self->is_super_admin($name);
 
 	my $admins = $self->config->{Security}->{Admins}->{Admin}; 
-	   $admins = [$admins] unless ref $admins;
+	   $admins = [$admins] unless ref $admins  eq "ARRAY";
 
-	return 1 if grep { $_ eq $name } @$admins;
+	return 1 if grep { ref $_ ? ( $_->{content} eq $name ) : $_ eq $name } @$admins;
 	return 0;
 }
 
@@ -406,9 +399,9 @@ sub is_super_admin
 	my $name = shift;
 
 	my $admins = $self->config->{Security}->{SuperAdmins}->{Admin}; 
-	   $admins = [$admins] unless ref $admins;
+	   $admins = [$admins] unless ref $admins eq "ARRAY";
 
-	return 1 if grep { $_ eq $name } @$admins;
+	return 1 if grep { ref $_ ? ( $_->{content} eq $name ) : $_ eq $name } @$admins;
 	return 0;
 }
 

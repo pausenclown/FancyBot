@@ -3,6 +3,7 @@ use Moose;
 use XML::Simple;
 use LWP::Simple;
 use Win32::Guidgen;
+use Data::Dumper;
 use namespace::autoclean;
 
 BEGIN {extends 'Catalyst::Controller'; }
@@ -54,7 +55,7 @@ sub cookie :Local
 	my $cookie = Win32::Guidgen::create(); $cookie =~ s/[^0-9A-Z]//g;
 	
 	$c->stash->{name}     = $c->session->{player_name};
-	$c->stash->{cookie}   = "-admin $cookie";
+	$c->stash->{cookie}   = "-login $cookie";
 	$c->stash->{template} = 'cookie.tt';
 	
 	$c->stash->{error} = 'Could not write cookie' unless
@@ -75,6 +76,7 @@ sub write_cookie
 {
 	my ($self, $player_name, $cookie) = @_;
 	
+	mkdir 'login' unless -e 'login';
 	open my $out, '>', "login/$cookie" or return;
 	print $out time, ':', $player_name, "\n";
 	close $out;
@@ -93,8 +95,19 @@ sub admin_login
 	
 	my @admins = 
 		grep { $_->{content} eq $player_name } 
-		map { ref $_ ? $_ : { password => $security->{AdminPassword}, content => $_ } }
-		@{ $security->{Admins}->{Admin} };
+		map { ref $_ eq "HASH" ? $_ : { password => $security->{AdminPassword}, content => $_ } }
+		@{ 
+			ref $security->{Admins}->{Admin} eq "ARRAY" ?
+			$security->{Admins}->{Admin} :
+			[ $security->{Admins}->{Admin} ]
+		},
+		@{ 
+			ref $security->{SuperAdmins}->{Admin} eq "ARRAY" ?
+			$security->{SuperAdmins}->{Admin} :
+			[ $security->{SuperAdmins}->{Admin} ]
+		};
+		
+	print STDERR Dumper(\@admins);
 	
 	$error .= 'You are not an Admin.<br/>'
 		unless @admins;

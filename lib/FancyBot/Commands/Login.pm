@@ -21,6 +21,7 @@ This command is only useful when Security.Paranoia is in effect.
 package FancyBot::Commands::Login;
 
 use Moose;
+use Data::Dumper;
 
 # Main function of the command
 # Receives references to self, bot, user and the commands argument(s), 
@@ -34,20 +35,20 @@ sub execute
 	my $token = shift;
 
 	# Open the token file
-	unless ( open my $in, "<", "login/$token" )
+	my $in; unless ( open $in, "<", "login/$token" )
 	{
 		$bot->send_chatter( "Irregular token." );
 		return;
 	}
-	
+
 	# Read contents
 	my $line = <$in>; chomp $line;
 	my ( $time, $cuser ) = split /:/, $line;
 	
 	# Detect hijack, user doesnt match user from token
-	unless ( $cuser eq $user )
+	unless ( $cuser eq $user->name )
 	{
-		$bot->send_chatter( "Token Hijack detected. $user be warned." );
+		$bot->send_chatter( "Token Hijack detected. ". $user->name. " be warned. I know your IP." );
 		return;
 	}
 	
@@ -57,9 +58,10 @@ sub execute
 		$bot->send_chatter( "Token timeout. Please relogin at the webshell." );
 		return;
 	}
-	
 	# all good, set authorized flag
-	$bot->user( $user )->is_authorized(1);
+	$user->is_authorized(1);
+
+	$bot->send_chatter( "Admin status granted: $cuser" );
 		
 	return 1;
 }
