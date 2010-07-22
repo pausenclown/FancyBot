@@ -1,0 +1,233 @@
+=head1 NAME
+
+HTML::FormHandler::Manual::Rendering
+
+=head1 SYNOPSIS
+
+You can easily build any kind of renderer for FormHandler. A custom
+renderer could be a separate object or class that takes a form object,
+or a role that is applied to your form. Since the primary use of
+FormHandler is for HTML forms, the built-in rendering methods create
+HTML (though in addition all forms can return a hashref of the values 
+and a hashref of the values to use to fill in an HTML form).
+
+If you are interested in creating your own renderer,
+L<HTML::FormHandler::Render::Simple> can be used as an example of
+rendering directly from forms/fields. Depending on what kind of
+rendering you want to do, it may be simpler to take the 'value'
+hashref and use that.
+
+HFH has a number of different rendering methods:
+
+   1. Handcoded html with no assist from HFH at all
+   2. Use templates and the field 'widget' to determine the template snippet
+   3. Use a rendering role in your form class, like Render::Simple
+
+and now:
+
+   4. Automatically installed rendering widgets using a combination of
+      rendering roles, which can easily be customized by the user.
+
+With all of the rendering roles, it is impossible to make improvements
+and additions to rendering without changes to the output, so you should
+consider either using your own versions of the rendering objects, or
+carefully inspecting the output when installing new versions of FormHandler.
+
+=head2 Handcoded HTML
+
+The names of your fields must match the names of your FormHandler fields.
+If you use compound fields, you must use the FormHandler naming convention.
+If you want your fields automatically filled, you probably need to
+use L<HTML::FillInForm> in some manner. If you use Select fields, you
+must take care that the select lists in your HTML do not get out of
+sync with the Select lists in FormHandler. A totally hand-built solution
+would be difficult for Compound and Repeatable fields.
+
+The best alternative may be to render some of the HTML by hand, but use
+FormHandler to display the field elements:
+
+   [% form.field('title').render %]
+
+FormHandler is not a template system, so unless your form is very simple,
+rendering the entire form page only with FormHandler may not be the best solution.
+It's great for scaffolding, or simple admin forms, but user facing forms
+may need some degree of hand-building.
+
+It is *possible* to do fairly complex form rendering in FormHandler.
+Whether it makes sense for your application is something you have to decide.
+The rendering roles make it easy to integrate other types of templating.
+
+=head2 Use Render::Simple/Table or rendering widgets?
+
+The form and fields rendering widgets will be automatically applied unless
+a 'render' method already exists, so if your form class applies a role like:
+
+   with 'HTML::FormHandler::Render::Simple';
+
+then L<HTML::FormHandler::Widget::Form::Simple'> will not be applied.
+
+The advantage of an all-in-one type role is that you can include all of
+your rendering code for a particular form in one file. You could even
+have one renderer for each form. The widgets are more atomic, so may
+make widget reuse easier. 
+
+=head2 Rendering with Widgets
+
+All FormHandler widgets are Moose roles.  Default widget roles are found in the 
+HTML::FormHandler::Widget directory. They include widgets for the fields in the 
+distribution. Field and wrapper widgets are automatically applied to fields, 
+Each field can render itself with C<< $field->render >>.
+
+The name space used to look for the widget roles can be specified on a form or
+field basis by setting 'widget_name_space' to an arrayref of name spaces:
+
+   has '+widget_name_space' => ( default => sub { ['MyApp::Form::Submit',
+       'MyApp::Form::Widget' ]);
+
+The HTML::FormHandler::Widget name space is always searched as the last name space.
+This means that you can set up an application or form specific set of widgets.
+
+Widgets in a widget directory (specified in widget_name_space) are located in either
+a 'Field', 'Wrapper', or 'Form' subdirectory.
+
+The form's rendering role is looked for in the widget name space plus 'Form'. The
+default form rendering roles are in HTML::FormHandler::Widget::Form (Simple
+and Table).  The form widget is specified in the form with 'widget_form'.
+
+   package MyApp::Form;
+   ....
+   has '+widget_form' => ( default => 'Simple' ); 
+   ...
+
+The 'wrapper' for field rendering can also be specified with 'widget_wrapper'. 
+The widget specified will be looked for in the widget directories' 'Wrapper'
+subdirectory. It contains a 'wrap_field' method which is called from the Field
+widgets.  The wrap_field method takes the basic rendered field (passed from the
+field widget) and wraps it with HTML. The defaults provided are 'Div' and 'Table'.
+You can specify a wrapper class for all the fields in the form by setting 
+'widget_wrapper' in the form class, or you can set them individually by setting
+'widget_wrapper' on individual fields.
+
+   has_field 'some_field' => ( widget_wrapper => 'MyWrapper' );
+ 
+The 'widget' attribute is set to a default in FormHandler fields, or you can 
+set it to a different widget in your field declarations.
+
+   has_field 'another_field' => (
+     widget => 'MyWidget',
+     widget_wrapper => 'MyWrapper'
+   ); 
+
+Can be set in the form:
+
+   widget_name_space
+   widget_wrapper
+   widget_form
+
+Can be set in the field:
+
+   widget_name_space
+   widget_wrapper
+   widget
+
+The widget_name_space and widget_wrapper will be copied into the fields from the
+form if they are not already defined.
+
+By default, a form will use the Form::Simple and Wrapper::Simple widgets. If you
+want to use the table format you can change the 'widget_form' and 'widget_wrapper'
+attributes in the form, or do it on new:
+
+   my $form = MyApp::Form->new(
+     widget_form => 'Table',
+     widget_wrapper => 'Table'
+   );
+
+=head2 Rendering filter for fill-in-form values
+
+The base field class has a 'render_filter' attribute which is a coderef used to
+clean the values used to fill in the form for Render::Simple and the Widgets.
+The default filter changes quote, ampersand, <, and > to the equivalent html
+entities. If you wish to use some other sort of filtering, you can set use
+'render_filter' method in your form, or set a coderef on individual field
+objects. 
+
+    sub render_filter {
+        my ( $self, $string ) = @_;
+        $string =~ s/my/MY/g; # perform some kind of transformation
+        return $string;
+    }
+    -- or --
+    has_field 'foo' => ( render_filter => sub { ... } );
+
+The filter is called in Render::Simple in the widgets with as 
+C<< $self->html_filter( $fif ) or $field->html_filter( $fif ) >>.
+
+=head2 Customized Widgets
+
+You can create custom widgets for your complete application or on a per-form basis.
+One possible layout for your widgets;
+
+   lib/MyApp/Form
+   lib/MyApp/Form/Widget/Form
+   lib/MyApp/Form/Widget/Field (contains MyWidget.pm)
+   lib/MyApp/Form/Widget/Wrapper
+
+Create custom widgets and put them in the respective directories, and then specify your
+widget name space:
+
+   MyApp::Form::User:
+   ...
+   has '+widget_name_space' => ( default => sub { ['MyApp::Form::Widget'] } );
+   ..
+   has 'some_field' => ( widget => 'MyWidget' );
+
+Your rendering widgets will be applied into your field classes.
+
+The 'widget_tags' hashref attribute has been provided to allow customizing
+rendering behavior on a per-field basis. They can be used to switch the Simple
+wrapper from divs to using paragraphs instead:
+
+   has_field 'my_field' => ( widget_tags => {wrapper_start => '<p>',
+       wrapper_end => '</p>' } );
+
+Widget tags set for the form will be copied into the fields if the same key
+does not exist in the field 'wrapper_tags' hashref, so you can set the
+widget_tags in a form to apply them to all the fields:
+
+   package MyApp::Form;
+   ....
+   has '+widget_tags' => ( default => sub { {wrapper_start => '<p>',
+      wrapper_end => '</p>' } );
+
+=head2 Creating Widgets
+
+The new widgets are designed to be used with either the original FormHandler 
+form objects or the new L<HTML::FormHandler::Result> objects. For that reason,
+you should use C<< $field->result >> to access the current value, errors and 
+'fif' (fill-in-form) in field widgets, so that they will work 
+for both form and result rendering.
+
+The basic structure for a field widget:
+
+   package MyApp::Form::Widget::Field::MyWidget;
+   use Moose::Role;
+
+   sub render {
+      my ( $self, $result ) = @_;
+
+      $result ||= $self->result;
+      my $output;
+      < create rendered field >
+      my $fif = $result->fif;
+      my $value = $result->value;
+      my $errors = $result->errors;
+      < done creating rendered field )
+      return $self->wrap_field($result, $output);
+   }
+   use namespace::autoclean; 
+   1;
+
+Although the shipped widgets use a wrapper method, it is not necessary for
+you to do that in your widgets. 
+
+=cut

@@ -1,0 +1,146 @@
+=head1 NAME
+
+HTML::FormHandler::Manual::Templates - using templates
+
+=head1 SYNOPSIS
+
+Documentation on templates to use with L<HTML::FormHandler>
+
+=head1 Using templates
+
+There are lots of different ways to set up templates. One way is to
+create a 'widget' directory, and store template snippets there.
+
+You can use the default 'widget' for the field class, or set the 'widget' 
+for the field in your form:
+
+   fields => [
+      my_special_field => {
+         type => 'Text',
+         widget => 'my_special_widget',
+      },
+      my_second_field => {
+         type => 'Text',
+         widget => 'yet_another_widget',
+      },
+   ]
+
+And include them in a generic template:
+
+   [% PROCESS widget/form_start.tt %]
+
+   [% FOREACH f IN form.sorted_fields %]
+      [% PROCESS widget/${f.widget}.tt %]
+   [% END %]
+
+   [% PROCESS widget/form_end.tt %]
+
+=head1 Sample templates
+
+Note that the following templates assume that the field is in a TT variable "f",
+as though they were processed in the above loop. Otherwise the individual
+fields could be preceded by something like:
+
+  [% f = form.field('title') %]
+
+=head2 Text input field with error class on div & error messages
+
+   <div class="[% f.css_class %] [% IF f.has_errors %]error_fld[% END %]">
+   [% IF f.has_errors %]
+     [% FOR error IN f.errors %]
+       <p><span class="error" id="error">[% error %] </span></p>
+     [% END %]
+   [% END %]
+   <label class="label" for="[% f.id %]">[% f.label %]</label>
+   <input type="text" name="[% f.html_name %]" id="[% f.id %]" value="[% f.fif %]">
+   </div>
+
+Simple text field;
+
+   [% f = form.field('text_field') %]
+   <div><label class="label" for="[% f.id %]">[% f.label %]: </label>
+   <input type="text" name="[% f.html_name %]" id="[% f.id %]" value="[% f.fif %]" /> </div>
+
+
+=head2 Select field
+
+Single select:
+
+   <label class="label" for="[% f.id %]">[% f.label %]</label>
+   <select name="[% f.html_name %]" id="[% f.id %]>
+     [% FOR option IN f.options %]
+       <option value="[% option.value %]" 
+       [% IF option.value == f.fif %]
+          selected="selected"
+       [% END %]>
+       [% option.label %]</option>
+     [% END %] 
+   </select>
+
+Multiple select:
+
+   <label class="label" for="[% f.id %]">[% f.label %]</label>
+   <select name="[% f.html_name %]" id="[% f.id %] 
+             multiple="multiple" size="[% f.size %]">
+     [% FOR option IN f.options %]
+       <option value="[% option.value %]" 
+       [% FOREACH optval IN f.value %]
+          [% IF optval == option.value %]
+             selected="selected"
+          [% END %]
+       [% END %]>
+       [% option.label %]</option>
+     [% END %] 
+   </select>
+
+Warning: TT has problems with single element arrays. If you are likely
+to have a single element in a select list, you might want to use the
+rendering method instead or add an extra "choose" row. (If you come up
+with a good solution, please submit a doc patch.)
+
+=head2 Checkbox
+
+   <div><label class="label" for="[% f.id %]">[% f.label %]: </label>
+   <input type="checkbox" name="[% f.html_name %]" id="[% f.id %]" value="1" />
+   </div>
+
+=head2 Textarea
+
+   <div><label class="label" for="[% f.id %]">[% f.label %]" </label>
+   <textarea name="[% f.html_name %]" id="[% f.id %]" 
+        rows="[% f.rows %]" cols="[% f.cols %]">[% f.fif %]</textarea></div>
+
+=head2 Hidden
+
+   <div><input type="hidden" name="[% f.html_name %]" id="[% f.id %]" 
+       value="[% f.fif %]" /></div>
+
+=head2 Submit
+
+   <div><input type="submit" name="[% f.html_name %]" id="[% f.id %]" 
+       value="[% f.value %]" /></div>
+
+=head2 Radio group
+
+   <div>
+   <label class="label" for="[% f.id %]">[% f.label %]</label>
+   [% FOR option IN f.options %]
+     <input type="radio" value="[% option.value %]" 
+        name="[% f.name %]"
+     [% IF option.value == f.fif %]
+        checked="checked"
+     [% END %]>
+     [% option.label %]<br />
+   [% END %] 
+   </div>
+
+=head1 AUTHORS
+
+HTML::FormHandler Contributors; see HTML::FormHandler
+
+=head1 COPYRIGHT
+
+This library is free software, you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+=cut

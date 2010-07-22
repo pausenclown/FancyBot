@@ -1,0 +1,10 @@
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\Controller\Login.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\Form\Login.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\Form\LoginOpenID.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\Manual.pod
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\TraitFor\Controller\Login\Logout.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\TraitFor\Controller\Login\OpenID.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\TraitFor\Controller\Login\RenderAsTTTemplate.pm
+C:\strawberry\perl\site\lib\CatalystX\SimpleLogin\TraitFor\Controller\Login\WithRedirect.pm
+C:\strawberry\perl\site\lib\Catalyst\ActionRole\NeedsLogin.pm
