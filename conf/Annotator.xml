@@ -4,17 +4,49 @@
 	<!-- Comments will be printed when a battle event occurs. -->
 	<!-- Match will go top down, the first match wins. -->
 	<Annotations>
-	
+
+		<!-- when dsa wins -->
+		<Win>
+			<Winner>^DSA_</Winner>
+			<Loser></Loser>
+			<Message>Another fabulous win for the DarkStar Alliance. Uploading to Mercnet...</Message>
+			<Message>DSA strikes again! Uploading to Mercnet...</Message>
+			<Message>Good Job Clan! This was just too easy. Uploading to Mercnet...</Message>
+			<Message>DSA! The skill! The elegance! Uploading to Mercnet...</Message>
+			<Message>DSA FTW! All your lives belong to us. Uploading to Mercnet...</Message>
+		</Win>
+		
+		<!-- when dsa loses -->
+		<Win>
+			<Winner></Winner>
+			<Loser>^DSA_</Loser>
+			<Message>DSA is defeated, but not destroyed. Uploading to Mercnet...</Message>
+			<Message>What's wrong DSA? Forgot your training? Uploading to Mercnet...</Message>
+		</Win>
+
+		<!-- when dsa loses, against the widowmakers -->
+		<Win>
+			<Winner>^=WM=</Winner>
+			<Loser>^DSA_</Loser>
+			<Message>We stand defeated Widowmakers. This time. Uploading to Mercnet...</Message>
+		</Win>
+		
+		<!-- empty 'Winner' or 'Loser' tags match everbody -->
+		<Win>
+			<Winner></Winner>
+			<Loser></Loser>
+			<Message>Good job Team %win_team.</Message>
+			<Message>Team %win_team wins!</Message>
+		</Win>
+		
 		<!-- me, when i kill -->
 		<Kill>
 			<Killer>^DSA_Tailgnnr_SGT$</Killer>
 			<Victim></Victim>
-			<Message>Too bad master, next time.</Message>
-			<Message>Ah no! Cheating!!</Message>
 			<Message>Good kill, master.</Message>
 			<Message>Nice master!</Message>
 			<Message>Outstanding kill, master!</Message>
-			<Message>Kaboom! The skill! The elegance!What , master!</Message>
+			<Message>Kaboom! The skill! The elegance!</Message>
 		</Kill>
 		
 		<!-- me, when i get killed -->
@@ -29,8 +61,9 @@
 		<Kill>
 			<Killer>^DSA</Killer>
 			<Victim></Victim>
-			<Message>Another mech destroyed %killer, money for HRR unit.</Message>
+			<Message>Another mech destroyed %killer, money for DSA unit.</Message>
 			<Message>%killer's %killer_mech terminated %victim's %victim_mech.</Message>
+			<Message>Another entry in the DSA kill statistics.</Message>
 		</Greeting>
 
 		<!-- clan member gets killed -->

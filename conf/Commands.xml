@@ -1,6 +1,7 @@
 <Commands>
 	<Command>
 		<Name>launch</Name>
+		<Example>-launch</Example>
 		<Help>Starts the mission immedeatly.</Help>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
@@ -11,6 +12,7 @@
 	<Command>
 		<Name>stop</Name>
 		<Help>Stops the mission immedeatly.</Help>
+		<Example>-stop</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -19,8 +21,8 @@
 	</Command>
 	<Command>
 		<Name>drop</Name>
-		<Arguments>maxdiff?</Arguments>
 		<Help>Starts the mission immedeatly, but only when all players are ready and the weight difference is smaller or equal to maxdiff (in tons). Syntax is '-drop [max. weight diff].'</Help>
+		<Example>-drop 100</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -28,9 +30,8 @@
 	</Command>
 	<Command>
 		<Name>cold-drop</Name>
-		<Arguments>maxdiff?</Arguments>
-		<Arguments>wavescount?</Arguments>
 		<Help>Starts the mission immedeatly, but only when all players are ready and the weight difference is smaller or equal to maxdiff (in tons) Also ensures frags are set and the server gets locked. Syntax is '-drop [max. weight diff]? [no. of waves]?'.  </Help>
+		<Example>-cold-drop 100 3</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -40,6 +41,7 @@
 		<Name>help</Name>
 		<Arguments>topic?</Arguments>
 		<Help>Haha. Funny!</Help>
+		<Example>-help</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -49,6 +51,7 @@
 	<Command>
 		<Name>commands</Name>
 		<Help>Shows a list of available commands.</Help>
+		<Example>-commands</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -56,8 +59,8 @@
 	</Command>
 	<Command>
 		<Name>list-players</Name>
-		<Arguments>search?</Arguments>
 		<Help>Shows a short info about players. Syntax is '-list-players [search term]?'. The search term is optional. If ommitted lists all players.</Help>
+		<Example>-list players DSA_</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -66,8 +69,8 @@
 	</Command>
 	<Command>
 		<Name>list-maps</Name>
-		<Arguments>search?</Arguments>
 		<Help>Shows a list of available maps or players. Syntax is '-list maps [search term]?'. The search term is optional. If ommitted lists all maps.</Help>
+		<Example>-list maps VOS_</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -76,8 +79,8 @@
 	</Command>
 	<Command>
 		<Name>map</Name>
-		<Arguments>search?</Arguments>
 		<Help>Selects a map. Syntax is '-map [search term]'. The search must lead to a unique result or be exactly equiv. to a map name.</Help>
+		<Example>-map Alpine Pro</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -86,6 +89,7 @@
 	<Command>
 		<Name>restart</Name>
 		<Help>Restarts the server, taking config changes per -config into account.</Help>
+		<Example>-restart</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>1</IsSuperAdminCommand>
@@ -95,6 +99,7 @@
 	<Command>
 		<Name>shutdown</Name>
 		<Help>Shuts the server down.</Help>
+		<Example>-shutdown</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>1</IsSuperAdminCommand>
@@ -104,6 +109,7 @@
 	<Command>
 		<Name>hello</Name>
 		<Help>Makes the bot say hi.</Help>
+		<Example>-hello</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -113,6 +119,7 @@
 	<Command>
 		<Name>version</Name>
 		<Help>Prints the bot version number.</Help>
+		<Example>-version</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -121,6 +128,7 @@
 	<Command>
 		<Name>balance</Name>
 		<Help>Prints a small overview of team weights and mechs.</Help>
+		<Example>-balance</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -128,8 +136,8 @@
 	</Command>
 	<Command>
 		<Name>admin</Name>
-		<Arguments>name,status</Arguments>
 		<Help>Grants or revokes admin status to a player. Syntax is '-admin [playername] (off|on)'.</Help>
+		<Example>-admin DSA_Ranger_MCB</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>1</IsSuperAdminCommand>
@@ -137,8 +145,8 @@
 	</Command>
 	<Command>
 		<Name>login</Name>
-		<Arguments>token</Arguments>
-		<Help>logs the player in as admin, if the token is valid.Syntax is '-login [token]'.</Help>
+		<Help>Grants administrator priviliges, if the token is valid. Token can be aquired by visiting the WebShell (See -webshell). Syntax is '-login [token]'.</Help>
+		<Example>-login 76198A508CDD42879D9E7A3458018DF7</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -147,6 +155,7 @@
 	<Command>
 		<Name>webshell</Name>
 		<Help>Shows the IP where to access the webshell.</Help>
+		<Example>-webshell</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -154,7 +163,9 @@
 	</Command>
 	<Command>
 		<Name>vote</Name>
-		<Help>Starts a vote to execute a admin command.</Help>
+		<Help>Starts a vote to execute a admin command. Syntax is '-vote [command] [command_args]?'</Help>
+		<Example>-vote stop</Example>
+		<Example>-vote map Alpine Pro</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>1</IsSuperAdminCommand>
@@ -163,6 +174,7 @@
 	<Command>
 		<Name>visibility</Name>
 		<Help>Sets the visibility. Syntax is '-visibility (default|clear|lightfog|heavyfog)'.</Help>
+		<Example>-visibility clear</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -171,6 +183,7 @@
 	<Command>
 		<Name>weather</Name>
 		<Help>Sets the weather. Syntax is '-weather (on|off)'.</Help>
+		<Example>-weather on</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -179,6 +192,7 @@
 	<Command>
 		<Name>daylight</Name>
 		<Help>Sets day or night. Syntax is '-daylight (on|off)'.</Help>
+		<Example>-daylight on</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -186,7 +200,8 @@
 	</Command>
 	<Command>
 		<Name>time</Name>
-		<Help>Sets the time for map. Syntax is '-time [no. of mintes]'.</Help>
+		<Help>Sets the time for map. Syntax is '-time [no. of minutes]'.</Help>
+		<Example>-time 30</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -195,6 +210,7 @@
 	<Command>
 		<Name>frags</Name>
 		<Help>Sets the frag limit. Syntax is '-frags [no. of lives per wave]'. Using a value of zero deactivates frags.</Help>
+		<Example>-frags 3</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -203,6 +219,7 @@
 	<Command>
 		<Name>waves</Name>
 		<Help>Sets the waves limit. Syntax is '-waves [no. of waves]'. Using a value of zero deactivates waves.</Help>
+		<Example>-waves 3</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -211,6 +228,7 @@
 	<Command>
 		<Name>radar</Name>
 		<Help>Sets the radar. Syntax is '-radar (advanced|simple|team|off)'.</Help>
+		<Example>-radar advanced</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -219,6 +237,7 @@
 	<Command>
 		<Name>lock</Name>
 		<Help>(Un)locks the game. Syntax is '-lock (on|off)'.</Help>
+		<Example>-lock on</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -227,6 +246,7 @@
 	<Command>
 		<Name>stock</Name>
 		<Help>Enforces stock configs. Syntax is '-stock (on|off)'.</Help>
+		<Example>-stock off</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -235,6 +255,7 @@
 	<Command>
 		<Name>bots</Name>
 		<Help>(De)activates bots the game. Syntax is '-bots [no. of bots]'. Using a value of zero deactivates bots.</Help>
+		<Example>-bots 9</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -243,6 +264,7 @@
 	<Command>
 		<Name>kick</Name>
 		<Help>Kicks the specified player. Syntax is '-kick [player name]'. Using a value of zero deactivates bots.</Help>
+		<Example>-kick BadGuy</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -251,6 +273,7 @@
 	<Command>
 		<Name>ban</Name>
 		<Help>Kicks the specified player. Syntax is '-kick [player name]'. Using a value of zero deactivates bots.</Help>
+		<Example>-ban BadGuy</Example>
 		<IsImplemented>0</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
@@ -259,11 +282,32 @@
 	<Command>
 		<Name>comstar</Name>
 		<Help>Looks in the ComStar Data for a term and prints information about it. Syntax is '-comstar [search term]'.</Help>
+		<Example>-comstar LRM20</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 	</Command>
+	<Command>
+		<Name>range</Name>
+		<Help>Restricts weapons to weapons from a specific range. Syntax is '-comstar (&lt;|&lt;=|&gt;|&gt;=|*) [range]?'. * means nlimited.</Help>
+		<Example>-range &lt;= 350</Example>
+		<Example>-range *</Example>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>alias</Name>
+		<Help>Lists command aliases.</Help>
+		<Example>-alias &lt;= 350</Example>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+
 </Commands>
 
 <!--
