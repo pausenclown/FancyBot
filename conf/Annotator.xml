@@ -92,6 +92,8 @@
 			<Message>Note to %victim: do not rush enemy spawn alone...</Message>
 			<Message>Ouch!</Message>
 			<Message>%victim's death #%victim_deaths</Message>
+			<Message>%Well done %killer. %unit is proud of you.</Message>
+			<Message>The star of %unit strikes again.</Message>
 			
 			<!-- Duncan Fisher Quotes, uncommend if you want to use them -->
 			

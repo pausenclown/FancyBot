@@ -13,7 +13,7 @@
 		<PathToMercs>D:\Mercs\Dedicated</PathToMercs>
 		
 		<!-- You need to name your 'bot pilot' same like the BotName here. -->	
-		<!-- It is importans that these two settings match, -->	
+		<!-- It is important that these two settings match, -->	
 		<!-- otherwise several plugins watching chatter might crash or work incorrectly. -->	
 		<BotName>S7</BotName>
 		
@@ -121,5 +121,27 @@
 		<LogFile>logFancyLog.log</LogFile>
 	</Logger>
 	
+	<KnownUnits>
+		<Unit>
+			<Match>^=WM=</Match>
+			<Name>Widowmakers</Name>
+		</Unit>
+		<Unit>
+			<Match>^CSA_</Match>
+			<Name>Clan Star Adder</Name>
+		</Unit>
+		<Unit>
+			<Match>CSJ</Match>
+			<Name>Clan Smoke Jaguar</Name>
+		</Unit>
+		<Unit>
+			<Match>CBS</Match>
+			<Name>Clan Blood Spirit</Name>
+		</Unit>
+		<Unit>
+			<Match>^TK_</Match>
+			<Name>Todeskommando</Name>
+		</Unit>
+	</KnownUnits>
 
 </settings>
