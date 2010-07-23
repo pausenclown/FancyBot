@@ -6,5 +6,10 @@
 	<form><input type="text" name="cookie" style="width:30%" value="[% c.stash.cookie %]" />
 	</div>
 	<br/>
-	<div style="color: red;">[% c.stash.error %]</div>
+	[% IF c.stash.error %]
+		<div style="color: red;">[% c.stash.error %]</div>
+	[% ELSE %]
+		<a href="/login/console">Go to Server console.</a>
+	[% END %]
+	
 [% INCLUDE footer.tt %]

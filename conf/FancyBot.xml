@@ -68,14 +68,8 @@
 	<!-- Webshell settings -->
 	<WebShell>
 
-		<!-- Enables or disables the webshell -->
-		<AllowLogin>0</AllowLogin>
-		
-		<!-- Enables or disables the webshell -->
-		<AdminPassword>dsa_foo123</AdminPassword>
-
 		<!-- Port the webshell server shall listen. -->
-		<Port>80</Port>
+		<Port>3000</Port>
 		
 	</WebShell>
 

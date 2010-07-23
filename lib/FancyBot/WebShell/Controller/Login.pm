@@ -1,6 +1,7 @@
 package FancyBot::WebShell::Controller::Login;
 use Moose;
 use XML::Simple;
+use LWP::Simple;
 use Win32::Guidgen;
 use namespace::autoclean;
 
@@ -33,7 +34,7 @@ sub index :Path :Args(0) {
 		
 		if ( $login )
 		{
-			$c->session->{player_name} = $c->request->param('name');
+			$c->session->{player_name}    = $c->request->param('name');
 			$c->response->redirect('/login/cookie');
 			return;
 		}
@@ -47,9 +48,6 @@ sub index :Path :Args(0) {
 	$c->stash->{template} = 'login.tt';
 }
 
-# use LWP::Simple qw( get );
-# $c->stash->{ip}       = get('http://www.whatismyip.com/automation/n09230945.asp');
-
 sub cookie :Local
 {
     my ( $self, $c ) = @_;
@@ -61,6 +59,16 @@ sub cookie :Local
 	
 	$c->stash->{error} = 'Could not write cookie' unless
 		$self->write_cookie( $c->stash->{name}, $cookie );
+		
+	$c->session->{current_cookie} = $cookie;
+}
+
+
+sub console :Local
+{
+    my ( $self, $c ) = @_;
+	$c->stash->{template} = 'console.tt';
+	$c->stash->{ip}       = get( 'http://www.whatismyip.com/automation/n09230945.asp' );
 }
 
 sub write_cookie
