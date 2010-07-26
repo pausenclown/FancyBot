@@ -1,6 +1,7 @@
 bin/perl/site/lib/Devel/Profile.pm
 dist
 dist/*
+log/*.log
 gui.txt
 login/
 prof.out

@@ -89,7 +89,6 @@ has events =>
 		},
 		'chatter' => sub 
 		{
-			print "!!chatter\n";
 			# Fetch args from @_
 			my $args   = shift;
 			

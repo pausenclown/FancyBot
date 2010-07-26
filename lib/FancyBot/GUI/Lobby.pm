@@ -140,7 +140,7 @@ sub send_chatter {
 	my $ohwnd  = GetForegroundWindow();
 	
 	WMSetText( $hwnd, $msg );
-	$self->bot->raise_event( 'debug', { message => 'sending chatter' } ); my $i = 1;
+	$self->bot->raise_event( 'debug', { bot => $self->bot, message => 'sending chatter' } ); my $i = 1;
 	while ( WMGetText( $hwnd ) ) {
 		$self->bot->raise_event( 'debug', { message => 'trying ' .$i++ } );
 		SetForegroundWindow( $self->bot->main_hwnd );

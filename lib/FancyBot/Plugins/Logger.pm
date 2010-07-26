@@ -1,23 +1,50 @@
 package FancyBot::Plugins::Logger;
 
 use Moose;
+use POSIX qw( strftime );
 
 has events =>
 	isa     => 'HashRef',
 	is      => 'ro',
 	default => sub {{
+		'starting_server' => sub {
+			my $args  = shift;
+			my $bot   = $args->{bot}     || die "No bot reference";
+			
+			for ( qw( ChatLogFile ErrorLogFile LogFile ) )
+			{
+				my $file = $bot->config->{Logger}->{$_};
+				$bot->config->{Logger}->{$_} = IO::File->new( ">> $file" );
+			}
+		},
 		'notice' => sub {
-			print '[NOTICE] ', +shift->{message}, "\n";
+			my $args  = shift;
+			my $bot   = $args->{bot}     || die "No bot reference";
+			
+			print '[NOTICE] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{LogFile}->print( '[NOTICE:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
 		},
 		'debug' => sub {
-			print '[DEBUG] ', +shift->{message}, "\n";
+			my $args  = shift;
+			my $bot   = $args->{bot}     || die "No bot reference";
+	
+			print '[DEBUG] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{LogFile}->print( '[DEBUG:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
 		},
 		'fatal' => sub {
-			print '[ERROR] ', +shift->{message}, "\n";
+			my $args  = shift;
+			my $bot   = $args->{bot}     || die "No bot reference";
+
+			print '[ERROR] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{ErrorLogFile}->print( '[ERROR:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
 			exit;
 		},
 		'chatter' => sub {
-			print '[CHAT] ', +shift->{message}, "\n";
+			my $args  = shift;
+			my $bot   = $args->{bot}     || die "No bot reference";
+
+			print '[CHAT] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{ChatLogFile}->print( '[CHAT:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
 		},
 		'command' => sub {
 			my $args  = shift;

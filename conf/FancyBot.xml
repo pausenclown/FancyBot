@@ -131,13 +131,13 @@
 	<Logger>
 		
 		<!-- Logfile for Chat -->
-		<ChatLogFile>logFancyChat.log</ChatLogFile>
+		<ChatLogFile>log\FancyChat.log</ChatLogFile>
 		
 		<!-- Logfile for Error - Messages -->
-		<ErrorLogFile>logFancyError.log</ErrorLogFile>
+		<ErrorLogFile>log\FancyError.log</ErrorLogFile>
 		
 		<!-- Common Logfile -->
-		<LogFile>logFancyLog.log</LogFile>
+		<LogFile>log\FancyLog.log</LogFile>
 	</Logger>
 	
 	<KnownUnits>

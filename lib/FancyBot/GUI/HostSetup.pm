@@ -116,7 +116,7 @@ sub host
 		sleep(15);
 	}
 	
-	$self->bot->raise_event( 'notice', { message =>  "Initializing screen 3/3..." } );
+	$self->bot->raise_event( 'notice', { bot => $self->bot, message =>  "Initializing screen 3/3..." } );
 	$self->bot->screen( FancyBot::GUI::Lobby->new( bot => $self->bot ) );
 	$self->bot->update_gui;
 }
