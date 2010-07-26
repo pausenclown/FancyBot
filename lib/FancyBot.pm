@@ -1,4 +1,3 @@
-
 package FancyBot;
 
 use warnings;
@@ -6,6 +5,7 @@ use strict;
 
 use FancyBot::GUI;
 use FancyBot::User;
+use FancyBot::Mech;
 use Text::Diff;
 
 use Moose;
@@ -16,7 +16,16 @@ use Win32;
 use Win32::Process;
 use Win32::GuiTest qw( WMGetText FindWindowLike GetChildWindows GetComboContents SelComboItemText GetClassName);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
+
+has is_updating_player_info =>
+	isa     => 'Bool',
+	is      => 'rw';
+
+has player_info_dirty =>
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 1;
 
 # holds a reference to an object that represent the current screen of
 # the dedicated server process
@@ -72,6 +81,12 @@ has keep_running =>
 	isa     => 'Bool',
 	is      => 'rw',
 	default => 1;
+
+# flag to control the main runloop
+has in_game => 
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 0;
 	
 has last_chatter => 
 	isa     => 'Str',
@@ -102,14 +117,16 @@ HELLO
 
 sub start_server
 {
-	my $self = shift;
+	my $self        = shift;
+	my $keep_config = shift;
 	
 	# error when server is alive
 	die "Server already running.\n"
 		if $self->is_server_alive;
 		
 	# read configuration file
-	$self->{config} = XMLin( 'conf/FancyBot.xml' );
+	$self->{config} = XMLin( 'conf/FancyBot.xml' )
+		unless keys %{$self->{config}};
 	
 	# load plugins as configured
 	$self->load_plugins;
@@ -167,10 +184,10 @@ sub load_plugins
 			\$plugin = FancyBot::Plugins::$plugin_name->new();
 		";
 
-		print "Loading Plugin: $plugin_name\n";
+		print "[INIT] Loading Plugin: $plugin_name\n";
 		eval $code;
 
-		die "Error loading Plugin: $@\n"
+		die "[FATAL] Error loading Plugin: $@\n"
 			if $@;
 		
 		$self->register_events( $plugin );
@@ -190,13 +207,24 @@ sub load_plugins
 sub command
 {
 	my $self = shift;
-	my $cmd  = shift;
+	my $args = shift;
+	my $cmd  = $args->{command};
 	
-	my $cfgs = [ grep { $_->{Name} eq $cmd } @{ $self->config->{Commands}->{Command} } ];
+	my ( $stgs, $cfgs, $scfg);
 
-	if ( @$cfgs )
+	$stgs = [ grep { $self->config->{Server}->{PublicSettings}->{$_} eq $cmd } keys %{ $self->config->{Server}->{PublicSettings} } ];
+	
+	if ( scalar @$stgs )
 	{
-		if ( @$cfgs == 1 )
+		$args->{params} = $stgs->[0] . ' ' . $args->{params};
+		$cmd  = 'settings';
+	}
+
+	$cfgs = [ grep { $_->{Name} eq $cmd } @{ $self->config->{Commands}->{Command} } ];
+	
+	if ( scalar @$cfgs )
+	{
+		if ( scalar @$cfgs == 1 )
 		{
 			$self->instantiate_command_object( $cfgs->[0] )
 				unless $cfgs->[0]->{CommandObject};
@@ -213,6 +241,7 @@ sub command
 		$self->send_chatter( "Error, unknown command '$cmd'." );
 	}
 	
+	return;
 }
 
 sub send_chatter
@@ -256,53 +285,21 @@ sub register_events {
 		push @{ $self->listeners->{ $event_name } }, $plugin->events->{ $event_name };
 	}
 }
+
+
 	
 sub watch_loop
 {
 	my $self = shift;
 	
 	$self->raise_event( 'debug', { message => 'enter watch loop' } );
-	
+
 	while ( $self->keep_running )
 	{
 		if ( $self->is_server_alive )
 		{
 			$self->raise_event( 'pulse', { bot => $self } );
-			
-			# my $i = 0;
-			# for ( GetChildWindows($self->main_hwnd) ) { 
-				# print $i++, ' ', $self->main_hwnd, " ! ", WMGetText($_), '==', GetClassName($_), "\n" ;
-				# # $g{GetClassName($_)}++;
-			# }	
-			# print '-' x 60, "\n";
-			if ( ref $self->screen eq 'FancyBot::GUI::Lobby' )
-			{
-				my $last    = $self->last_chatter;
-				my $chatter = WMGetText( ( GetChildWindows($self->main_hwnd) )[172] ); 
-				my $new     = diff \$last, \$chatter; 
-
-				for my $msg ( split /(\x0D\x0A|\x0D|\x0A)/, $new )
-				{
-					next unless $msg =~ /^\+/;
-
-					my ($user, $text) = $msg =~ /^\+(.*):> (.*)/; $user ||= '';
-					next unless $text;
-					
-					$text =~ s/^-list (maps|players)/-list-$1/;
-					
-					if ( $text =~ /^-([a-z-]+) ?(.*)/ )
-					{
-						$self->raise_event( 'command', { bot => $self, command => $1, user => $user, params => $2 } );
-					}
-					else
-					{
-						$self->raise_event( 'chatter', { bot => $self, user => $user, message => $text } );
-					}
-				}
-				
-				$self->last_chatter( $chatter );
-			}
-
+			$self->do_events;
 			sleep( $self->config->{'Monitor'}->{'EventLoopInterval'} );
 		}
 		else
@@ -314,6 +311,66 @@ sub watch_loop
 			else
 			{
 				$self->start_server
+			}
+		}
+	}
+}
+
+sub myconfess
+{
+	my $self = shift;
+	my $i = 0;
+
+	for ( GetChildWindows($self->main_hwnd) ) { 
+		print $i++, ' ', $self->main_hwnd, " ! ", WMGetText($_), '==', GetClassName($_), "\n" ;
+	}	
+	print '-' x 60, "\n";
+
+}
+	
+sub do_events
+{
+	my $self = shift;
+
+	# $self->myconfess;
+
+	my @windows;
+	@windows =  GetChildWindows($self->main_hwnd);
+
+	if ( ref $self->screen eq 'FancyBot::GUI::Lobby' )
+	{
+		my $ingame = $self->screen->in_game;
+		
+		$self->raise_event( 'game_stop', { bot => $self } )
+			if $self->in_game && !$ingame;
+		
+		$self->raise_event( 'game_start', { bot => $self } )
+			if ( !$self->in_game && $ingame );
+
+		$self->in_game( $ingame ? 1 : 0 );
+		
+		my $last    = $self->last_chatter;
+		my $chatter = WMGetText( $windows[172] ); 
+		my $new     = diff \$last, \$chatter; 
+
+		$self->last_chatter( $chatter );
+		
+		for my $msg ( split /(\x0D\x0A|\x0D|\x0A)/, $new )
+		{
+			next unless $msg =~ /^\+/;
+
+			my ($user, $text) = $msg =~ /^\+(.*):> (.*)/; $user ||= '';
+			next unless $text;
+			
+			$text =~ s/^-list (maps|players|bots|types)/-list-$1/;
+			
+			if ( $text =~ /^-([a-z-]+) ?(.*)/ )
+			{
+				$self->raise_event( 'command', { bot => $self, command => $1, user => $user, params => $2 } );
+			}
+			else
+			{
+				$self->raise_event( 'chatter', { bot => $self, user => $user, message => $text } );
 			}
 		}
 	}
@@ -343,16 +400,15 @@ sub raise_event
 	my $events = shift;
 	my $args   = shift;
 
-	print Dumper( [ $events ] ) unless $events eq 'pulse';
+	# print Dumper( [ $events ] ) unless $events eq 'pulse';
 	# print ref( $events ), "\n";
 	for my $event ( ref( $events ) ? (@$events) : ($events) )
 	{
-		print "EV $event\n" unless $event eq 'pulse';;
+		print "[DEBUG] Event raised: $event $args\n" unless $event =~ /(pulse|debug|notice)/;
 		if ( $self->listeners->{ $event } )
 		{
 			for my $listener ( @{ $self->listeners->{ $event } } )
 			{
-				print "LS $listener\n";
 				return 
 					unless $listener->( $args );
 			}
@@ -368,15 +424,94 @@ sub update_gui
 	$self->screen->update_gui
 }
 
+
+sub player_info
+{
+	my $self = shift;
+
+	# $self->send_chatter( 'Determining player info...');
+	$self->is_updating_player_info(1);
+	my $info =  $self->screen->player_info;
+	
+	$self->player_info_dirty( 0 );
+	$self->do_events;
+	
+	if ( $self->player_info_dirty )
+	{
+		print "[DEBUG] Info dirty.\n";
+		return $self->player_info;
+	}
+	else
+	{
+		$self->is_updating_player_info(0);
+		return $info;
+	}
+}
+
+sub update_player_info
+{
+	my $self  = shift;
+	my $force = shift;
+	print "[DEBUG] update player info...\n";
+	
+	return if $self->is_updating_player_info;
+	print "[DEBUG] is not updating.\n";
+	return if !$self->player_info_dirty && !$force;
+	print "[DEBUG] is dirty.\n";
+	
+	my $info = $self->player_info;
+	print Dumper($info);
+
+	for my $player ( keys %$info )
+	{
+		my $user = $self->user( $player );
+		
+		$user->team( $info->{$player}->{team} );
+		$user->is_bot( $info->{$player}->{bot} ? 1 : 0 );
+		$user->mech( FancyBot::Mech->new(
+			name    => $info->{$player}->{mech},
+			tonnage => $info->{$player}->{tonnage},
+			c_bills => $info->{$player}->{c_bills},
+			variant => $info->{$player}->{variant}
+		) );
+	}
+}
+
+
+
+
 sub user
 {
 	my $self = shift;
 	my $name = shift;
 	
-	$self->users->{ $name } = FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) )
-		unless defined $self->users->{ $name };
+	while ( !$self->is_updating_player_info )
+	{
+		$self->users->{ $name } = FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) )
+			unless defined $self->users->{ $name };
+			
+		$self->users->{ $name }->known_unit( $self->identfy_unit( $name ) );
 
-	return $self->users->{ $name };
+		return $self->users->{ $name };
+	}
+}
+
+sub identfy_unit
+{
+	my $self = shift;
+	my $name = shift;
+	
+	my @units = ref $self->config->{ KnownUnits }->{ Unit } eq "ARRAY" ? 
+				@{ $self->config->{ KnownUnits }->{ Unit } } :
+				( $self->config->{ KnownUnits }->{ Unit } );
+				
+	for my $unit ( @units )
+	{
+		my $re = $unit->{Match}; 
+		return $unit->{Name} if $name =~ /$re/
+	}
+		
+	return '';
 }
 
 sub is_admin
@@ -434,3 +569,4 @@ Tailgunner, C<< <tailgunner at somewhere.com> >>
 =cut
 
 1;
+		

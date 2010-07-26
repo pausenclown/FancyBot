@@ -3,10 +3,27 @@ package FancyBot::User;
 use Moose;
 use Data::Dumper;
 
-has name =>
+has known_unit =>
 	isa     => 'Str',
 	is      => 'rw';
 
+has name =>
+	isa     => 'Str',
+	is      => 'rw';
+	
+has team =>
+	isa     => 'Int',
+	is      => 'rw';
+	
+has mech =>
+	isa     => 'FancyBot::Mech',
+	is      => 'rw';
+
+has is_bot =>
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 0;
+	
 has is_super_admin =>
 	isa     => 'Bool',
 	is      => 'rw',
@@ -43,6 +60,16 @@ has kills_overall =>
 	default => 0;
 
 has kills_this_match =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+
+has teamkills_overall =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+
+has teamkills_this_match =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;
@@ -108,6 +135,29 @@ sub is_allowed_to {
 		if $paranoia && ( $command->{IsSuperAdminCommand} || $command->{IsAdminCommand} ) && !$self->is_authorized;
 
 	return 1;
+}
+
+sub annotate
+{
+	my $self = shift;
+	my $type = shift;
+	my $msg  = shift;
+	
+	for my $method qw( name times_joined_this_match kills_overall kills_this_match suicides_overall suicides_this_match current_kill_streak longest_kill_streak deaths_overall deaths_this_match current_death_streak longest_death_streak )
+	{
+		$msg =~ s/\%${type}_${method}/$self->$method/ge;
+	}
+	
+	for my $method qw( name tonnage variant c_bills )
+	{
+		$msg =~ s/\%${type}_mech_${method}/$self->mech->$method/ge;
+	}
+	
+	my $unit = $self->known_unit||'Your Team';
+	$msg =~ s/\%${type}_unit/$unit/g;
+	
+	
+	return $msg;
 }
 
 1;

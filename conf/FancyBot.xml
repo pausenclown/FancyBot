@@ -23,9 +23,10 @@
 		<Name>FancyBot Devel and Test</Name>
 		<Password></Password>
 		
-		<!-- Options -->	
-		<AdvertiseGame>1</AdvertiseGame>
-		<AllowJoinInProgress>1</AllowJoinInProgress>
+		
+		<!-- Options -->
+		<AdvertiseGame>0</AdvertiseGame>
+		<AllowJoinInProgress >1</AllowJoinInProgress>
 		<DeadMechsCantSee>1</DeadMechsCantSee>
 		<DeadMechsCantTalk>1</DeadMechsCantTalk>
 		<DefaultRadarMode>off</DefaultRadarMode>
@@ -40,6 +41,24 @@
 		<RestrictMechs>0</RestrictMechs>
 		<SplashDamage>1</SplashDamage>
 		<AllowCustomDecals>1</AllowCustomDecals>
+		
+		<PublicSettings>
+			<AdvertiseGame>advertise</AdvertiseGame>
+			<AllowJoinInProgress>join</AllowJoinInProgress>
+			<DeadMechsCantSee>see</DeadMechsCantSee>
+			<DeadMechsCantTalk>talk</DeadMechsCantTalk>
+			<DelayBetweenMaps>delay</DelayBetweenMaps>
+			<ForceFirstPersonView>fp</ForceFirstPersonView>
+			<ForceRespawn>fr</ForceRespawn>
+			<FriendlyFire>ff</FriendlyFire>
+			<HeatManagement>heat</HeatManagement>
+			<JoinTimeLimit>Unlimited</JoinTimeLimit>
+			<LimitedAmmunitions>ammo</LimitedAmmunitions>
+			<Players>players</Players>
+			<RestrictMechs>restrict</RestrictMechs>
+			<SplashDamage>splash</SplashDamage>
+			<AllowCustomDecals>decals</AllowCustomDecals>
+		</PublicSettings>
 	</Server>
 	
 	<!-- Basic Monitor Settings	-->	
@@ -140,6 +159,10 @@
 		<Unit>
 			<Match>^TK_</Match>
 			<Name>Todeskommando</Name>
+		</Unit>
+		<Unit>
+			<Match>^DSA_</Match>
+			<Name>DarkStar Alliance</Name>
 		</Unit>
 	</KnownUnits>
 

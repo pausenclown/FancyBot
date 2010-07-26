@@ -9,7 +9,7 @@
 	[% IF c.stash.error %]
 		<div style="color: red;">[% c.stash.error %]</div>
 	[% ELSE %]
-		<a href="/login/console">Go to Server console.</a>
+		<!-- a href="/login/console">Go to Server console.</a -->
 	[% END %]
 	
 [% INCLUDE footer.tt %]

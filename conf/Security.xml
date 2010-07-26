@@ -3,7 +3,7 @@
 
 	<!-- When activated every admin MUST login -admin TOKEN -->	
 	<!-- Otherwise the bot just relies on player names which can easily be faked. -->	
-	<Paranoia>1</Paranoia>
+	<Paranoia>0</Paranoia>
 
 	<!-- List of Administrators -->	
 	<!-- You can specify a password for every admin if you want. All other admins use the AdminPassword -->	

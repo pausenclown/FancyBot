@@ -47,6 +47,7 @@
 			<Message>Nice master!</Message>
 			<Message>Outstanding kill, master!</Message>
 			<Message>Kaboom! The skill! The elegance!</Message>
+			<Message>One more %victim_mech_name for the trashheap</Message>
 		</Kill>
 		
 		<!-- me, when i get killed -->
@@ -61,8 +62,8 @@
 		<Kill>
 			<Killer>^DSA</Killer>
 			<Victim></Victim>
-			<Message>Another mech destroyed %killer, money for DSA unit.</Message>
-			<Message>%killer's %killer_mech terminated %victim's %victim_mech.</Message>
+			<Message>Another mech destroyed %killer_name, money for DSA unit.</Message>
+			<Message>%killer_name's %killer_mech_name terminated %victim_name's %victim_mech_name.</Message>
 			<Message>Another entry in the DSA kill statistics.</Message>
 		</Kill>
 
@@ -70,7 +71,7 @@
 		<Kill>
 			<Killer></Killer>
 			<Victim>^DSA</Victim>
-			<Message>%victim, DSA's accountant will keep %victim_cbills cbills from your wage!</Message>
+			<Message>%victim_name, DSA's accountant will keep %victim_cbills cbills from your wage!</Message>
 			<Message>Ah no! Cheating!!</Message>
 		</Kill>
 
@@ -78,61 +79,61 @@
 		<Kill>
 			<Killer></Killer>
 			<Victim></Victim>
-			<Message>Good Kill %killer.</Message>
-			<Message>%victim fell to %killer's alpha strike.</Message>
+			<Message>Good Kill %killer_name.</Message>
+			<Message>%victim_name fell to %killer_name's alpha strike.</Message>
 			<Message>Doh, nice kill.</Message>
-			<Message>victim1, that hurts...</Message>
-			<Message>%killer killed a sitting duck.</Message>
+			<Message>%victim_name, that hurts...</Message>
+			<Message>%killer_name killed a sitting duck.</Message>
 			<Message>More scrap metal.</Message>
-			<Message>%killer's kill #%killer_kills.</Message>
-			<Message>%victim has a new mech now.</Message>
-			<Message>%victim seeking revenge now.</Message>
-			<Message>%victim doomed</Message>
-			<Message>%victim, got it ?</Message>
-			<Message>Note to %victim: do not rush enemy spawn alone...</Message>
+			<Message>%killer_name's kill #%killer_kills_this_match.</Message>
+			<Message>%victim_name has a new mech now.</Message>
+			<Message>%victim_name seeking revenge now.</Message>
+			<Message>%victim_name doomed</Message>
+			<Message>%victim_name, got it ?</Message>
+			<Message>Note to %victim_name: do not rush enemy spawn alone...</Message>
 			<Message>Ouch!</Message>
-			<Message>%victim's death #%victim_deaths</Message>
-			<Message>%Well done %killer. %unit is proud of you.</Message>
-			<Message>The star of %unit strikes again.</Message>
+			<Message>%victim_name's death #%victim_deaths_this_match</Message>
+			<Message>Well done %killer_name. %killer_unit is proud of you.</Message>
+			<Message>The star of %killer_unit strikes again.</Message>
 			
 			<!-- Duncan Fisher Quotes, uncommend if you want to use them -->
 			
-			<!-- Message>That's %killer's kill #%killer_total_kills</Message>
+			<!-- Message>That's %killer_name's kill #%killer_kills_this_match</Message>
 			<Message>Now that's the way you do it</Message>
 			<Message>A clean shot and another mech is rubble</Message>
 			<Message>Another mech hits the ground</Message>
-			<Message>%killer showed a lot of patience and carefully lined up the shot</Message>
-			<Message>%killer's one step closer to victory</Message>
-			<Message>Well %killer gets to add another notch to her mech for that one</Message>
-			<Message>%killer went down because he didn't know who the key players were</Message>
-			<Message>%killer is certainly leaving a trail of destruction</Message>
-			<Message>Boy would I hate to be on the other side of the beating %killer can deliver</Message>
-			<Message>%killer spends more time doing victory laps than fighting these days</Message>
-			<Message>BAM! %killer seems in perfect form today</Message>
-			<Message>In case you've been living in a cave, %killer is in the mix</Message>
+			<Message>%killer_name showed a lot of patience and carefully lined up the shot</Message>
+			<Message>%killer_name's one step closer to victory</Message>
+			<Message>Well %killer_name gets to add another notch to her mech for that one</Message>
+			<Message>%killer_name went down because he didn't know who the key players were</Message>
+			<Message>%killer_name is certainly leaving a trail of destruction</Message>
+			<Message>Boy would I hate to be on the other side of the beating %killer_name can deliver</Message>
+			<Message>%killer_name spends more time doing victory laps than fighting these days</Message>
+			<Message>BAM! %killer_name seems in perfect form today</Message>
+			<Message>In case you've been living in a cave, %killer_name is in the mix</Message>
 			<Message>BOOM! Chalk one up for %killer</Message>
 			<Message>Look at all those fireworks</Message>
 			<Message>That's one mech for the trash heap</Message>
-			<Message>That's one %victim_mech for the trash heap</Message>
-			<Message>Another %victim_mech hits the ground</Message>
+			<Message>That's one %victim_mech_name for the trash heap</Message>
+			<Message>Another %victim_mech_name hits the ground</Message>
 			<Message>Ouch! That's gotta sting</Message>
 			<Message>KAPOW one less mech on the field</Message>
-			<Message>KAPOW one less %victim_mech on the field</Message>
-			<Message>%victim is outta here</Message>
-			<Message>I wonder how the view is from the air, %victim is gone</Message>
-			<Message>That shot had %victim's name on it</Message>
+			<Message>KAPOW one less %victim_mech_name on the field</Message>
+			<Message>%victim_name is outta here</Message>
+			<Message>I wonder how the view is from the air, %victim_name is gone</Message>
+			<Message>That shot had %victim_name's name on it</Message>
 			<Message>BAM!</Message>
 			<Message>If you're going to try to dodge, its best to dodge out of the way, not into it</Message>
-			<Message>I bet %victim is thinking, ""Hey how'd I get hit?"" with reflexes like those, %victim should expect it more often</Message>
+			<Message>I bet %victim_name is thinking, ""Hey how'd I get hit?"" with reflexes like those, %victim_name should expect it more often</Message>
 			<Message>Sometimes a kill sneaks up on you, like that one</Message>
-			<Message>Sometimes a kill sneaks up on %victim, like that one</Message>
+			<Message>Sometimes a kill sneaks up on %victim_name, like that one</Message>
 			<Message>When the reactor goes, that's usually a sign that you've taken too much damage</Message>
-			<Message>Man that kid was on fire, %victim went the distance longer than any of us could expect, of course now %victim is literally on fire</Message>
-			<Message>I like %victim's style, he came out punching and didn't give up until his mech went POW</Message>
+			<Message>Man that kid was on fire, %victim_name went the distance longer than any of us could expect, of course now %victim_name is literally on fire</Message>
+			<Message>I like %victim_name's style, he came out punching and didn't give up until his mech went POW</Message>
 			<Message>I don't even know who's piloting that one, but he sure put up a fight</Message>
-			<Message>Sometimes you win, sometimes you don't, %victim is outta here</Message>
+			<Message>Sometimes you win, sometimes you don't, %victim_name is outta here</Message>
 			<Message>Woah, that one's definitely down</Message>
-			<Message>Woah, that %victim_mech's definitely down</Message -->
+			<Message>Woah, that %victim_mech_name's definitely down</Message -->
 			
 		</Kill>
 
@@ -148,7 +149,7 @@
 		<!-- clan member -->
 		<Suicide>
 			<Player>^DSA_</Player>
-			<Message>%player you are fired!</Message>
+			<Message>%player_name you are fired!</Message>
 		</Suicide>
 
 
@@ -156,7 +157,7 @@
 		<Suicide>
 			<Player></Player>
 			<Message>What a genius!!!</Message>
-			<Message>Go play PacMan %player.</Message>
+			<Message>Go play PacMan %player_name.</Message>
 			<Message>n00b alert.</Message>
 			<Message>LOL n00b</Message>
 			<Message>Use heat sinks, this is not a fucking NH/UA server.</Message>
@@ -172,60 +173,60 @@
 		<!-- clan member -->
 		<Join>
 			<Player>^DSA_</Player>
-			<Message>Go kick their ass %player! Remember your training.</Message>
+			<Message>Go kick their ass %player_name! Remember your training.</Message>
 		</Join>
 
 		<!-- empty 'Player' tags match everbody -->
 		<Join>
 			<Player></Player>
-			<Message>Good luck %player.</Message>
+			<Message>Good luck %player_name.</Message>
 		</Join>
 
 		<!-- clan member -->
 		<Rejoin>
 			<Player>^DSA_</Player>
-			<Message>%player: What Ranger said about rejoins!</Message>
+			<Message>%player_name: What Ranger said about rejoins!</Message>
 		</Rejoin>
 		
 		<!-- empty 'Player' tags match everbody -->
 		<Rejoin>
 			<Player></Player>
-			<Message>%player join #%player_joins, all other players THANK YOU for JOIN LAG</Message>
+			<Message>%player_name join #%player_times_joined_this_match, all other players THANK YOU for JOIN LAG</Message>
 		</Rejoin>
 
 		<!-- clan member -->
 		<KillStreak>
 			<Player>^DSA_</Player>
-			<Message>DSA strikes again. %player_kill_streak x streak for %player!</Message>
+			<Message>DSA strikes again. %player_current_kill_streak x streak for %player_name!</Message>
 		</KillStreak>
 		
 
 		<!-- empty 'Player' tags match everbody -->
 		<KillStreak>
 			<Player></Player>
-			<Message>WOW, this is the consecutive kill #%player_kill_streak for %player!</Message>
-			<Message>Cool %player, kill streak of %player_kill_streak.</Message>
-			<Message>%player killed the consecutive victim #%player_kill_streak.</Message>
-			<Message>Good kill %player, streak of %player_kill_streak.</Message>
+			<Message>WOW, this is the consecutive kill #%player_current_kill_streak for %player!</Message>
+			<Message>Cool %player_name, kill streak of %player_current_kill_streak.</Message>
+			<Message>%player_name killed the consecutive victim #%player_current_kill_streak.</Message>
+			<Message>Good kill %player_name, streak of %player_current_kill_streak.</Message>
 		</KillStreak>
 
 
 		<!-- empty 'Player' tags match everbody -->
 		<DeathStreak>
 			<Player></Player>
-			<Message>Hey %player, this is your consecutive death #%player_death_streak</Message>
-			<Message>%player, enemy team loves you.</Message>
-			<Message>%player - Death streak of %player_death_streak.</Message>
-			<Message>%player what about a nice n00b server?</Message>
-			<Message>%player increased the personal death streak record to %player_death_streak.</Message>
+			<Message>Hey %player_name, this is your consecutive death #%player_current_death_streak</Message>
+			<Message>%player_name, enemy team loves you.</Message>
+			<Message>%player_name - Death streak of %player_current_death_streak.</Message>
+			<Message>%player_name what about a nice n00b server?</Message>
+			<Message>%player_name increased the personal death streak record to %player_current_death_streak.</Message>
 		</DeathStreak>
 
 				
 		<!-- empty 'Player' tags match everbody -->
 		<TeamKill>
 			<Player></Player>
-			<Message>%player, TEAMKILL #%player_teamkills!</Message>
-			<Message>Whoa, watch your fire %player! Teamkill #%player_teamkills!</Message>
+			<Message>%player, TEAMKILL #%player_teamkills_this_match!</Message>
+			<Message>Whoa, watch your fire %player_name! Teamkill #%player_teamkills_this_match!</Message>
 		</TeamKill>
 		
 	</Annotations>

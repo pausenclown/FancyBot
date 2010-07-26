@@ -49,6 +49,15 @@
 		<Alias>info</Alias>
 	</Command>
 	<Command>
+		<Name>example</Name>
+		<Help>Shows usage Examples of a command. Try -example bots!</Help>
+		<Example>-example bots</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
 		<Name>commands</Name>
 		<Help>Shows a list of available commands.</Help>
 		<Example>-commands</Example>
@@ -66,6 +75,16 @@
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 		<Alias>list players</Alias>
+	</Command>
+	<Command>
+		<Name>list-bots</Name>
+		<Help>This command just prints the names of all bots.</Help>
+		<Example>-list bots</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>list bots</Alias>
 	</Command>
 	<Command>
 		<Name>list-maps</Name>
@@ -86,6 +105,16 @@
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
 	</Command>		
+	<Command>
+		<Name>type</Name>
+		<Help>Selects a gametype. Syntax is '-type (b|d|tb|td|cb|ctb|cmp|cu)', for Battle, Destruction, Team Battle, Team Destruction, Custom Battle, Custom Team Battle, Custom Mission Play and Custom Undefined. </Help>
+		<Example>-type b</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>		
+
 	<Command>
 		<Name>restart</Name>
 		<Help>Restarts the server, taking config changes per -config into account.</Help>
@@ -175,7 +204,7 @@
 		<Name>visibility</Name>
 		<Help>Sets the visibility. Syntax is '-visibility (default|clear|lightfog|heavyfog)'.</Help>
 		<Example>-visibility clear</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -184,16 +213,34 @@
 		<Name>weather</Name>
 		<Help>Sets the weather. Syntax is '-weather (on|off)'.</Help>
 		<Example>-weather on</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
 	</Command>
 	<Command>
-		<Name>daylight</Name>
+		<Name>tonnage</Name>
+		<Help>Sets the max tonnage per mech. Syntax is '-tonnage [max. tonnage]'.</Help>
+		<Example>-tonnage 50</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>cbills</Name>
+		<Help>Sets the max C-bills per mech. Syntax is '-cbills [max. C-bills]'.</Help>
+		<Example>-cbills 50</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>daytime</Name>
 		<Help>Sets day or night. Syntax is '-daylight (on|off)'.</Help>
-		<Example>-daylight on</Example>
-		<IsImplemented>0</IsImplemented>
+		<Example>-daytime on</Example>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -202,7 +249,7 @@
 		<Name>time</Name>
 		<Help>Sets the time for map. Syntax is '-time [no. of minutes]'.</Help>
 		<Example>-time 30</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -211,7 +258,7 @@
 		<Name>frags</Name>
 		<Help>Sets the frag limit. Syntax is '-frags [no. of lives per wave]'. Using a value of zero deactivates frags.</Help>
 		<Example>-frags 3</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -220,7 +267,7 @@
 		<Name>waves</Name>
 		<Help>Sets the waves limit. Syntax is '-waves [no. of waves]'. Using a value of zero deactivates waves.</Help>
 		<Example>-waves 3</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -229,16 +276,25 @@
 		<Name>radar</Name>
 		<Help>Sets the radar. Syntax is '-radar (advanced|simple|team|off)'.</Help>
 		<Example>-radar advanced</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
 	</Command>
 	<Command>
 		<Name>lock</Name>
-		<Help>(Un)locks the game. Syntax is '-lock (on|off)'.</Help>
+		<Help>(Un)locks the game. Syntax is '-lock (on|off)'. Default is 'on'.</Help>
 		<Example>-lock on</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>1</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>unlock</Name>
+		<Help>Unlocks the game. Syntax is '-unlock'.</Help>
+		<Example>-unlock</Example>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -253,10 +309,19 @@
 		<IsVotableCommand>1</IsVotableCommand>
 	</Command>
 	<Command>
+		<Name>settings</Name>
+		<Help>Internal, do not alter.</Help>
+		<Example></Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
 		<Name>bots</Name>
-		<Help>(De)activates bots the game. Syntax is '-bots [no. of bots]'. Using a value of zero deactivates bots.</Help>
-		<Example>-bots 9</Example>
-		<IsImplemented>0</IsImplemented>
+		<Help>(De)activates bots the game. Syntax is '-bots (on|off|[no. of bots] [min. level] [max. level] [off at])'. Using a value of zero for 'no. of bots' deactivates bots entirely.</Help>
+		<Example>-bots 4 9 9 6</Example>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>

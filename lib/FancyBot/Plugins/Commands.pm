@@ -47,7 +47,8 @@ has events =>
 			
 			# Fetch the config info for the command from the bot, 
 			# step out if the command is not recognized.
-			my $cmd  = $bot->command( $args->{command} ) || return;
+			my $cmd  = $bot->command( $args ) || return;
+			print Dumper( $cmd );
 			
 			# Fetch a FancyBot::User Object from the bot
 			my $user = $bot->user( $args->{user} );
@@ -57,11 +58,11 @@ has events =>
 			{
 				# If so, fetch the FancyBot::Plugin::Command object
 				my $co = $cmd->{CommandObject};
-
+				print Dumper( $co );
 				if ( $co )
 				{
 					# Execute the command...
-					eval { $co->execute( $bot, $user, $args->{params} ) };
+					eval { $co->execute( $bot, $user, $args->{params}, $cmd ) };
 
 					# and complain if there is an error.
 					$_ = "Error executing command '". $cmd->{Name}. "': $@",

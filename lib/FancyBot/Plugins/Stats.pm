@@ -46,8 +46,50 @@ has events =>
 	isa     => 'HashRef',
 	is      => 'ro',
 	default => sub {{
+		'game_start' => sub 
+		{
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->update_player_info;
+			print "DEBUG PlayerInfo Updated.\n";
+			return 1;
+		},
+		'game_stop' => sub 
+		{
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->player_info_dirty( 1 );
+			return 1;
+		},
+		'player_join' => sub 
+		{
+			# Make sure we got a bot reference
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->update_player_info;
+			return 1;
+		},
+		'player_connect' => sub 
+		{
+			# Make sure we got a bot reference
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->player_info_dirty( 1 );
+			return 1;
+		},
+		'player_disconnect' => sub 
+		{
+			# Make sure we got a bot reference
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->player_info_dirty( 1 );
+			return 1;
+		},
+		'player_left' => sub 
+		{
+			# Make sure we got a bot reference
+			my $bot    = shift->{bot} || die "No bot reference";
+			$bot->player_info_dirty( 1 );
+			return 1;
+		},
 		'chatter' => sub 
 		{
+			print "!!chatter\n";
 			# Fetch args from @_
 			my $args   = shift;
 			
@@ -70,6 +112,13 @@ has events =>
 				
 				$bot->raise_event( 'player_connect', { bot => $bot, player => $player } );
 			}
+			elsif ( $text =~ /^(.+) has left/ )
+			{
+				my $player = $bot->user( $1 ); 
+				$player->times_connected( $player->times_connected + 1 );
+				
+				$bot->raise_event( 'player_left', { bot => $bot, player => $player } );
+			}			
 			elsif ( $text =~ /^(.+) has joined/ )
 			{
 			
@@ -92,7 +141,7 @@ has events =>
 			elsif ( $text =~ /^(.+) Destroyed (.+)/ )
 			{
 				my $player = $bot->user( $1 );
-				
+				print Dumper( $player );
 				$player->kills_this_match( $player->kills_this_match + 1 );
 				$player->kills_overall( $player->kills_overall + 1 );
 				$player->current_death_streak( 0 );

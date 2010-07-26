@@ -10,6 +10,8 @@ package FancyBot::Plugins::Annotator;
 
 use Moose;
 use Chatbot::Eliza;
+use Win32::GuiTest qw( SetForegroundWindow GetForegroundWindow );
+
 use Data::Dumper;
 # Declare the events we listen to, here: chatter
 has events =>
@@ -31,19 +33,21 @@ has events =>
 			my $notes = $bot->config->{Annotator}->{Annotations}->{Join};
 			my @notes = ref $notes eq "ARRAY" ? @$notes : ( $notes );
 		
+			my @messages;
+			
 			for my $note ( @notes )
 			{
 				my $re = $note->{Player}; if ( ref( $re ) || $player->name =~ /$re/ ) {
 					my $messages = $note->{Message};
-					my @messages = ref $messages eq "ARRAY" ? @$messages : ($messages);
-					my $msg      = $messages[ int( rand( scalar @messages ) ) ]; 
-					
-					$msg =~ s/\%player/$player->name/ge;
-					
-					$bot->screen->send_chatter( $messages[ $msg ] ); 
-					return 1;
+					push @messages, ref $messages eq "ARRAY" ? @$messages : ($messages);
 				}
 			}
+			
+			my $msg = $messages[ int( rand( scalar @messages ) ) ]; 
+
+			$bot->send_chatter( $player->annotate( 'player', $messages[ $msg ] ) ); 
+			
+			return 1;
 		},
 
 		'player_kill' => sub 
@@ -58,9 +62,13 @@ has events =>
 			my $player = $args->{player}  || die "No message";
 			my $victim = $args->{victim}  || die "No victim";
 			
+			return if $player->is_bot;
+			
 			my $notes = $bot->config->{Annotator}->{Annotations}->{Kill};
 			my @notes = ref $notes eq "ARRAY" ? @$notes : ( $notes );
-		
+
+			my @messages;
+			
 			for my $note ( @notes )
 			{
 				my $re  = $note->{Killer}; 
@@ -69,19 +77,22 @@ has events =>
 				if ( ( ref( $re ) || $player->name =~ /$re/ ) && ( ref( $re2 ) || $victim->name =~ /$re2/ )  ) {
 					my $messages = $note->{Message};
 
-					my @messages = ref $messages eq "ARRAY" ? @$messages : ($messages);
+					push @messages, ref $messages eq "ARRAY" ? @$messages : ($messages);
 
-					my $i = int( rand( scalar @messages ) );
-
-					my $msg      = $messages[ $i ]; 
-					
-					$msg =~ s/\%killer/$player->name/ge;
-					$msg =~ s/\%victim/$victim->name/ge;
-					
-					$bot->screen->send_chatter( $msg ); 
-					return 1;
 				}
 			}
+			
+			my $i = int( rand( scalar @messages ) );
+
+			my $msg      = $messages[ $i ]; 
+			
+			$msg = $player->annotate( 'killer', $msg );
+			$msg = $victim->annotate( 'victim', $msg );
+			
+			my $ohwnd = GetForegroundWindow();
+			$bot->send_chatter( $msg ); 
+			SetForegroundWindow( $ohwnd );
+			return 1;
 		},		
 	}};
 
