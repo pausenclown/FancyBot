@@ -290,18 +290,18 @@ has events =>
 		'chatter' => sub 
 		{
 			my $args  = shift;
-			print "FancyBot::Plugins::BC::chatter\n";
+			# print "FancyBot::Plugins::BC::chatter\n";
 			my $txt  = $args->{message}  || die "No message";
 			my $bot  = $args->{bot}     || die "No bot reference";
-			print "********* $txt ***********\n";
+			# print "********* $txt ***********\n";
 			if ( $txt =~ /(.+) has connected$/ )
 			{
 				print "** $1 **\n";
 				if ( defined $bot->users->{$1} )
 				{
-					print Dumper( $bot->users->{$1} );
+					# print Dumper( $bot->users->{$1} );
 					$bot->users->{$1}->stash->{overall_stats}->{connections}++;
-					print "*** ",  $bot->users->{$1}->stash->{overall_stats}->{connections}, "**\n";
+					# print "*** ",  $bot->users->{$1}->stash->{overall_stats}->{connections}, "**\n";
 				}
 				else
 				{

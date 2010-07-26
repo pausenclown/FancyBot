@@ -460,7 +460,7 @@ sub update_player_info
 	print "[DEBUG] is dirty.\n";
 	
 	my $info = $self->player_info;
-	print Dumper($info);
+	# print Dumper($info);
 
 	for my $player ( keys %$info )
 	{

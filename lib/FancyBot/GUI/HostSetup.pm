@@ -113,7 +113,7 @@ sub host
 	{
 		SetForegroundWindow( $self->bot->main_hwnd );
 		PushChildButton( $self->bot->main_hwnd, 'HOST GAME' );
-		sleep(5);
+		sleep(15);
 	}
 	
 	$self->bot->raise_event( 'notice', { message =>  "Initializing screen 3/3..." } );

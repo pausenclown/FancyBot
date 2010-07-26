@@ -48,7 +48,7 @@ has events =>
 			# Fetch the config info for the command from the bot, 
 			# step out if the command is not recognized.
 			my $cmd  = $bot->command( $args ) || return;
-			print Dumper( $cmd );
+			# print Dumper( $cmd );
 			
 			# Fetch a FancyBot::User Object from the bot
 			my $user = $bot->user( $args->{user} );
@@ -58,7 +58,7 @@ has events =>
 			{
 				# If so, fetch the FancyBot::Plugin::Command object
 				my $co = $cmd->{CommandObject};
-				print Dumper( $co );
+				# print Dumper( $co );
 				if ( $co )
 				{
 					# Execute the command...

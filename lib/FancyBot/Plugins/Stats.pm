@@ -141,7 +141,7 @@ has events =>
 			elsif ( $text =~ /^(.+) Destroyed (.+)/ )
 			{
 				my $player = $bot->user( $1 );
-				print Dumper( $player );
+				# print Dumper( $player );
 				$player->kills_this_match( $player->kills_this_match + 1 );
 				$player->kills_overall( $player->kills_overall + 1 );
 				$player->current_death_streak( 0 );

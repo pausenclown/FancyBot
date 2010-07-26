@@ -30,7 +30,7 @@ sub execute
 	my $self  = shift;
 	my $bot   = shift;
 	
-	print Dumper ( $bot->config->{WebShell} );
+	# print Dumper ( $bot->config->{WebShell} );
 	
 	my $port  = ref $bot->config->{WebShell}->{Port} ?
 				3000 :
