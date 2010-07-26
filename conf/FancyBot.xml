@@ -120,6 +120,7 @@
 	<PlugIns>
 		<PlugIn>Eliza</PlugIn>
 		<PlugIn>Logger</PlugIn>
+		<PlugIn>Comstar</PlugIn>
 		<PlugIn>Commands</PlugIn>
 		<PlugIn>Security</PlugIn>
 		<PlugIn>Stats</PlugIn>

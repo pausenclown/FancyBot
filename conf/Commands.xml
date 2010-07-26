@@ -9,6 +9,7 @@
 		<IsVotableCommand>0</IsVotableCommand>
 		<Alias>start</Alias>
 	</Command>
+	
 	<Command>
 		<Name>stop</Name>
 		<Help>Stops the mission immedeatly.</Help>
@@ -105,6 +106,15 @@
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
 	</Command>		
+	<Command>
+		<Name>cycle</Name>
+		<Example>-cycle on</Example>
+		<Help>(De)activates map cycle. Syntax is '-cycle (off|on|add [group]?)'. If you choose add, the current configuration will be saved in the specified group. </Help>
+		<IsImplemented>0</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
 	<Command>
 		<Name>type</Name>
 		<Help>Selects a gametype. Syntax is '-type (b|d|tb|td|cb|ctb|cmp|cu)', for Battle, Destruction, Team Battle, Team Destruction, Custom Battle, Custom Team Battle, Custom Mission Play and Custom Undefined. </Help>
