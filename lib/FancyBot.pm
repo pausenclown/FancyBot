@@ -434,7 +434,7 @@ sub player_info
 	my $info =  $self->screen->player_info;
 	
 	$self->player_info_dirty( 0 );
-	$self->do_events;
+	# $self->do_events;
 	
 	if ( $self->player_info_dirty )
 	{
@@ -484,15 +484,19 @@ sub user
 {
 	my $self = shift;
 	my $name = shift;
+	my $user;
 	
-	while ( !$self->is_updating_player_info )
+	while ( !$user )
 	{
-		$self->users->{ $name } = FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) )
-			unless defined $self->users->{ $name };
-			
-		$self->users->{ $name }->known_unit( $self->identfy_unit( $name ) );
+		unless ( $self->is_updating_player_info )
+		{
+			$self->users->{ $name } = FancyBot::User->new( name => $name, is_admin => $self->is_admin($name), is_super_admin => $self->is_super_admin($name) )
+				unless defined $self->users->{ $name };
+				
+			$self->users->{ $name }->known_unit( $self->identfy_unit( $name ) );
 
-		return $self->users->{ $name };
+			return $self->users->{ $name };
+		}
 	}
 }
 
