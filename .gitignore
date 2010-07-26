@@ -1,0 +1,8 @@
+bin/perl/site/lib/Devel/Profile.pm
+dist
+dist/*
+gui.txt
+login/
+prof.out
+tmp/session
+tmp/session/*
