@@ -41,7 +41,7 @@ sub execute
 	my $bot     = shift;
 	
 	# Fetch player information list from the bot control screen
-	my $players = $bot->screen->player_info;
+	my $players = $bot->player_info;
 	
 	# Needed to keep track of the sums
 	my $teams   = {};
@@ -89,7 +89,7 @@ sub execute
 		my $players = $teams->{ $team }->{players};
 		my $tonnage = $teams->{ $team }->{tonnage};
 		my $mechs   = join( "/", map { $teams->{ $team }->{mechs}->{ $_ } } qw( ba light medium heavy assault ) );
-		"Team: $team, $tonnage $tons ( $mechs )";
+		"Team: $team, $tonnage tons ( $mechs )";
 	}
 	sort keys %$teams;
 	
@@ -99,3 +99,5 @@ sub execute
 	# indicates success of the command
 	return 1;
 }
+
+1;

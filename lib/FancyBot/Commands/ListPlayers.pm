@@ -46,20 +46,20 @@ sub execute
 	}
 	
 	# read player data from the bot screen
-	my $players = $bot->screen->player_info;
+	$bot->update_player_info;
 	
 	# iterate the player names
-	for my $name ( sort keys %$players )
+	for my $name ( sort keys %{ $bots->users } )
 	{
 		# do nothing if we look for teams and team no. doesn't match
-		next if $team   && $players->{ $name }->{team} ne $team;
+		next if $team   && $bots->user( $name )->team ne $team;
 		
 		# do nothing if we look for a specific player and the name doesn't match
 		next if $player && $name !~ /$player/;
 		
 		# otherwise print player info
-		my $t = $players->{ $name }->{tonnage};
-		my $m = $players->{ $name }->{mech};
+		my $t = $bots->user( $name )->tonnage;
+		my $m = $bots->user( $name )->mech;
 		
 		$bot->send_chatter( "$name is using a $t tons $m." );
 	}

@@ -21,7 +21,7 @@ sub execute
 	}
 	
 	$bot->kill_server;
-	$bot->start_server;
+	$bot->start_server(1);
 	
 	return 1;
 }
