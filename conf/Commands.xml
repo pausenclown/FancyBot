@@ -313,7 +313,7 @@
 		<Name>stock</Name>
 		<Help>Enforces stock configs. Syntax is '-stock (on|off)'.</Help>
 		<Example>-stock off</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>1</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>1</IsVotableCommand>
@@ -391,18 +391,6 @@
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 	</Command>	
-
-	<Command>
-		<Name>config</Name>
-		<Help>Shows current config or set a config variable. Syntax is '-config [variable name]? [value]?'. Settings per '-config' need a '-restart' to take effect.</Help>
-		<Example>-config</Example>
-		<Example>-config ForceFirstPersonView</Example>
-		<Example>-config ForceFirstPersonView 1</Example>
-		<IsImplemented>0</IsImplemented>
-		<IsAdminCommand>0</IsAdminCommand>
-		<IsSuperAdminCommand>0</IsSuperAdminCommand>
-		<IsVotableCommand>0</IsVotableCommand>
-	</Command>
 
 </Commands>
 
