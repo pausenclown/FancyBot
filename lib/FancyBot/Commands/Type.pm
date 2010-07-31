@@ -10,7 +10,7 @@ sub execute
 	my $search = shift;
 
 	$bot->screen->send_chatter( "Error selecting gametype." )
-		unless $bot->screen->select_type( $search ); 
+		unless $bot->screen->select_game_type( $search ); 
 
 	return 1;
 }

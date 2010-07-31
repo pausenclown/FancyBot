@@ -74,6 +74,8 @@
 			<Message>%victim_name, DSA's accountant will keep %victim_cbills cbills from your wage!</Message>
 			<Message>Ah no! Cheating!!</Message>
 		</Kill>
+		
+		
 
 		<!-- empty 'Killer' or 'Victim' tags match everbody -->
 		<Kill>
@@ -198,13 +200,14 @@
 		<KillStreak>
 			<Player>^DSA_</Player>
 			<Message>DSA strikes again. %player_current_kill_streak x streak for %player_name!</Message>
+			<Message>DSA bears another ace! %player_current_kill_streak x streak for %player_name!</Message>
 		</KillStreak>
 		
 
 		<!-- empty 'Player' tags match everbody -->
 		<KillStreak>
 			<Player></Player>
-			<Message>WOW, this is the consecutive kill #%player_current_kill_streak for %player!</Message>
+			<Message>WOW, this is the consecutive kill #%player_current_kill_streak for %player_name!</Message>
 			<Message>Cool %player_name, kill streak of %player_current_kill_streak.</Message>
 			<Message>%player_name killed the consecutive victim #%player_current_kill_streak.</Message>
 			<Message>Good kill %player_name, streak of %player_current_kill_streak.</Message>

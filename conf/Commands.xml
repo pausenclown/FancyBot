@@ -9,6 +9,43 @@
 		<IsVotableCommand>0</IsVotableCommand>
 		<Alias>start</Alias>
 	</Command>
+
+	<Command>
+		<Name>bot-add</Name>
+		<Example>-bot-add name Rufus mech Atlas</Example>
+		<Help></Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>bot add</Alias>
+		<Alias>add bot</Alias>
+	</Command>
+	
+	<Command>
+		<Name>bot-assign-mech</Name>
+		<Example>-bot-assign-mech Rufus Atlas</Example>
+		<Example>-bot-assign-mech Rufus Daishi::Bonecrusher</Example>
+		<Help></Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>bot assign mech</Alias>
+		<Alias>bot mech</Alias>
+	</Command>
+	
+	<Command>
+		<Name>bot-assign-team</Name>
+		<Example>-bot-assign-team Rufus 1</Example>
+		<Help>Assigns a bot to a team.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>bot assign team</Alias>
+		<Alias>bot team</Alias>
+	</Command>
 	
 	<Command>
 		<Name>stop</Name>
@@ -89,13 +126,23 @@
 	</Command>
 	<Command>
 		<Name>list-maps</Name>
-		<Help>Shows a list of available maps or players. Syntax is '-list maps [search term]?'. The search term is optional. If ommitted lists all maps.</Help>
+		<Help>Shows a list of available maps. Syntax is '-list maps [search term]?'. The search term is optional. If ommitted lists all maps.</Help>
 		<Example>-list maps VOS_</Example>
 		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
 		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 		<Alias>list maps</Alias>
+	</Command>
+	<Command>
+		<Name>list-types</Name>
+		<Help>Shows a list of available game types. Syntax is '-list types'.</Help>
+		<Example>-list types</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>list types</Alias>
 	</Command>
 	<Command>
 		<Name>map</Name>

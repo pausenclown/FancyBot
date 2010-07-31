@@ -4,6 +4,8 @@
 			body { 
 				background: black;
 				background-image: url(/static/images/background.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
 				font-family: Arial;
 				color: white;
 				text-align: center;

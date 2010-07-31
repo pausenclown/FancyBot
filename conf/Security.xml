@@ -8,11 +8,19 @@
 	<!-- List of Administrators -->	
 	<!-- You can specify a password for every admin if you want. All other admins use the AdminPassword -->	
 	<Admins>
-		<Admin>DSA_Warhorse_CO</Admin>
-		<Admin password="tailgunner">DSA_Tailgnnr_SGT</Admin>
+		<Admin>DSA WarHorse CO</Admin>
+		<Admin>DSA_Ash</Admin>
+		<Admin>DSA_Term98_SGT</Admin>
+		<Admin>DSA_Schafer_MSgt</Admin>
+		<Admin>Ironfist</Admin>
+		<Admin>DSA_KAEL_CPL</Admin>
+		<Admin>DSA_ir0nfist RXO</Admin>
+		<Admin>DSA_MadDog_SGT</Admin>
+		<Admin>DSA_Sythe_Pvt</Admin>
+		<Admin password="DSAmech2000">DSA_Tailgnnr_SGT</Admin>
 	</Admins>
 	
-	<AdminPassword>admin</AdminPassword>
+	<AdminPassword>DSAmech2000</AdminPassword>
 	
 	<!-- Timeout for the admins rights after the player has left the room. -->	
 	<!-- Keep it small, as big values make it easier for someone to hijack the rights. -->	
@@ -24,6 +32,6 @@
 		<Admin password="superPW123">S7</Admin>
 	</SuperAdmins>
 	
-	<SuperAdminPassword>admin</SuperAdminPassword>
+	<SuperAdminPassword>DSAmech2000</SuperAdminPassword>
 
 </Security>

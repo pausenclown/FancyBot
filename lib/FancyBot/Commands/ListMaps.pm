@@ -9,7 +9,7 @@ sub execute
 	my $user  = shift;
 	my $search = shift;
 
-	$bot->screen->send_long_chatter( 100, ", ", join ", ", $bot->screen->maps( $search ) ); 
+	$bot->screen->send_chatter( join ( ", ", $bot->screen->maps( $search ) ), ", " ); 
 	
 	return 1;
 }

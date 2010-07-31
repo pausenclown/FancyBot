@@ -35,7 +35,6 @@ has events =>
 	isa     => 'HashRef',
 	is      => 'ro',
 	default => sub {{
-		
 		# React to a command
 		'command' => sub 
 		{

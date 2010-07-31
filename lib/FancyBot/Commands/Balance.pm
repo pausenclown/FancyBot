@@ -40,18 +40,20 @@ sub execute
 	my $self    = shift;
 	my $bot     = shift;
 	
-	# Fetch player information list from the bot control screen
-	my $players = $bot->player_info;
-	
 	# Needed to keep track of the sums
 	my $teams   = {};
 	
 	# Iterate over all players and collect sums
-	for my $name ( sort keys %$players )
+	# iterate the player names
+	for my $name ( sort keys %{ $bot->users } )
 	{
-		# Shortcuts
-		my $w = $players->{ $name }->{tonnage};
-		my $t = $players->{ $name }->{team};
+		# do nothing if its the FancyBot
+		next if $name eq $bot->config->{Server}->{BotName};
+		
+		my $user = $bot->user( $name );
+		
+		my $w = $user->{mech}->{tonnage};
+		my $t = $user->{team};
 
 		# count number of players per team 
 		$teams->{ $t }->{players} += 1; 

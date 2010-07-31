@@ -20,30 +20,31 @@
 		<!-- See more about that in installation instructions. -->	
 		
 		<!-- Advertised Server Name, and optional password -->	
-		<Name>FancyBot Devel and Test</Name>
+		<Name>DSA Public Bot Test</Name>
 		<Password></Password>
 		
 		
 		<!-- Options -->
-		<AdvertiseGame>0</AdvertiseGame>
+		<AdvertiseThisGame>0</AdvertiseThisGame>
 		<AllowJoinInProgress >1</AllowJoinInProgress>
 		<DeadMechsCantSee>1</DeadMechsCantSee>
 		<DeadMechsCantTalk>1</DeadMechsCantTalk>
-		<DefaultRadarMode>off</DefaultRadarMode>
-		<DelayBetweenMaps>10 min</DelayBetweenMaps>
-		<ForceFirstPersonView>1</ForceFirstPersonView>
-		<ForceRespawn>0</ForceRespawn>
+		<RadarMode>Team Only</RadarMode>
+		<ServerRecycle>1</ServerRecycle>
+		<DelayBetweenMaps>5 min.</DelayBetweenMaps>
+		<ForceFirstPersonView>0</ForceFirstPersonView>
+		<ForceRespawn>1</ForceRespawn>
 		<FriendlyFire>1</FriendlyFire>
 		<HeatManagement>1</HeatManagement>
 		<JoinTimeLimit>Unlimited</JoinTimeLimit>
 		<LimitedAmmunitions>1</LimitedAmmunitions>
-		<Players>16</Players>
-		<RestrictMechs>0</RestrictMechs>
+		<MaxNumberOfPlayers>16</MaxNumberOfPlayers>
+		<RestrictMechsAndComponents>0</RestrictMechsAndComponents>
 		<SplashDamage>1</SplashDamage>
 		<AllowCustomDecals>1</AllowCustomDecals>
 		
 		<PublicSettings>
-			<AdvertiseGame>advertise</AdvertiseGame>
+			<AdvertiseThisGame>1</AdvertiseThisGame>
 			<AllowJoinInProgress>join</AllowJoinInProgress>
 			<DeadMechsCantSee>see</DeadMechsCantSee>
 			<DeadMechsCantTalk>talk</DeadMechsCantTalk>
@@ -55,7 +56,7 @@
 			<JoinTimeLimit>Unlimited</JoinTimeLimit>
 			<LimitedAmmunitions>ammo</LimitedAmmunitions>
 			<Players>players</Players>
-			<RestrictMechs>restrict</RestrictMechs>
+			<RestrictMechsAndComponents>restrict</RestrictMechsAndComponents>
 			<SplashDamage>splash</SplashDamage>
 			<AllowCustomDecals>decals</AllowCustomDecals>
 		</PublicSettings>
@@ -68,7 +69,7 @@
 		<LobbyTimeout>30</LobbyTimeout>
 		
 		<!-- Timeout in seconds for the server window to appear before the monitor give up, change it only if your server is really slow -->
-		<ServerTimeout>5</ServerTimeout>
+		<ServerTimeout>8</ServerTimeout>
 		
 		<!-- If 0 then the monitor restarts crashed servers. -->
 		<Restart>0</Restart>		
@@ -125,7 +126,10 @@
 		<PlugIn>Security</PlugIn>
 		<PlugIn>Stats</PlugIn>
 		<PlugIn>Annotator</PlugIn>
+		<PlugIn>Autobot</PlugIn>
+		<PlugIn>KickBan</PlugIn>
 	</PlugIns>	
+	
 	
 	<!-- Logfile settings, setting on of the values to blank stops the log from being written to disk. -->
 	<Logger>
@@ -141,30 +145,61 @@
 	</Logger>
 	
 	<KnownUnits>
+	
+		<!-- Bot Units, when editing, also edit corresponding bots in Autobot.xml -->
+		
 		<Unit>
-			<Match>^=WM=</Match>
-			<Name>Widowmakers</Name>
+			<Match>^\*ATB\*</Match>
+			<Name>Autobots</Name>
 		</Unit>
+
+		<Unit>
+			<Match>^\*DCT\*</Match>
+			<Name>Decepticons</Name>
+		</Unit>
+		
+		<Unit>
+			<Match>^\*CMR\*</Match>
+			<Name>Clan Mole Rat</Name>
+		</Unit>
+		
+		<Unit>
+			<Match>^\*CSV\*</Match>
+			<Name>Clan Super Villains</Name>
+		</Unit>
+		
+		<!-- Human Units -->
+		
 		<Unit>
 			<Match>^CSA_</Match>
 			<Name>Clan Star Adder</Name>
 		</Unit>
+	
 		<Unit>
-			<Match>CSJ</Match>
+			<Match>^CSJ</Match>
 			<Name>Clan Smoke Jaguar</Name>
 		</Unit>
+		
 		<Unit>
-			<Match>CBS</Match>
+			<Match>^CBS</Match>
 			<Name>Clan Blood Spirit</Name>
 		</Unit>
+		
 		<Unit>
 			<Match>^TK_</Match>
 			<Name>Todeskommando</Name>
 		</Unit>
+
 		<Unit>
 			<Match>^DSA_</Match>
 			<Name>DarkStar Alliance</Name>
 		</Unit>
+
+		<Unit>
+			<Match>ix$</Match>
+			<Name>*ix</Name>
+		</Unit>
+
 	</KnownUnits>
 
 </settings>

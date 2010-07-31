@@ -34,7 +34,7 @@ sub execute
 		}
 		
 		$bot->screen->send_chatter( "Stats for $player: " );
-		$bot->screen->send_long_chatter( 100, " / ", join " / ", @stats );
+		$bot->screen->send_chatter( join( " / ", @stats ), " / " );
 	}
 	else
 	{

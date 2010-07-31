@@ -13,7 +13,7 @@ sub execute
 	{
 		if ( $topic eq $cfg->{Name} )
 		{
-			$bot->screen->send_long_chatter( 70, ' ', $cfg->{Example} );
+			$bot->screen->send_chatter( $cfg->{Example} );
 			return 1;
 		}
 	}

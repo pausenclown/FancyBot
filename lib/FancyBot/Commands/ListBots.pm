@@ -32,7 +32,6 @@ sub execute
 	my $user    = shift;
 		
 	# read player data from the bot screen
-	$bot->update_player_info;
 	
 	my @bots = grep { $bot->user( $_ )->is_bot } sort keys %{ $bot->users };
 	

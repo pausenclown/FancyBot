@@ -26,10 +26,18 @@
 			<Message>Welcome DarkStar Alliance member.</Message>
 			<Message>A DSA member joined the server.</Message>
 		</Greeting>
-
-		<!-- empty 'Player' tag matches everbody -->
+		
+		<!-- ordinary clan members -->
 		<Greeting>
-			<Player></Player>
+			<Match>^=WM=</Match>
+			<Message>Welcome Widowmaker.</Message>
+			<Message>Always nice to see a Widowmaker, %player.</Message>
+			<Message>Widowmakers FTW! But not here.</Message>
+		</Greeting>
+
+		<!-- empty 'Match' tag matches everbody -->
+		<Greeting>
+			<Match></Match>
 			<Message>Hello %player, I am the %botname.</Message>
 			<Message>Hello %player.</Message>
 			<Message>Hi %player.</Message>

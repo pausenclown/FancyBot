@@ -1,23 +1,34 @@
 package FancyBot::User;
 
 use Moose;
-use Data::Dumper;
+use FancyBot::Mech;
 
 has known_unit =>
 	isa     => 'Str',
-	is      => 'rw';
+	is      => 'rw',
+	default => '';
 
 has name =>
 	isa     => 'Str',
-	is      => 'rw';
+	is      => 'rw',
+	default => '';
 	
 has team =>
 	isa     => 'Int',
-	is      => 'rw';
+	is      => 'rw',
+	default => '0';
 	
 has mech =>
 	isa     => 'FancyBot::Mech',
-	is      => 'rw';
+	is      => 'rw',
+	default => sub {
+		FancyBot::Mech->new(
+			name    => 'Camera',
+			tonnage => 0,
+			c_bills => 0,
+			variant => 'Stock'
+		);
+	};
 
 has is_bot =>
 	isa     => 'Bool',
@@ -43,8 +54,13 @@ has times_connected =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;
+
+has is_connected =>
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 0;
 	
-has times_joined =>
+has is_joined =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;
@@ -113,6 +129,21 @@ has longest_death_streak =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;	
+	
+has times_kicked =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;	
+
+has last_kick =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;	
+
+has position =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => -1;	
 
 has stash =>
 	isa     => 'HashRef',

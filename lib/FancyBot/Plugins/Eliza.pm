@@ -165,7 +165,7 @@ has events =>
 				for my $question ( @{ $bot->config->{Eliza}->{Questions}->{Question} }  )
 				{
 					# See if the question matches the configured subject
-					my $re = $question->{Subject}; if ( $txt =~ /^${re}$/i )
+					my $re = $question->{Subject}; if ( $txt =~ /^!!!?${re}$/i )
 					{
 						# Depending on the XML we sometimes get a string or an array
 						my $answers = ref $question->{Answers}->{Answer} ? 

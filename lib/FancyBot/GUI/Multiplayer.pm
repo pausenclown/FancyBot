@@ -11,24 +11,23 @@ sub connection
 {
 	my $self = shift;
 	my $conn = shift;
-	SelComboItemText( (GetChildWindows( $self->bot->main_hwnd ))[4], $conn );
+	$self->get_control('cmbConnection')->set_value( $conn );
 }
 
 sub quit
 {
 	my $self = shift;
-	PushChildButton( $self->bot->main_hwnd, 'QUIT' );
+	$self->get_control( 'btnQuit' )->push;
 }
 
 sub next 
 {
 	my $self = shift;
 	
-	while ( !(GetChildWindows( $self->bot->main_hwnd ))[11] )
+	while ( !$self->get_window_handle('cmbRadarMode') )
 	{
-		SetForegroundWindow( $self->bot->main_hwnd );
-		PushChildButton( $self->bot->main_hwnd, 'NEXT' );
-		sleep(5);
+		$self->get_control( 'btnNext' )->push;
+		sleep(3);
 	}
 	
 	$self->bot->screen( FancyBot::GUI::HostSetup->new( bot => $self->bot ) );

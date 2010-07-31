@@ -49,42 +49,39 @@ has events =>
 		'game_start' => sub 
 		{
 			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->update_player_info;
 			print "DEBUG PlayerInfo Updated.\n";
 			return 1;
 		},
 		'game_stop' => sub 
 		{
 			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->player_info_dirty( 1 );
 			return 1;
 		},
 		'player_join' => sub 
 		{
 			# Make sure we got a bot reference
 			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->update_player_info;
 			return 1;
 		},
 		'player_connect' => sub 
 		{
 			# Make sure we got a bot reference
-			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->player_info_dirty( 1 );
+			my $args  = shift;
+			my $bot    = $args->{bot} || die "No bot reference";
+			my $user   = $bot->user( $args->{user} );
+			print Dumper( $user );
 			return 1;
 		},
 		'player_disconnect' => sub 
 		{
 			# Make sure we got a bot reference
 			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->player_info_dirty( 1 );
 			return 1;
 		},
 		'player_left' => sub 
 		{
 			# Make sure we got a bot reference
 			my $bot    = shift->{bot} || die "No bot reference";
-			$bot->player_info_dirty( 1 );
 			return 1;
 		},
 		'chatter' => sub 
@@ -102,7 +99,6 @@ has events =>
 			my $user   = $args->{user};
 
 			return 1 if $args->{user};
-			
 			
 			if ( $text =~ /^(.+) has connected/ )
 			{
@@ -142,8 +138,9 @@ has events =>
 				my $player = $bot->user( $1 );
 				# print Dumper( $player );
 				$player->kills_this_match( $player->kills_this_match + 1 );
+				$player->current_kill_streak( $player->current_kill_streak + 1 );
 				$player->kills_overall( $player->kills_overall + 1 );
-				$player->current_death_streak( 0 );
+				$player->current_death_streak( 0 ); 
 				
 				if ( $player->current_kill_streak > $player->longest_kill_streak )
 				{
@@ -153,6 +150,7 @@ has events =>
 				
 				my $victim = $bot->user( $2 );
 				$victim->deaths_this_match( $victim->deaths_this_match + 1 );
+				$victim->current_death_streak( $victim->current_death_streak + 1 );
 				$victim->deaths_overall( $victim->deaths_overall + 1 );
 				$victim->current_kill_streak( 0 ); 
 				
@@ -160,8 +158,38 @@ has events =>
 				{
 					$victim->longest_death_streak( $victim->current_death_streak );
 				}
+
+				print "[KILLER] player => ". $player->name. ", kills => ". $player->kills_this_match. ", deaths => ". $player->deaths_this_match. ", killz => ". $player->current_kill_streak. ", deathz => ". $player->current_death_streak. "\n";
+				print "[VICTIM] player => ". $victim->name. ", kills => ". $victim->kills_this_match. ", deaths => ". $victim->deaths_this_match. ", killz => ". $victim->current_kill_streak. ", deathz => ". $victim->current_death_streak. "\n";
 				
-				$bot->raise_event( 'player_kill', { bot => $bot, player => $player, victim => $victim } ); # or team_kill
+				if ( !1 ) 
+				{
+					$bot->raise_event( 'player_team_kill', { 
+						bot => $bot, 
+						player => $player, 
+						victim => $victim 
+					} );
+				}
+				elsif ( $player->current_kill_streak > 2 )
+				{
+					$bot->raise_event( 'player_kill_streak', { 
+						bot => $bot, player => $player
+					} ); 
+				}
+				elsif ( $victim->current_death_streak > 2 )
+				{
+					$bot->raise_event( 'player_death_streak', { 
+						bot => $bot, player => $victim
+					} ); 
+				}
+				else
+				{
+					$bot->raise_event( 'player_kill', { 
+						bot => $bot, 
+						player => $player, 
+						victim => $victim 
+					} ); # or team_kill
+				}
 			}
 			
 			return 1;

@@ -22,7 +22,7 @@ sub execute
 		}
 	}
 	
-	$bot->screen->send_long_chatter( 70, ', ', join( ', ', map { $_->{Name} } @cmds ) );
+	$bot->send_chatter( join( ', ', map { $_->{Name} } @cmds ), ', ' );
 	
 	return 1;
 }

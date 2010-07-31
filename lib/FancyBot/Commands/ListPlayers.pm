@@ -45,21 +45,21 @@ sub execute
 		$player = '';
 	}
 	
-	# read player data from the bot screen
-	$bot->update_player_info;
-	
 	# iterate the player names
-	for my $name ( sort keys %{ $bots->users } )
+	for my $name ( sort keys %{ $bot->users } )
 	{
+		# do nothing if its the FancyBot
+		next if $name eq $bot->config->{Server}->{BotName};
+		
 		# do nothing if we look for teams and team no. doesn't match
-		next if $team   && $bots->user( $name )->team ne $team;
+		next if $team   && $bot->user( $name )->team ne $team;
 		
 		# do nothing if we look for a specific player and the name doesn't match
 		next if $player && $name !~ /$player/;
 		
 		# otherwise print player info
-		my $t = $bots->user( $name )->tonnage;
-		my $m = $bots->user( $name )->mech;
+		my $t = $bot->user( $name )->mech->tonnage;
+		my $m = $bot->user( $name )->mech->name;
 		
 		$bot->send_chatter( "$name is using a $t tons $m." );
 	}
