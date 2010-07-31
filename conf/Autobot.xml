@@ -1,0 +1,969 @@
+<opt>
+  <AllowedMechs>
+    <Mech>
+      <Name>Annihilator</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Atlas</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Awesome</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Battlemaster</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Battlemaster_IIC</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Behemoth</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Behemoth_II</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Blood Asp</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Canis</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Cyclops</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Daishi</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Deimos</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Fafnir</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Gargoyle</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Gladiator</Name>
+      <Weight>95</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hauptmann</Name>
+      <Weight>95</Weight>
+    </Mech>
+    <Mech>
+      <Name>Highlander</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Kodiak</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Longbow</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Mad Cat Mark II</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Marauder_II</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Masakari</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Mauler</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Stalker</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Sunder</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Supernova</Name>
+      <Weight>90</Weight>
+    </Mech>
+    <Mech>
+      <Name>Talos</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Templar</Name>
+      <Weight>85</Weight>
+    </Mech>
+    <Mech>
+      <Name>Thug</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Victor</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>Warlord</Name>
+      <Weight>100</Weight>
+    </Mech>
+    <Mech>
+      <Name>Warthog</Name>
+      <Weight>95</Weight>
+    </Mech>
+    <Mech>
+      <Name>Zeus</Name>
+      <Weight>80</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Clan Infantry (B)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Clan Infantry (E)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Clan Infantry (M)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>Commando</Name>
+      <Weight>25</Weight>
+    </Mech>
+    <Mech>
+      <Name>Cougar</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Dasher</Name>
+      <Weight>20</Weight>
+    </Mech>
+    <Mech>
+      <Name>Duan Gung</Name>
+      <Weight>25</Weight>
+    </Mech>
+    <Mech>
+      <Name>Elemental</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>Flea</Name>
+      <Weight>20</Weight>
+    </Mech>
+    <Mech>
+      <Name>Gnome</Name>
+      <Weight>3</Weight>
+    </Mech>
+    <Mech>
+      <Name>Golem</Name>
+      <Weight>4</Weight>
+    </Mech>
+    <Mech>
+      <Name>Gray Death</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>Infiltrator</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Is Infantry (B)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Is Infantry (E)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>~Is Infantry (M)</Name>
+      <Weight>1</Weight>
+    </Mech>
+    <Mech>
+      <Name>Jenner_IIC</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Kanazuchi</Name>
+      <Weight>4</Weight>
+    </Mech>
+    <Mech>
+      <Name>Koto</Name>
+      <Weight>25</Weight>
+    </Mech>
+    <Mech>
+      <Name>Locust_IIC</Name>
+      <Weight>25</Weight>
+    </Mech>
+    <Mech>
+      <Name>Longinus</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>Osiris</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Owens</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Panther</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Puma</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Raven</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Razorback</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Salamander</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>Solitaire</Name>
+      <Weight>25</Weight>
+    </Mech>
+    <Mech>
+      <Name>Standard</Name>
+      <Weight>2</Weight>
+    </Mech>
+    <Mech>
+      <Name>Uller</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Urban Mech Clan</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Urban Mech Is</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Urbanmech_IIC</Name>
+      <Weight>30</Weight>
+    </Mech>
+    <Mech>
+      <Name>Wasp</Name>
+      <Weight>20</Weight>
+    </Mech>
+    <Mech>
+      <Name>Wolfhound</Name>
+      <Weight>35</Weight>
+    </Mech>
+    <Mech>
+      <Name>Archer</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Ares</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Argus</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Argus_Xt</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Avatar</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Black Heart</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Black Knight</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Bowman</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Catapult</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Katapult</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Cauldron Born</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Dragon</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Grizzly</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Loki</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Mad Cat</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Marauder</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Nova Cat</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Orion_IIC</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Pitbull</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Rifleman</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Tenchi</Name>
+      <Weight>65</Weight>
+    </Mech>
+    <Mech>
+      <Name>Thanatos</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Thanatos_Xt</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Thor</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Vulture</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Vulture_II</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Vulture_C</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Warhammer</Name>
+      <Weight>70</Weight>
+    </Mech>
+    <Mech>
+      <Name>Wildcat</Name>
+      <Weight>75</Weight>
+    </Mech>
+    <Mech>
+      <Name>Yeoman</Name>
+      <Weight>60</Weight>
+    </Mech>
+    <Mech>
+      <Name>Arctic Wolf</Name>
+      <Weight>40</Weight>
+    </Mech>
+    <Mech>
+      <Name>Assassin_II</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Black Hawk</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Black Jack_II</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Black Lanner</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Bushwacker</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Centurion</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Chimera</Name>
+      <Weight>40</Weight>
+    </Mech>
+    <Mech>
+      <Name>Crab</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Fenris</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Gesu</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Grim Reaper</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hellhound</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hellspawn</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hollander_II</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hunchback</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Hunchback_IIC</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Privateer</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Rabid Coyote</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Reaver</Name>
+      <Weight>40</Weight>
+    </Mech>
+    <Mech>
+      <Name>Ryoken</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Shadow Cat</Name>
+      <Weight>45</Weight>
+    </Mech>
+    <Mech>
+      <Name>Shadow Hawk</Name>
+      <Weight>55</Weight>
+    </Mech>
+    <Mech>
+      <Name>Strider</Name>
+      <Weight>40</Weight>
+    </Mech>
+    <Mech>
+      <Name>Trebuchet</Name>
+      <Weight>50</Weight>
+    </Mech>
+    <Mech>
+      <Name>Ursus</Name>
+      <Weight>50</Weight>
+    </Mech>
+  </AllowedMechs>
+  <Bots>
+    <Bot>
+      <Level>9</Level>
+      <Team>Decepticons</Team>
+      <Name>Megatron</Name>
+      <Variant>Atlas:HardSnipe</Variant>
+      <Variant>Daishi:Bonecrusher</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Decepticons</Team>
+      <Name>Lord Straxus</Name>
+      <Variant>Behemoth_II:Stock</Variant>
+      <Variant>BloodAsp:Longfish</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Decepticons</Team>
+      <Name>Cyclonus</Name>
+      <Variant>Cyclops:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Decepticons</Team>
+      <Name>Squawkbox</Name>
+      <Variant>Thor:*</Variant>
+      <Variant>Loki:Lone Wolf</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Shockwave</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Starscream</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Thundercracker</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Skywarp</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Sunstorm</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Acid Storm</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Thunder Rain</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Toxic</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Ramjet</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Dirge</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Thrust</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Scourge</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Sweeps</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Buzzsaw</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Ratbat</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Overkill</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Decepticons</Team>
+      <Name>Slugfest</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Autobots</Team>
+      <Name>Guardian Prime</Name>
+      <Variant>Atlas:HardSnipe</Variant>
+      <Variant>Daishi:Bonecrusher</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Autobots</Team>
+      <Name>Alpha Prime</Name>
+      <Variant>Behemoth_II:Stock</Variant>
+      <Variant>BloodAsp:Longfish</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Autobots</Team>
+      <Name>Sentinel Prime</Name>
+      <Variant>Cyclops:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Autobots</Team>
+      <Name>Optimus Prime</Name>
+      <Variant>Thor:*</Variant>
+      <Variant>Loki:Lone Wolf</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Shockwave</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Starscream</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Thundercracker</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Alpha Trion</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Emirate Xaaron</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Ultra Magnus</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Wheeljack</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Ironhide</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Bumblebee</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Powerglide</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Tailgate</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Grimlock</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Steeljaw</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Nitro</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Six-Gun</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Firestar</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Autobots</Team>
+      <Name>Moonracer</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Kim Possible</Name>
+      <Variant>Atlas:HardSnipe</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Ron Stoppable</Name>
+      <Variant>Bushwacker:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Rufus</Name>
+      <Variant>Warthog:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Wade Load</Name>
+      <Variant>Thor:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Sensei</Name>
+      <Variant>Flea:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Felix</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Jim Possible</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Tim Possible</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Monique</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Bonnie</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Cousin Larry</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Yori</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Mole Rat</Team>
+      <Name>Camille Leon</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Shego</Name>
+      <Variant>Atlas:HardSnipe</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Dr. Drakken</Name>
+      <Variant>Bushwacker:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Professor Dementor</Name>
+      <Variant>Warthog:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Monkey Fist</Name>
+      <Variant>Thor:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Duff Killigan</Name>
+      <Variant>Flea:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Señor Senior Junior</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Señor Senior Senior</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Señora Senior Junior</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Señora Senior Senior</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Motor Ed</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Mathter</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Brick Flagg</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Spencer Fox</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>*</Level>
+      <Team>Clan Super Villains</Team>
+      <Name>Bebe Roboter</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>DarkStar Alliance</Team>
+      <Name>RoboRanger</Name>
+      <Variant>Annihilator:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>DarkStar Alliance</Team>
+      <Name>RoboHorse</Name>
+	  <Variant>Daishi:*</Variant>
+	  <Variant>Blood Asp:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>DarkStar Alliance</Team>
+      <Name>RoboCass</Name>
+      <Variant>Black Lanner:*</Variant>
+	  <Variant>Cauldron Born:*</Variant>
+    </Bot>
+  </Bots>
+  <Teams>
+    <Team>
+      <Name>Decepticons</Name>
+      <Tag>DCT</Tag>
+    </Team>
+    <Team>
+      <Name>Autobots</Name>
+      <Tag>ATB</Tag>
+    </Team>
+    <Team>
+      <Name>Clan Mole Rat</Name>
+      <Tag>CMR</Tag>
+    </Team>
+    <Team>
+      <Name>Clan Super Villains</Name>
+      <Tag>CSV</Tag>
+    </Team>
+    <Team>
+      <Name>DarkStar Alliance</Name>
+      <Tag>DSA</Tag>
+    </Team>
+
+</Teams>
+</opt>
