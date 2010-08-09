@@ -3,110 +3,71 @@ package Class::MOP::Deprecated;
 use strict;
 use warnings;
 
-use Carp qw( cluck );
-use Scalar::Util qw( blessed );
-
-our $VERSION = '1.03';
+our $VERSION = '1.04';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
-my %DeprecatedAt = (
+use Package::DeprecationManager -deprecations => {
+    'Class::MOP::HAVE_ISAREV'           => '0.93',
+    'Class::MOP::subname'               => '0.93',
+    'Class::MOP::in_global_destruction' => '0.93',
 
-    # features deprecated before 0.93
-    'Class::MOP::HAVE_ISAREV'           => 0.93,
-    'Class::MOP::subname'               => 0.93,
-    'Class::MOP::in_global_destruction' => 0.93,
+    'Class::MOP::Package::get_method_map' => '0.93',
 
-    'Class::MOP::Package::get_method_map' => 0.93,
+    'Class::MOP::Class::construct_class_instance'          => '0.93',
+    'Class::MOP::Class::check_metaclass_compatibility'     => '0.93',
+    'Class::MOP::Class::create_meta_instance'              => '0.93',
+    'Class::MOP::Class::clone_instance'                    => '0.93',
+    'Class::MOP::Class::alias_method'                      => '0.93',
+    'Class::MOP::Class::compute_all_applicable_methods'    => '0.93',
+    'Class::MOP::Class::compute_all_applicable_attributes' => '0.93',
+    'Class::MOP::Class::get_attribute_map'                 => '0.95',
 
-    'Class::MOP::Class::construct_class_instance'          => 0.93,
-    'Class::MOP::Class::check_metaclass_compatibility'     => 0.93,
-    'Class::MOP::Class::create_meta_instance'              => 0.93,
-    'Class::MOP::Class::clone_instance'                    => 0.93,
-    'Class::MOP::Class::alias_method'                      => 0.93,
-    'Class::MOP::Class::compute_all_applicable_methods'    => 0.93,
-    'Class::MOP::Class::compute_all_applicable_attributes' => 0.93,
-    'Class::MOP::Class::get_attribute_map' => 0.95,
+    'Class::MOP::Instance::bless_instance_structure' => '0.93',
 
-    'Class::MOP::Instance::bless_instance_structure' => 0.93,
+    'Class::MOP::Attribute::process_accessors' => '0.93',
 
-    'Class::MOP::Attribute::process_accessors' => 0.93,
+    'Class::MOP::Method::Accessor::initialize_body'                 => '0.93',
+    'Class::MOP::Method::Accessor::generate_accessor_method'        => '0.93',
+    'Class::MOP::Method::Accessor::generate_reader_method'          => '0.93',
+    'Class::MOP::Method::Accessor::generate_writer_method'          => '0.93',
+    'Class::MOP::Method::Accessor::generate_predicate_method'       => '0.93',
+    'Class::MOP::Method::Accessor::generate_clearer_method'         => '0.93',
+    'Class::MOP::Method::Accessor::generate_accessor_method_inline' => '0.93',
+    'Class::MOP::Method::Accessor::generate_reader_method_inline'   => '0.93',
+    'Class::MOP::Method::Accessor::generate_writer_method_inline'   => '0.93',
+    'Class::MOP::Method::Accessor::generate_clearer_method_inline'  => '0.93',
+    'Class::MOP::Method::Accessor::generate_predicate_method_inline' =>
+        '0.93',
 
-    'Class::MOP::Method::Accessor::initialize_body'                  => 0.93,
-    'Class::MOP::Method::Accessor::generate_accessor_method'         => 0.93,
-    'Class::MOP::Method::Accessor::generate_reader_method'           => 0.93,
-    'Class::MOP::Method::Accessor::generate_writer_method'           => 0.93,
-    'Class::MOP::Method::Accessor::generate_predicate_method'        => 0.93,
-    'Class::MOP::Method::Accessor::generate_clearer_method'          => 0.93,
-    'Class::MOP::Method::Accessor::generate_accessor_method_inline'  => 0.93,
-    'Class::MOP::Method::Accessor::generate_reader_method_inline'    => 0.93,
-    'Class::MOP::Method::Accessor::generate_writer_method_inline'    => 0.93,
-    'Class::MOP::Method::Accessor::generate_clearer_method_inline'   => 0.93,
-    'Class::MOP::Method::Accessor::generate_predicate_method_inline' => 0.93,
-
-    'Class::MOP::Method::Constructor::meta_instance'               => 0.93,
-    'Class::MOP::Method::Constructor::attributes'                  => 0.93,
-    'Class::MOP::Method::Constructor::initialize_body'             => 0.93,
-    'Class::MOP::Method::Constructor::generate_constructor_method' => 0.93,
+    'Class::MOP::Method::Constructor::meta_instance'               => '0.93',
+    'Class::MOP::Method::Constructor::attributes'                  => '0.93',
+    'Class::MOP::Method::Constructor::initialize_body'             => '0.93',
+    'Class::MOP::Method::Constructor::generate_constructor_method' => '0.93',
     'Class::MOP::Method::Constructor::generate_constructor_method_inline' =>
-        0.93,
+        '0.93',
+};
 
-    # features deprecated after 0.93
-    # ...
-);
-
-my %Registry;
-
-sub import {
-    my ( $class, %args ) = @_;
-
-    if ( defined( my $compat_version = delete $args{-compatible} ) ) {
-        $Registry{ (caller) } = $compat_version;
-    }
-
-    if (%args) {
-        my $unknowns = join q{ }, keys %args;
-        cluck "Unknown argument(s) for $class->import: $unknowns.\n";
-    }
-    return;
-}
-
-sub warn {
-    my ( $package, undef, undef, $feature ) = caller(1);
-
-    my $compat_version;
-    while ( $package && !defined( $compat_version = $Registry{$package} ) ) {
-        $package =~ s/ :: \w+ \z//xms or last;
-    }
-
-    my $deprecated_at = $DeprecatedAt{$feature}
-        or die "Unregistered deprecated feature: $feature";
-
-    if ( !defined($compat_version)
-        || $compat_version >= $DeprecatedAt{$feature} ) {
-        goto &cluck;
-    }
-}
 
 package
     Class::MOP;
 
 sub HAVE_ISAREV () {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         "Class::MOP::HAVE_ISAREV is deprecated and will be removed in a future release. It has always returned 1 anyway."
     );
     return 1;
 }
 
 sub subname {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         "Class::MOP::subname is deprecated. Please use Sub::Name directly.");
     require Sub::Name;
     goto \&Sub::Name::subname;
 }
 
 sub in_global_destruction {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         "Class::MOP::in_global_destruction is deprecated. Please use Devel::GlobalDestruction directly."
     );
     require Devel::GlobalDestruction;
@@ -116,8 +77,10 @@ sub in_global_destruction {
 package
     Class::MOP::Package;
 
+use Scalar::Util qw( blessed );
+
 sub get_method_map {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The get_method_map method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -138,7 +101,7 @@ package
     Class::MOP::Class;
 
 sub construct_class_instance {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The construct_class_instance method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -146,7 +109,7 @@ sub construct_class_instance {
 }
 
 sub check_metaclass_compatibility {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The check_metaclass_compatibility method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -154,7 +117,7 @@ sub check_metaclass_compatibility {
 }
 
 sub construct_instance {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The construct_instance method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -162,7 +125,7 @@ sub construct_instance {
 }
 
 sub create_meta_instance {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The create_meta_instance method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -170,7 +133,7 @@ sub create_meta_instance {
 }
 
 sub clone_instance {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The clone_instance method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -178,14 +141,14 @@ sub clone_instance {
 }
 
 sub alias_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         "The alias_method method is deprecated. Use add_method instead.\n");
 
     shift->add_method(@_);
 }
 
 sub compute_all_applicable_methods {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The compute_all_applicable_methods method is deprecated.'
             . " Use get_all_methods instead.\n" );
 
@@ -199,7 +162,7 @@ sub compute_all_applicable_methods {
 }
 
 sub compute_all_applicable_attributes {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The compute_all_applicable_attributes method has been deprecated.'
             . " Use get_all_attributes instead.\n" );
 
@@ -207,7 +170,7 @@ sub compute_all_applicable_attributes {
 }
 
 sub get_attribute_map {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         "The get_attribute_map method has been deprecated.\n");
 
     shift->_attribute_map(@_);
@@ -217,7 +180,7 @@ package
     Class::MOP::Instance;
 
 sub bless_instance_structure {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The bless_instance_structure method is deprecated.'
             . " It will be removed in a future release.\n" );
 
@@ -229,7 +192,7 @@ package
     Class::MOP::Attribute;
 
 sub process_accessors {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The process_accessors method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -240,7 +203,7 @@ package
     Class::MOP::Method::Accessor;
 
 sub initialize_body {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The initialize_body method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -248,7 +211,7 @@ sub initialize_body {
 }
 
 sub generate_accessor_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_accessor_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -256,7 +219,7 @@ sub generate_accessor_method {
 }
 
 sub generate_reader_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_reader_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -264,7 +227,7 @@ sub generate_reader_method {
 }
 
 sub generate_writer_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_writer_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -272,7 +235,7 @@ sub generate_writer_method {
 }
 
 sub generate_predicate_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_predicate_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -280,7 +243,7 @@ sub generate_predicate_method {
 }
 
 sub generate_clearer_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_clearer_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -288,7 +251,7 @@ sub generate_clearer_method {
 }
 
 sub generate_accessor_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_accessor_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -296,7 +259,7 @@ sub generate_accessor_method_inline {
 }
 
 sub generate_reader_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_reader_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -304,7 +267,7 @@ sub generate_reader_method_inline {
 }
 
 sub generate_writer_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_writer_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -312,7 +275,7 @@ sub generate_writer_method_inline {
 }
 
 sub generate_predicate_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_predicate_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -320,7 +283,7 @@ sub generate_predicate_method_inline {
 }
 
 sub generate_clearer_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_clearer_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -331,7 +294,7 @@ package
     Class::MOP::Method::Constructor;
 
 sub meta_instance {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The meta_instance method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -339,7 +302,7 @@ sub meta_instance {
 }
 
 sub attributes {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The attributes method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -348,7 +311,7 @@ sub attributes {
 }
 
 sub initialize_body {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The initialize_body method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -356,7 +319,7 @@ sub initialize_body {
 }
 
 sub generate_constructor_method {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
               'The generate_constructor_method method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -364,7 +327,7 @@ sub generate_constructor_method {
 }
 
 sub generate_constructor_method_inline {
-    Class::MOP::Deprecated::warn(
+    Class::MOP::Deprecated::deprecated(
         'The generate_constructor_method_inline method has been made private.'
             . " The public version is deprecated and will be removed in a future release.\n"
     );
@@ -379,18 +342,18 @@ __END__
 
 =head1 NAME 
 
-Class::MOP::Deprecated - List of deprecated methods
+Class::MOP::Deprecated - Manages deprecation warnings for Class::MOP
 
 =head1 DESCRIPTION
 
-    use Class::MOP::Deprecated -compatible => $version;
+    use Class::MOP::Deprecated -api_version => $version;
 
 =head1 FUNCTIONS
 
-This class provides methods that have been deprecated but remain for backward
-compatibility.
+This module manages deprecation warnings for features that have been
+deprecated in Class::MOP.
 
-If you specify C<< -compatible => $version >>, you can use deprecated features
+If you specify C<< -api_version => $version >>, you can use deprecated features
 without warnings. Note that this special treatment is limited to the package
 that loads C<Class::MOP::Deprecated>.
 

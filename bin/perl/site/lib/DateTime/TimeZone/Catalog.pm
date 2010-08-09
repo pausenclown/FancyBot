@@ -378,6 +378,7 @@ qw(
   Pacific/Apia
   Pacific/Auckland
   Pacific/Chatham
+  Pacific/Chuuk
   Pacific/Easter
   Pacific/Efate
   Pacific/Enderbury
@@ -403,14 +404,13 @@ qw(
   Pacific/Pago_Pago
   Pacific/Palau
   Pacific/Pitcairn
-  Pacific/Ponape
+  Pacific/Pohnpei
   Pacific/Port_Moresby
   Pacific/Rarotonga
   Pacific/Saipan
   Pacific/Tahiti
   Pacific/Tarawa
   Pacific/Tongatapu
-  Pacific/Truk
   Pacific/Wake
   Pacific/Wallis
   WET
@@ -803,6 +803,7 @@ qw(
     Apia
     Auckland
     Chatham
+    Chuuk
     Easter
     Efate
     Enderbury
@@ -828,14 +829,13 @@ qw(
     Pago_Pago
     Palau
     Pitcairn
-    Ponape
+    Pohnpei
     Port_Moresby
     Rarotonga
     Saipan
     Tahiti
     Tarawa
     Tongatapu
-    Truk
     Wake
     Wallis
 ) ],
@@ -1137,8 +1137,8 @@ qw(
     Atlantic/Stanley
 ) ],
   'fm' => [ qw(
-    Pacific/Truk
-    Pacific/Ponape
+    Pacific/Chuuk
+    Pacific/Pohnpei
     Pacific/Kosrae
 ) ],
   'fo' => [ qw(
@@ -1858,8 +1858,10 @@ qw(
   'NZ-CHAT' => 'Pacific/Chatham',
   'Navajo' => 'America/Denver',
   'PRC' => 'Asia/Shanghai',
+  'Pacific/Ponape' => 'Pacific/Pohnpei',
   'Pacific/Samoa' => 'Pacific/Pago_Pago',
-  'Pacific/Yap' => 'Pacific/Truk',
+  'Pacific/Truk' => 'Pacific/Chuuk',
+  'Pacific/Yap' => 'Pacific/Chuuk',
   'Poland' => 'Europe/Warsaw',
   'Portugal' => 'Europe/Lisbon',
   'ROC' => 'Asia/Taipei',
@@ -1887,7 +1889,7 @@ qw(
 
 ;
 
-sub OlsonVersion { '2010j' }
+sub OlsonVersion { '2010k' }
 
 
 1;
@@ -2292,6 +2294,7 @@ so that applications can easily present a list of timezones.
   Pacific/Apia
   Pacific/Auckland
   Pacific/Chatham
+  Pacific/Chuuk
   Pacific/Efate
   Pacific/Enderbury
   Pacific/Fakaofo
@@ -2314,14 +2317,13 @@ so that applications can easily present a list of timezones.
   Pacific/Pago_Pago
   Pacific/Palau
   Pacific/Pitcairn
-  Pacific/Ponape
+  Pacific/Pohnpei
   Pacific/Port_Moresby
   Pacific/Rarotonga
   Pacific/Saipan
   Pacific/Tahiti
   Pacific/Tarawa
   Pacific/Tongatapu
-  Pacific/Truk
   Pacific/Wake
   Pacific/Wallis
   Pacific/Honolulu
@@ -3000,8 +3002,8 @@ so that applications can easily present a list of timezones.
 =head3 Micronesia, Federated States of (FM)
 
   Pacific/Kosrae - Kosrae
-  Pacific/Ponape - Ponape (Pohnpei)
-  Pacific/Truk - Truk (Chuuk) and Yap
+  Pacific/Pohnpei - Pohnpei (Ponape)
+  Pacific/Chuuk - Chuuk (Truk) and Yap
 
 =head3 Moldova, Republic of (MD)
 
@@ -3584,8 +3586,10 @@ A linked zone is an alias from one name to another.
   NZ-CHAT => Pacific/Chatham
   Navajo => America/Denver
   PRC => Asia/Shanghai
+  Pacific/Ponape => Pacific/Pohnpei
   Pacific/Samoa => Pacific/Pago_Pago
-  Pacific/Yap => Pacific/Truk
+  Pacific/Truk => Pacific/Chuuk
+  Pacific/Yap => Pacific/Chuuk
   Poland => Europe/Warsaw
   Portugal => Europe/Lisbon
   ROC => Asia/Taipei

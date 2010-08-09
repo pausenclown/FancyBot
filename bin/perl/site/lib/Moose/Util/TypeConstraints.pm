@@ -6,7 +6,7 @@ use List::MoreUtils qw( all any );
 use Scalar::Util qw( blessed reftype );
 use Moose::Exporter;
 
-our $VERSION = '1.08';
+our $VERSION = '1.09';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
@@ -25,6 +25,7 @@ sub optimize_as (&);
 
 ## --------------------------------------------------------
 
+use Moose::Deprecated;
 use Moose::Meta::TypeConstraint;
 use Moose::Meta::TypeConstraint::Union;
 use Moose::Meta::TypeConstraint::Parameterized;
@@ -275,6 +276,12 @@ sub type {
 
     # back-compat version, called without sugar
     if ( !any { ( reftype($_) || '' ) eq 'HASH' } @_ ) {
+        Moose::Deprecated::deprecated(
+            feature => 'type without sugar',
+            message =>
+                'Calling type() with a simple list of parameters is deprecated'
+        );
+
         return _create_type_constraint( $_[0], undef, $_[1] );
     }
 
@@ -294,6 +301,12 @@ sub subtype {
     #
     # subtype 'Parent', sub { where };
     if ( scalar @_ == 2 && ( reftype( $_[1] ) || '' ) eq 'CODE' ) {
+        Moose::Deprecated::deprecated(
+            feature => 'subtype without sugar',
+            message =>
+                'Calling subtype() with a simple list of parameters is deprecated'
+        );
+
         return _create_type_constraint( undef, @_ );
     }
 
@@ -301,11 +314,23 @@ sub subtype {
     # subtype 'Parent', sub { where }, sub { message }, sub { optimized };
     if ( scalar @_ >= 3 && all { ( reftype($_) || '' ) eq 'CODE' }
         @_[ 1 .. $#_ ] ) {
+        Moose::Deprecated::deprecated(
+            feature => 'subtype without sugar',
+            message =>
+                'Calling subtype() with a simple list of parameters is deprecated'
+        );
+
         return _create_type_constraint( undef, @_ );
     }
 
     # subtype 'Name', 'Parent', ...
     if ( scalar @_ >= 2 && all { !ref } @_[ 0, 1 ] ) {
+        Moose::Deprecated::deprecated(
+            feature => 'subtype without sugar',
+            message =>
+                'Calling subtype() with a simple list of parameters is deprecated'
+        );
+
         return _create_type_constraint(@_);
     }
 
@@ -573,20 +598,53 @@ sub _install_type_coercions ($$) {
 
     my $valid_chars = qr{[\w:\.]};
     my $type_atom   = qr{ (?>$valid_chars+) }x;
-    my $ws   = qr{ (?>\s*) }x;
+    my $ws          = qr{ (?>\s*) }x;
+    my $op_union    = qr{ $ws \| $ws }x;
 
-    my $any;
+    my ($type, $type_capture_parts, $type_with_parameter, $union, $any);
+    if (Class::MOP::IS_RUNNING_ON_5_10) {
+        my $type_pattern
+            = q{  (?&type_atom)  (?: \[ (?&ws)  (?&any)  (?&ws) \] )? };
+        my $type_capture_parts_pattern
+            = q{ ((?&type_atom)) (?: \[ (?&ws) ((?&any)) (?&ws) \] )? };
+        my $type_with_parameter_pattern
+            = q{  (?&type_atom)      \[ (?&ws)  (?&any)  (?&ws) \]    };
+        my $union_pattern
+            = q{ (?&type) (?> (?: (?&op_union) (?&type) )+ ) };
+        my $any_pattern
+            = q{ (?&type) | (?&union) };
 
-    my $type = qr{  $type_atom  (?: \[ $ws (??{$any})   $ws \] )? }x;
-    my $type_capture_parts
-        = qr{ ($type_atom) (?: \[ $ws ((??{$any})) $ws \] )? }x;
-    my $type_with_parameter
-        = qr{  $type_atom      \[ $ws (??{$any})   $ws \]    }x;
+        my $defines = qr{(?(DEFINE)
+            (?<valid_chars>         $valid_chars)
+            (?<type_atom>           $type_atom)
+            (?<ws>                  $ws)
+            (?<op_union>            $op_union)
+            (?<type>                $type_pattern)
+            (?<type_capture_parts>  $type_capture_parts_pattern)
+            (?<type_with_parameter> $type_with_parameter_pattern)
+            (?<union>               $union_pattern)
+            (?<any>                 $any_pattern)
+        )}x;
 
-    my $op_union = qr{ $ws \| $ws }x;
-    my $union    = qr{ $type (?> (?: $op_union $type )+ ) }x;
+        $type                = qr{ $type_pattern                $defines }x;
+        $type_capture_parts  = qr{ $type_capture_parts_pattern  $defines }x;
+        $type_with_parameter = qr{ $type_with_parameter_pattern $defines }x;
+        $union               = qr{ $union_pattern               $defines }x;
+        $any                 = qr{ $any_pattern                 $defines }x;
+    }
+    else {
+        $type
+            = qr{  $type_atom  (?: \[ $ws  (??{$any})  $ws \] )? }x;
+        $type_capture_parts
+            = qr{ ($type_atom) (?: \[ $ws ((??{$any})) $ws \] )? }x;
+        $type_with_parameter
+            = qr{  $type_atom      \[ $ws  (??{$any})  $ws \]    }x;
+        $union
+            = qr{ $type (?> (?: $op_union $type )+ ) }x;
+        $any
+            = qr{ $type | $union }x;
+    }
 
-    $any = qr{ $type | $union }x;
 
     sub _parse_parameterized_type_constraint {
         { no warnings 'void'; $any; }  # force capture of interpolated lexical

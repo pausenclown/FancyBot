@@ -3,13 +3,14 @@ package Moose::Exporter;
 use strict;
 use warnings;
 
-our $VERSION = '1.08';
+our $VERSION = '1.09';
 our $XS_VERSION = $VERSION;
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
 use Class::MOP;
 use List::MoreUtils qw( first_index uniq );
+use Moose::Deprecated;
 use Moose::Util::MetaRole;
 use Sub::Exporter 0.980;
 use Sub::Name qw(subname);
@@ -475,8 +476,6 @@ sub _make_unimport_sub {
             $export_recorder,
             $is_reexport,
         );
-        strict->unimport;
-        warnings->unimport;
     };
 }
 
@@ -547,11 +546,13 @@ sub _make_init_meta {
 
         return unless Class::MOP::class_of( $options{for_class} );
 
-        Moose::Util::MetaRole::apply_metaroles(
-            for => $options{for_class},
-            %new_style_roles,
-            %old_style_roles,
-        );
+        if ( %new_style_roles || %old_style_roles ) {
+            Moose::Util::MetaRole::apply_metaroles(
+                for => $options{for_class},
+                %new_style_roles,
+                %old_style_roles,
+            );
+        }
 
         Moose::Util::MetaRole::apply_base_class_roles(
             for_class => $options{for_class},
@@ -567,11 +568,6 @@ sub _make_init_meta {
 sub import {
     strict->import;
     warnings->import;
-}
-
-sub unimport {
-    strict->unimport;
-    warnings->unimport;
 }
 
 1;
@@ -652,7 +648,7 @@ functions from the original package, they will I<not> be cleaned.
 
 If you pass any parameters for L<Moose::Util::MetaRole>, this method will
 generate an C<init_meta> for you as well (see below for details). This
-C<init_meta> will call C<Moose::Util::MetaRole::apply_metaclass_roles> and
+C<init_meta> will call C<Moose::Util::MetaRole::apply_metaroles> and
 C<Moose::Util::MetaRole::apply_base_class_roles> as needed.
 
 Note that if any of these methods already exist, they will not be
@@ -698,7 +694,7 @@ when C<unimport> is called.
 
 You can also provide parameters for C<Moose::Util::MetaRole::apply_metaroles>
 and C<Moose::Util::MetaRole::base_class_roles>. Specifically, valid parameters
-are "class_metaroles", "role_metaroles", and "base_object_roles".
+are "class_metaroles", "role_metaroles", and "base_class_roles".
 
 =item B<< Moose::Exporter->build_import_methods(...) >>
 

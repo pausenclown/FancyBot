@@ -2,7 +2,7 @@ package Hook::LexWrap;
 use 5.006;
 use strict;
 use warnings;
-our $VERSION = '0.22';
+our $VERSION = '0.23';
 use Carp;
 
 {
@@ -91,7 +91,8 @@ sub DESTROY { $_[0]->() }
 use overload 
 	q{""}   => sub { undef },
 	q{0+}   => sub { undef },
-	q{bool} => sub { undef };
+	q{bool} => sub { undef },
+	q{fallback}=>1; #fallback=1 - like no overloading for other operations
 
 1;
 
@@ -104,8 +105,7 @@ Hook::LexWrap - Lexically scoped subroutine wrappers
 
 =head1 VERSION
 
-This document describes version 0.21 of Hook::LexWrap,
-released November  6, 2008.
+This document describes version 0.23 of Hook::LexWrap.
 
 =head1 SYNOPSIS
 

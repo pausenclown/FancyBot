@@ -376,6 +376,7 @@ C:\strawberry\perl\site\lib\DateTime\TimeZone\PST8PDT.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Apia.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Auckland.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Chatham.pm
+C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Chuuk.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Easter.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Efate.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Enderbury.pm
@@ -401,14 +402,13 @@ C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Noumea.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Pago_Pago.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Palau.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Pitcairn.pm
-C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Ponape.pm
+C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Pohnpei.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Port_Moresby.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Rarotonga.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Saipan.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Tahiti.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Tarawa.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Tongatapu.pm
-C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Truk.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Wake.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\Pacific\Wallis.pm
 C:\strawberry\perl\site\lib\DateTime\TimeZone\UTC.pm

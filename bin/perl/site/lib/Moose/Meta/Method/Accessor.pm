@@ -4,7 +4,7 @@ package Moose::Meta::Method::Accessor;
 use strict;
 use warnings;
 
-our $VERSION   = '1.08';
+our $VERSION   = '1.09';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
@@ -111,11 +111,40 @@ sub _value_needs_copy {
     return $attr->should_coerce;
 }
 
-sub _generate_reader_method { shift->_generate_reader_method_inline(@_) }
-sub _generate_writer_method { shift->_generate_writer_method_inline(@_) }
-sub _generate_accessor_method { shift->_generate_accessor_method_inline(@_) }
-sub _generate_predicate_method { shift->_generate_predicate_method_inline(@_) }
-sub _generate_clearer_method { shift->_generate_clearer_method_inline(@_) }
+sub _instance_is_inlinable {
+    my $self = shift;
+    return $self->associated_attribute->associated_class->instance_metaclass->is_inlinable;
+}
+
+sub _generate_reader_method {
+    my $self = shift;
+    $self->_instance_is_inlinable ? $self->_generate_reader_method_inline(@_)
+                                  : $self->SUPER::_generate_reader_method(@_);
+}
+
+sub _generate_writer_method {
+    my $self = shift;
+    $self->_instance_is_inlinable ? $self->_generate_writer_method_inline(@_)
+                                  : $self->SUPER::_generate_writer_method(@_);
+}
+
+sub _generate_accessor_method {
+    my $self = shift;
+    $self->_instance_is_inlinable ? $self->_generate_accessor_method_inline(@_)
+                                  : $self->SUPER::_generate_accessor_method(@_);
+}
+
+sub _generate_predicate_method {
+    my $self = shift;
+    $self->_instance_is_inlinable ? $self->_generate_predicate_method_inline(@_)
+                                  : $self->SUPER::_generate_predicate_method(@_);
+}
+
+sub _generate_clearer_method {
+    my $self = shift;
+    $self->_instance_is_inlinable ? $self->_generate_clearer_method_inline(@_)
+                                  : $self->SUPER::_generate_clearer_method(@_);
+}
 
 sub _inline_pre_body  { '' }
 sub _inline_post_body { '' }
@@ -137,7 +166,7 @@ sub _inline_check_coercion {
 
     my $attr = $self->associated_attribute;
 
-    return '' unless $attr->should_coerce;
+    return '' unless $attr->should_coerce && $attr->type_constraint->has_coercion;
     return "$value = \$attr->type_constraint->coerce($value);";
 }
 

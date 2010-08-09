@@ -9,7 +9,7 @@ use Scalar::Util 'blessed';
 use Carp         'confess';
 use Devel::GlobalDestruction 'in_global_destruction';
 
-our $VERSION   = '1.08';
+our $VERSION   = '1.09';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
@@ -390,14 +390,6 @@ sub does_role {
 }
 
 sub find_method_by_name { (shift)->get_method(@_) }
-
-sub alias_method {
-    Carp::cluck("The alias_method method is deprecated. Use add_method instead.\n");
-
-    my $self = shift;
-
-    $self->add_method(@_);
-}
 
 ## ------------------------------------------------------------------
 ## role construction

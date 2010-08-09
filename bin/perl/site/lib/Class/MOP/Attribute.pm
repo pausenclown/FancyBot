@@ -10,7 +10,7 @@ use Carp         'confess';
 use Scalar::Util 'blessed', 'weaken';
 use Try::Tiny;
 
-our $VERSION   = '1.03';
+our $VERSION   = '1.04';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 

@@ -4,13 +4,14 @@ use warnings;
 
 use 5.008;
 
-our $VERSION   = '1.08';
+our $VERSION   = '1.09';
 $VERSION = eval $VERSION;
 our $AUTHORITY = 'cpan:STEVAN';
 
 use Scalar::Util 'blessed';
 use Carp         'confess';
 
+use Moose::Deprecated;
 use Moose::Exporter;
 
 use Class::MOP 0.94;
@@ -133,6 +134,11 @@ sub init_meta {
     # This used to be called as a function. This hack preserves
     # backwards compatibility.
     if ( $_[0] ne __PACKAGE__ ) {
+        Moose::Deprecated::deprecated(
+            feature => 'Moose::init_meta',
+            message => 'Calling Moose::init_meta as a function is deprecated',
+        );
+
         return __PACKAGE__->init_meta(
             for_class  => $_[0],
             base_class => $_[1],
@@ -975,6 +981,16 @@ for you.
 
 An alias for C<confess>, used by internally by Moose.
 
+=head2 The MooseX:: namespace
+
+Generally if you're writing an extension I<for> Moose itself you'll want
+to put your extension in the C<MooseX::> namespace. This namespace is
+specifically for extensions that make Moose better or different in some
+fundamental way. It is traditionally B<not> for a package that just happens
+to use Moose. This namespace follows from the examples of the C<LWPx::>
+and C<DBIx::> namespaces that perform the same function for C<LWP> and C<DBI>
+respectively.
+
 =head1 METACLASS COMPATIBILITY AND MOOSE
 
 Metaclass compatibility is a thorny subject. You should start by
@@ -1001,16 +1017,6 @@ parent's and child's original metaclasses.
 
 Ultimately, this is all transparent to you except in the case of an
 unresolvable conflict.
-
-=head2 The MooseX:: namespace
-
-Generally if you're writing an extension I<for> Moose itself you'll want
-to put your extension in the C<MooseX::> namespace. This namespace is
-specifically for extensions that make Moose better or different in some
-fundamental way. It is traditionally B<not> for a package that just happens
-to use Moose. This namespace follows from the examples of the C<LWPx::>
-and C<DBIx::> namespaces that perform the same function for C<LWP> and C<DBI>
-respectively.
 
 =head1 CAVEATS
 
