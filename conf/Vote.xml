@@ -1,0 +1,4 @@
+<Vote>
+	<VotingTime>10</VotingTime>
+	<MinimumTurnout>0.2</MinimumTurnout>
+</Vote>

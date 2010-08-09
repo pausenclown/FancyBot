@@ -1,0 +1,10 @@
+<GameCycle>
+	<Game>
+		<MapName>*</MapName>
+		<GameType>Team Battle,Team Battle,Team Battle,Battle</GameType>
+		<Visibility>Clear,Clear,Clear,Heavy Fog</Visibility>
+		<TimeOfDay>Day</TimeOfDay>
+		<Stock>Off,Off,Off,Off,Off,Off,On</Stock>
+		<Radar>Advanced</Radar>
+	</Game>
+</GameCycle>
