@@ -34,6 +34,11 @@ has is_bot =>
 	isa     => 'Bool',
 	is      => 'rw',
 	default => 0;
+
+has is_server_bot =>
+	isa     => 'Bool',
+	is      => 'rw',
+	default => 0;
 	
 has is_super_admin =>
 	isa     => 'Bool',
@@ -66,6 +71,11 @@ has is_joined =>
 	default => 0;
 	
 has times_joined_this_match =>
+	isa     => 'Int',
+	is      => 'rw',
+	default => 0;
+
+has times_joined =>
 	isa     => 'Int',
 	is      => 'rw',
 	default => 0;

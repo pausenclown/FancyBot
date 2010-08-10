@@ -9,20 +9,23 @@ sub execute
 	my $user  = shift;
 	my $all   = shift;
 
-	my @cmds;
+	my @cmds; my @vcmds;
 	
 	for my $cfg ( @{ $bot->config->{Commands}->{Command} } )
 	{
-		if ( $user->is_allowed_to( $cfg ) )
+		if ( $user->is_allowed_to( $cfg ) && ( $cfg->{IsImplemented} || $all ) )
 		{
-			if ( $cfg->{IsImplemented} || $all )
-			{
-				push @cmds, $cfg;
-			}
+			push @cmds, $cfg;
+		}
+		elsif ( $cfg->{IsVotableCommand} )
+		{
+			push @vcmds, $cfg;
 		}
 	}
 	
-	$bot->send_chatter( join( ', ', map { $_->{Name} } @cmds ), ', ' );
+	$bot->send_chatter( 'Available Commands: '. join( ', ', map { $_->{Name} } @cmds ), ', ' );
+	$bot->send_chatter( 'Votable Commands: '. join( ', ', map { $_->{Name} } @vcmds ), ', ' )
+		if @vcmds;
 	
 	return 1;
 }

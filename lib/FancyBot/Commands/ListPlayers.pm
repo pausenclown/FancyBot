@@ -46,22 +46,22 @@ sub execute
 	}
 	
 	# iterate the player names
-	for my $name ( sort keys %{ $bot->users } )
+	for my $user ( @{ $bot->connected_users_as_list } )
 	{
 		# do nothing if its the FancyBot
-		next if $name eq $bot->config->{Server}->{BotName};
+		next if $user->name eq $bot->config->{Server}->{BotName};
 		
 		# do nothing if we look for teams and team no. doesn't match
-		next if $team   && $bot->user( $name )->team ne $team;
+		next if $team && $user->team ne $team;
 		
 		# do nothing if we look for a specific player and the name doesn't match
-		next if $player && $name !~ /$player/;
+		next if $player && $user->name !~ /$player/;
 		
 		# otherwise print player info
-		my $t = $bot->user( $name )->mech->tonnage;
-		my $m = $bot->user( $name )->mech->name;
+		my $t = $user->mech->tonnage;
+		my $m = $user->mech->name;
 		
-		$bot->send_chatter( "$name is using a $t tons $m." );
+		$bot->send_chatter( $user->name. " is using a $t tons $m." );
 	}
 
 	return 1;

@@ -7,7 +7,7 @@ sub prepare_player_kick {
 	my $self     = shift;
 	my $player   = shift;
 	my $user     = $self->bot->user( $player );
-	
+	# print Dumper($user);
 	$self->bot->send_chatter( "Kick failed, no such player '$player'." ), return
 		unless $user->is_bot || $user->is_connected;
 		
@@ -43,10 +43,10 @@ sub kick_player
 	$self->bot->send_chatter( "Kicking $name..." );
 	
 	$button->push;
-	FancyBot::GUI::SendKeys( $name );
-	FancyBot::GUI::SendKeys( '{ENTER}' );
+	#FancyBot::GUI::SendKeys( $name );
+	#FancyBot::GUI::SendKeys( '{ENTER}' );
 		
-	#FancyBot::GUI::SendKeys( ( '{DOWN}' x ( $position + 1 ) ). '{ENTER}' );
+	FancyBot::GUI::SendKeys( ( '{DOWN}' x ( $position + 1 ) ). '{ENTER}' );
 	
 	
 	# remove the user from the list if it is a bot

@@ -133,15 +133,15 @@
       <Weight>80</Weight>
     </Mech>
     <Mech>
-      <Name>~Clan Infantry (B)</Name>
+      <Name>Clan Infantry (B)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
-      <Name>~Clan Infantry (E)</Name>
+      <Name>Clan Infantry (E)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
-      <Name>~Clan Infantry (M)</Name>
+      <Name>Clan Infantry (M)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
@@ -185,15 +185,15 @@
       <Weight>2</Weight>
     </Mech>
     <Mech>
-      <Name>~Is Infantry (B)</Name>
+      <Name>Is Infantry (B)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
-      <Name>~Is Infantry (E)</Name>
+      <Name>Is Infantry (E)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
-      <Name>~Is Infantry (M)</Name>
+      <Name>Is Infantry (M)</Name>
       <Weight>1</Weight>
     </Mech>
     <Mech>
@@ -764,19 +764,22 @@
       <Level>9</Level>
       <Team>Clan Mole Rat</Team>
       <Name>Kim Possible</Name>
-      <Variant>Atlas:HardSnipe</Variant>
+      <Variant>Atlas:Hardsnipe</Variant>
     </Bot>
     <Bot>
       <Level>9</Level>
       <Team>Clan Mole Rat</Team>
       <Name>Ron Stoppable</Name>
       <Variant>Bushwacker:*</Variant>
+	  <Variant>Black Lanner:*</Variant>
+	  <Variant>Cougar:*</Variant>
+	  <Variant>Atlas:Hardsnipe</Variant>
     </Bot>
     <Bot>
       <Level>9</Level>
       <Team>Clan Mole Rat</Team>
       <Name>Rufus</Name>
-      <Variant>Warthog:*</Variant>
+      <Variant>Annihilator:Zensus</Variant>
     </Bot>
     <Bot>
       <Level>9</Level>

@@ -3,6 +3,7 @@ package FancyBot;
 use Moose;
 
 use FancyBot::GUI;
+use Data::Dumper;
 
 with 'FancyBot::Events';
 with 'FancyBot::Commands';
@@ -111,6 +112,8 @@ sub update_gui
 	my $self = shift;
 	$self->screen->update_gui
 }
+
+
 
 =head1 NAME
 

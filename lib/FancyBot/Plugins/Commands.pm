@@ -57,16 +57,17 @@ has events =>
 			{
 				# If so, fetch the FancyBot::Plugin::Command object
 				my $co = $cmd->{CommandObject};
-				# print Dumper( $co );
+				# print Dumper( $co, $user );
 				if ( $co )
 				{
 					# Execute the command...
-					eval { $co->execute( $bot, $user, $args->{params}, $cmd ) };
+					eval { $co->execute( $bot, $user, $args->{params}, $cmd, $args->{params_array} ) };
 
 					# and complain if there is an error.
-					$_ = "Error executing command '". $cmd->{Name}. "': $@",
+					$_ = "Error executing command '". $cmd->{Name}. ".", #': $@",
 					$bot->send_chatter( $_ ),
-					$bot->raise_event( 'notice', { bot => $bot, message => $_ } )
+					$bot->raise_event( 'notice', { bot => $bot, message => $_ } ),
+					print "$_ $@"
 						if $@;
 				} 
 			}

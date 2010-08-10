@@ -20,12 +20,12 @@
 		<!-- See more about that in installation instructions. -->	
 		
 		<!-- Advertised Server Name, and optional password -->	
-		<Name>DSA Public Bot Test</Name>
+		<Name>FancyBot 0.3 Test</Name>
 		<Password></Password>
 		
 		
 		<!-- Options -->
-		<AdvertiseThisGame>0</AdvertiseThisGame>
+		<AdvertiseThisGame>1</AdvertiseThisGame>
 		<AllowJoinInProgress >1</AllowJoinInProgress>
 		<DeadMechsCantSee>1</DeadMechsCantSee>
 		<DeadMechsCantTalk>1</DeadMechsCantTalk>
@@ -119,15 +119,18 @@
 	-->
 	
 	<PlugIns>
-		<PlugIn>Eliza</PlugIn>
+		
 		<PlugIn>Logger</PlugIn>
 		<PlugIn>Comstar</PlugIn>
 		<PlugIn>Commands</PlugIn>
 		<PlugIn>Security</PlugIn>
 		<PlugIn>Stats</PlugIn>
+		<PlugIn>Eliza</PlugIn>
 		<PlugIn>Annotator</PlugIn>
 		<PlugIn>Autobot</PlugIn>
 		<PlugIn>KickBan</PlugIn>
+		<PlugIn>GameCycle</PlugIn>
+		<PlugIn>Vote</PlugIn>
 	</PlugIns>	
 	
 	

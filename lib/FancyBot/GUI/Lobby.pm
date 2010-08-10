@@ -23,7 +23,19 @@ has _maps =>
 sub update_gui
 {
 	my $self = shift;
-	$self->get_control('btnAddBot')->disable;
+
+	my @windows = FancyBot::GUI::GetChildWindows( $self->bot->main_hwnd );
+	
+	for ( my $i = 0; $i<24; $i++ )
+	{
+		my $hm = $windows[83+$i];
+		my $ht = $windows[120+$i];
+		my $ps = sprintf( "%02d", $i+1);
+				
+		FancyBot::GUI::WMSetText( $hm, "M$ps" );
+		FancyBot::GUI::WMSetText( $ht, "T$ps" );
+	}
+
 	FancyBot::GUI::Watcher::start( (FancyBot::GUI::GetChildWindows( $self->bot->main_hwnd ))[80] );
 }
 
@@ -42,14 +54,14 @@ sub iplayer_info
 sub launch {
 	my $self   = shift;
 	my $ohwnd  = FancyBot::GUI::GetForegroundWindow();
-	PushChildButton( $self->bot->main_hwnd, 'LAUNCH' );
+	FancyBot::GUI::PushChildButton( $self->bot->main_hwnd, 'LAUNCH' );
 	FancyBot::GUI::SetForegroundWindow( $ohwnd );
 }
 
 sub stop_map {
 	my $self   = shift;
 	my $ohwnd  = FancyBot::GUI::GetForegroundWindow();
-	PushChildButton( $self->bot->main_hwnd, 'STOP' );
+	FancyBot::GUI::PushChildButton( $self->bot->main_hwnd, 'STOP' );
 	FancyBot::GUI::SetForegroundWindow( $ohwnd );
 }
 
@@ -87,7 +99,24 @@ sub clan
 	return;
 }
 
+sub tag
+{
+	my $self   = shift;
+	my $search = shift;
+	my @clans  = @_;
+	
+	for my $clan ( @clans )
+	{
+		my $n = $clan->{Name};
+		my $m = quotemeta($clan->{Tag});
+		my $s = $clan->{Tag}; # $s =~ s/[^A-Z]+//gi;
 
+		return $s 
+			if lc($search) eq lc($n) || $search =~ /^$m/i || $search =~ /\b$s\b/i;
+	}
+	
+	return;
+}
 sub clan_members
 {
 	my $self = shift;

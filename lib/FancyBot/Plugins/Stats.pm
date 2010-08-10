@@ -49,12 +49,18 @@ has events =>
 		'game_start' => sub 
 		{
 			my $bot    = shift->{bot} || die "No bot reference";
-			print "DEBUG PlayerInfo Updated.\n";
 			return 1;
 		},
 		'game_stop' => sub 
 		{
 			my $bot    = shift->{bot} || die "No bot reference";
+			
+			foreach my $user ( values %{ $bot->users } )
+				{
+				$user->is_connected( 0 )
+					if $user->is_bot;
+			}
+			
 			return 1;
 		},
 		'player_join' => sub 
@@ -65,19 +71,26 @@ has events =>
 		},
 		'player_connect' => sub 
 		{
-			# Make sure we got a bot reference
 			my $args  = shift;
 			my $bot    = $args->{bot} || die "No bot reference";
-			my $user   = $bot->user( $args->{user} );
-			print Dumper( $user );
+
+			my $user   = $bot->connect_user( $args->{player_name} );
+
+			$user->times_connected( $user->times_connected+1 );
+			$user->is_connected( 1 );
+
 			return 1;
 		},
 		'player_disconnect' => sub 
 		{
-			# Make sure we got a bot reference
-			my $bot    = shift->{bot} || die "No bot reference";
+			my $args  = shift;
+			my $bot    = $args->{bot} || die "No bot reference";
+			my $user   = $bot->user( $args->{player} );
+			
+			$user->is_connected( 0 );
 			return 1;
 		},
+		
 		'player_left' => sub 
 		{
 			# Make sure we got a bot reference
@@ -102,10 +115,7 @@ has events =>
 			
 			if ( $text =~ /^(.+) has connected/ )
 			{
-				my $player = $bot->user( $1 ); 
-				$player->times_connected( $player->times_connected + 1 );
-				
-				$bot->raise_event( 'player_connect', { bot => $bot, player => $player } );
+				$bot->raise_event( 'player_connect', { bot => $bot, player_name => $1} );
 			}
 			elsif ( $text =~ /^(.+) has left/ )
 			{
@@ -136,24 +146,38 @@ has events =>
 			elsif ( $text =~ /^(.+) Destroyed (.+)/ )
 			{
 				my $player = $bot->user( $1 );
-				# print Dumper( $player );
+				my $victim = $bot->user( $2 );
+			
+				# could also be a turret or a tank
+				# make sure we dont count that
+				unless ( $victim )
+				{
+					$bot->raise_event( 'turret_destroyed', { bot => $bot, player => $player } )
+						if $2 eq "a turret";
+
+					$bot->raise_event( 'tank_destroyed', { bot => $bot, player => $player } )
+						if $2 eq "Demolisher";
+						
+					return 1;
+				}
+				
 				$player->kills_this_match( $player->kills_this_match + 1 );
 				$player->current_kill_streak( $player->current_kill_streak + 1 );
 				$player->kills_overall( $player->kills_overall + 1 );
 				$player->current_death_streak( 0 ); 
-				
+
 				if ( $player->current_kill_streak > $player->longest_kill_streak )
 				{
 					$player->longest_kill_streak( $player->current_kill_streak );
 				}
-				
-				
-				my $victim = $bot->user( $2 );
+
+
+
 				$victim->deaths_this_match( $victim->deaths_this_match + 1 );
 				$victim->current_death_streak( $victim->current_death_streak + 1 );
 				$victim->deaths_overall( $victim->deaths_overall + 1 );
 				$victim->current_kill_streak( 0 ); 
-				
+
 				if ( $victim->current_death_streak > $victim->longest_death_streak )
 				{
 					$victim->longest_death_streak( $victim->current_death_streak );
@@ -161,7 +185,7 @@ has events =>
 
 				print "[KILLER] player => ". $player->name. ", kills => ". $player->kills_this_match. ", deaths => ". $player->deaths_this_match. ", killz => ". $player->current_kill_streak. ", deathz => ". $player->current_death_streak. "\n";
 				print "[VICTIM] player => ". $victim->name. ", kills => ". $victim->kills_this_match. ", deaths => ". $victim->deaths_this_match. ", killz => ". $victim->current_kill_streak. ", deathz => ". $victim->current_death_streak. "\n";
-				
+
 				if ( !1 ) 
 				{
 					$bot->raise_event( 'player_team_kill', { 
@@ -189,7 +213,7 @@ has events =>
 						player => $player, 
 						victim => $victim 
 					} ); # or team_kill
-				}
+				}			
 			}
 			
 			return 1;

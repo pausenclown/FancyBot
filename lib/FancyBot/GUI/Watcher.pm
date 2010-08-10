@@ -1,19 +1,18 @@
 package FancyBot::GUI::Watcher;
 
-use threads;
-use threads::shared;
-
 use warnings;
 use strict;
 
-use Win32::GuiTest qw( GetListContents );
+use threads;
+use threads::shared;
+
 use JSON;
+use File::Slurp qw( read_file write_file );
+use Win32::GuiTest qw( GetListContents );
 use Data::Dumper;
 
-our $listbox_dirty  : shared;
-our $last_update    : shared;
-our %nplayer_info   : shared;
-our %iplayer_info   : shared;
+our $last_update : shared;
+our %json;
 
 sub start
 {
@@ -27,26 +26,19 @@ sub start
 			while (1) {
 				my @list; eval {
 					@list = GetListContents( $hwnd );
-				};
-				
-				next if $listbox_dirty;
+				}; # print Dumper( \@list );
 	
 				my ($players, $iplayers) = parse_player_list( @list );
-	
-				if ( $players ) 
+				
+				if ( $players )
 				{
-					my $data = to_json( $players );
-					my $idata = to_json( $iplayers );
+					eval {
+						write_file( "tmp/player_info.$hwnd", to_json( [$players, $iplayers] ) );
+						$last_update = time;
+					};
 					
-					lock( %nplayer_info ); 
-					lock( %iplayer_info );
-					
-					$nplayer_info{$hwnd} = $data;
-					$iplayer_info{$hwnd} = $idata;
-					
-					$last_update = time;
-					
-					$listbox_dirty = 0;
+					print "[WARN] Could not write playerinfo file: $@\n"
+						if $@;
 				}
 			}
 		},
@@ -55,28 +47,36 @@ sub start
 }
 
 
-sub player_info {
-	my $hwnd  = shift;
+sub player_info 
+{
+	my $hwnd  = shift || die "No handle for player_info!\n";
 	my $index = shift;
-	my $data  = $nplayer_info{$hwnd};
-	
-	return {} unless $data;
-	
-	$data = from_json( $data );
 
-	return $index ? $data->{ $index } : $data;
+	if ( -e "tmp/player_info.$hwnd" )
+	{
+		$json{$hwnd} = from_json( read_file( "tmp/player_info.$hwnd" ) );
+		unlink( "tmp/player_info.$hwnd" );
+	}
+	
+	return {} unless $json{$hwnd};
+	
+	return $index ? $json{$hwnd}->[0]->{ $index } : $json{$hwnd}->[0];
 }
 
-sub iplayer_info {
-	my $hwnd  = shift;
+sub iplayer_info 
+{
+	my $hwnd  = shift || die "No handle for player_info!\n";
 	my $index = shift;
-	my $data  = $iplayer_info{$hwnd};
-	
-	return [] unless $data;
-	
-	$data = from_json( $data );
 
-	return $index ? $data->[ $index ] : $data;
+	if ( -e "tmp/player_info.$hwnd" )
+	{
+		$json{$hwnd} = from_json( read_file( "tmp/player_info.$hwnd" ) );
+		unlink( "tmp/player_info.$hwnd" );
+	}
+	
+	return {} unless $json{$hwnd};
+	
+	return $index ? $json{$hwnd}->[1]->[ $index ] : $json{$hwnd}->[1];
 }
 
 sub parse_player_list
@@ -100,7 +100,8 @@ sub parse_player_list
 		return unless 
 			$record[3] =~ /^\d+\.\d$/ &&
 			$record[4] =~ /^\d+k$/ &&
-			$record[6] =~ /^(Accepted|Ready|Denied)$/;
+			1;
+			# $record[6] =~ /(Accepted|Ready|Denied)/;
 
 		
 		$record[3] =~ s/\..+//;

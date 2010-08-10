@@ -18,13 +18,18 @@ sub start_server
 	# read configuration file
 	$self->{config} = XMLin( 'conf/FancyBot.xml', SuppressEmpty => '')
 		unless keys %{$self->{config}};
-	
+		
 	# load plugins as configured
 	$self->load_plugins;
+	
+	
 
 	$self->raise_event( 'starting_server', { bot =>  $self } );
 	$self->raise_event( 'notice', { bot => $self, message =>  "Starting Dedicated Server..." } );
 	
+	
+	$self->connect_user( $self->{config}->{Server}->{BotName} );
+		
 	# create a process object for the server
 	my $process;
 	my $mercs_path = $self->config->{'Server'}->{'PathToMercs'} || '.';
@@ -50,11 +55,11 @@ sub start_server
 		
 	$self->raise_event( 'server_started', { bot => $self } );
 	
-	
+		
 	$self->raise_event( 'notice', {  bot => $self, message =>  "Initializing screen 1/3..." } );
 	
 	$self->screen( FancyBot::GUI->new( bot => $self )->start_screen );
-	print Dumper( $self->screen->control_map );
+	
 	$self->raise_event( 'notice', { bot => $self, message =>  "Initializing screen 2/3..." } );
 	$self->screen->next;
 
@@ -88,7 +93,7 @@ sub load_plugins
 		if ( -e "conf/${plugin_name}.xml" )
 		{
 			my $lconfig = XMLin( "conf/${plugin_name}.xml", SuppressEmpty => '' );
-			
+
 			for ( keys %$lconfig )
 			{
 				

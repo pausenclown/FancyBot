@@ -32,4 +32,11 @@ sub is_visible
 	return FancyBot::GUI::IsWindowStyle( $self->hwnd, $self->constants->{WS_VISIBLE} );
 }
 
+sub set_focus
+{
+	my $self = shift;
+	return FancyBot::GUI::SetFocus( $self->hwnd );
+}
+
+
 1;

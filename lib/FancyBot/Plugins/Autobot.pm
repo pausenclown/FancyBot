@@ -19,29 +19,26 @@ has events =>
 		{
 			# Fetch arguments
 			my $args  = shift;
-			
+
 			# Make sure we got a bot reference
-			my $bot  = $args->{bot}         || die 'No bot reference';
-		
-			my $mecha = $bot->pending_mech_assignments;
-			my $teama = $bot->pending_team_assignments;
-			
-			print Dumper ( ["assignments", $mecha, $teama] );
-			
-			if ( @$teama )
+			my $bot  = $args->{bot} || die 'No bot reference';
+
+			if ( @{ $bot->pending_team_assignments } )
 			{
-				for ( @$teama )
+				while ( @{ $bot->pending_team_assignments } )
 				{
-					$bot->select_team_for( $_->[0], $_->[1]  );
+					my $assignment = shift @{ $bot->pending_team_assignments };
+					$bot->select_team_for( @$assignment  );
 				}					
 				return;
 			}
 			
-			if ( @$mecha )
+			if ( @{ $bot->pending_mech_assignments } )
 			{
-				for ( @$mecha )
+				for ( @{ $bot->pending_mech_assignments } )
 				{
-					$bot->select_mech_for( $_->[0], $_->[1]  );
+					my $assignment = shift @{ $bot->pending_mech_assignments };
+					$bot->select_mech_for( @$assignment );
 				}					
 				return;
 			}

@@ -2,6 +2,25 @@ package FancyBot::Commands;
 
 use Moose::Role;
 use Data::Dumper;
+use Text::Balanced qw( extract_delimited );
+
+
+sub process_command
+{
+	my $self = shift;
+	my $txt  = shift;
+	my $user = shift;
+
+	my ( $command, $params, $pparams ) = $self->parse_command( $txt );
+
+	$self->raise_event( 'command', { 
+		bot => $self, 
+		command => $command, 
+		user => $user, 
+		params => $params, 
+		params_array => $pparams 
+	} );
+}
 
 sub is_command
 {
@@ -16,21 +35,64 @@ sub parse_command
 {
 	my $self = shift;
 	my $txt   = shift;
-	
-	$txt =~ s/^-list (maps|players|bots|types)/-list-$1/;
-	$txt =~ s/^-bot add/-bot-add/;
-	$txt =~ s/^-add bot/-bot-add/;
-	$txt =~ s/^-bot assign team/-bot-assign-team/;
-	$txt =~ s/^-bot team/-bot-assign-team/;
-	$txt =~ s/^-bot assign mech/-bot-assign-mech/;
-	$txt =~ s/^-bot mech/-bot-assign-mech/;
+
+	$txt = $self->replace_aliases( $txt );
 			
 	if ( $txt =~ /^-([a-z-]+) ?(.*)/ )
 	{
-		return ($1, $2);
+		my ( $command, $args, $argsa, @args ) = ( $1, $2, $2 );
+		
+		while ( $argsa )
+		{
+			if ( my $sextracted = extract_delimited( $argsa, "'" ) )
+			{
+				push @args, substr($sextracted,1,length($sextracted)-2);
+			}
+			elsif ( my $dextracted = extract_delimited( $argsa, '"' ) )
+			{
+				push @args, substr($dextracted,1,length($dextracted)-2);
+			}
+			elsif ( $argsa =~ s/([^ ]+) // )
+			{
+				push @args, $1;
+			}
+			else
+			{
+				push @args, $argsa; $argsa = '';
+			}
+		}
+		
+		return ( $command, $args, \@args );
 	}
 	
 	return;
+}
+
+sub replace_aliases
+{
+	my $self = shift;
+	my $txt  = shift;
+	
+	my %aliases;
+	
+	for my $command ( @{ $self->config->{Commands}->{Command} } )
+	{
+		if ( $command->{Alias} )
+		{
+			my @aliases = ref $command->{Alias} ? @{ $command->{Alias} }  : ( $command->{Alias} );
+			
+			for ( @aliases )
+			{
+				$aliases{ $_ } = $command->{Name};
+			}
+		}
+	}
+	
+	my $re_alias = '^-('. join( '|', keys %aliases ). ')';
+	
+	$txt =~ s/$re_alias/-$aliases{$1}/g;
+
+	return $txt;
 }
 
 sub command

@@ -104,8 +104,8 @@ has events =>
 			my $args  = shift;
 			
 			# Make sure we got a bot reference
-			my $bot       = $args->{bot}      || die "No bot reference";
-			my $player    = $args->{player}   || die "No player reference";
+			my $bot       = $args->{bot}         || die "No bot reference";
+			my $player    = $args->{player_name} || die "No player reference";
 
 			my @greetings = ref $bot->config->{Eliza}->{Greetings}->{Greeting} eq "ARRAY" ? 
 			                @{ $bot->config->{Eliza}->{Greetings}->{Greeting} } :
@@ -114,7 +114,7 @@ has events =>
 			for my $greeting ( @greetings )
 			{
 				# See if the question matches the configured subject
-				my $re = $greeting->{Match}; if ( $player->name =~ /${re}/ )
+				my $re = $greeting->{Match}; if ( $player =~ /${re}/ )
 				{
 					# Depending on the XML we sometimes get a string or an array
 					my $messages = ref $greeting->{Message} ? 
@@ -123,7 +123,7 @@ has events =>
 					
 					# Choose a random answer
 					my $msg = $messages->[ int( rand( scalar @$messages ) ) ];
-					$msg =~ s/%player/$player->name/eg;
+					$msg =~ s/%player/$player/g;
 																	
 					# Say Hi
 					sleep(5);

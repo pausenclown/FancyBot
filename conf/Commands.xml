@@ -11,6 +11,17 @@
 	</Command>
 
 	<Command>
+		<Name>next</Name>
+		<Example>-next</Example>
+		<Help>Goes to the next map in the mapcycle.</Help>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>1</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+		<Alias>iiek</Alias>
+	</Command>
+
+	<Command>
 		<Name>bot-add</Name>
 		<Example>-bot-add name Rufus mech Atlas</Example>
 		<Help></Help>
@@ -252,9 +263,27 @@
 		<Help>Starts a vote to execute a admin command. Syntax is '-vote [command] [command_args]?'</Help>
 		<Example>-vote stop</Example>
 		<Example>-vote map Alpine Pro</Example>
-		<IsImplemented>0</IsImplemented>
+		<IsImplemented>1</IsImplemented>
 		<IsAdminCommand>0</IsAdminCommand>
-		<IsSuperAdminCommand>1</IsSuperAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>yes</Name>
+		<Help>Agrees to the current vote.</Help>
+		<Example>-yes</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
+		<IsVotableCommand>0</IsVotableCommand>
+	</Command>
+	<Command>
+		<Name>no</Name>
+		<Help>Disagrees to the current vote.</Help>
+		<Example>-no</Example>
+		<IsImplemented>1</IsImplemented>
+		<IsAdminCommand>0</IsAdminCommand>
+		<IsSuperAdminCommand>0</IsSuperAdminCommand>
 		<IsVotableCommand>0</IsVotableCommand>
 	</Command>
 	<Command>

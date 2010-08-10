@@ -1,6 +1,7 @@
 package FancyBot::GUI::Lobby::Types;
 
 use Moose::Role;
+use Data::Dumper;
 
 sub game_type {
 	my $self   = shift;
@@ -27,5 +28,26 @@ sub select_game_type {
 		cu    => 'Custom Undefined',
 	});
 }
+
+sub select_random_game_type
+{
+	my $self  = shift;
+	my $gtype = shift || '*';
+	
+	if ( $gtype eq "*" )
+	{
+		my $gtypes = [ $self->game_types ];
+		$gtype = $gtypes->[ int(rand(scalar @$gtypes)) ];
+	}
+	elsif ( $gtype =~ /,/ )
+	{
+		my $gtypes = [ split /,/, $gtype ]; 
+		$gtype = $gtypes->[ int(rand(scalar @$gtypes)) ];
+		# print Dumper( $gtypes, $gtype );
+	}
+	
+	return $self->select_game_type( $gtype );
+}
+
 
 1;

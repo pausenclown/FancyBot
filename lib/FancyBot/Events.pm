@@ -36,11 +36,23 @@ sub watch_loop
 	{
 		if ( $self->is_server_alive )
 		{
-			# $self->update_player_info;
-			$self->raise_event( 'pulse', { bot => $self } );
-			$self->do_events;
+			eval {
+				$self->update_player_info;
+			};
 
-			sleep( $self->config->{'Monitor'}->{'EventLoopInterval'} );
+			$self->raise_event( 'warning', { bot => $self, message => $@ } )
+				if $@;
+
+			eval 
+			{
+				$self->raise_event( 'pulse', { bot => $self } );
+				$self->do_events;
+
+				sleep( $self->config->{'Monitor'}->{'EventLoopInterval'} );
+			};
+
+			$self->raise_event( 'error', { bot => $self, message => $@ } )
+				if $@;
 		}
 		else
 		{
@@ -100,8 +112,7 @@ sub do_events
 
 			if ( $self->is_command( $text ) )
 			{
-				my ( $command, $params ) = $self->parse_command( $text );
-				$self->raise_event( 'command', { bot => $self, command => $command, user => $user, params => $params } );
+				$self->process_command( $text, $user );
 			}
 			else
 			{

@@ -40,6 +40,21 @@ has events =>
 			$bot->config->{Logger}->{ErrorLogFile}->print( '[ERROR:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
 			exit;
 		},
+		'error' => sub {
+			my $args  = shift;
+			my $bot   = $args->{bot}     || confess "No bot reference";
+
+			print '[ERROR] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{ErrorLogFile}->print( '[ERROR:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
+		},
+
+		'warning' => sub {
+			my $args  = shift;
+			my $bot   = $args->{bot}     || confess "No bot reference";
+
+			print '[WARNING] ', $args->{message}, "\n";
+			$bot->config->{Logger}->{ErrorLogFile}->print( '[WARNING:', strftime('%x %X', localtime), '] ', $args->{message}, "\n" );
+		},
 		'chatter' => sub {
 			my $args  = shift;
 			my $bot   = $args->{bot}     || confess "No bot reference";
@@ -50,7 +65,7 @@ has events =>
 		'command' => sub {
 			my $args  = shift;
 			my $bot   = $args->{bot}     || confess "No bot reference";
-			my $cmd   = $args->{command} || confess "No command";
+			my $cmd   = $args->{command} || '';
 			my $prm   = $args->{params};
 			my $user  = $args->{user};		
 

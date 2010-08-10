@@ -13,6 +13,8 @@ sub select_weather {
 }
 
 
+
+
 sub select_heat {
 	my $self   = shift;
 	my $type   = shift;
@@ -40,6 +42,26 @@ sub select_daytime {
 	
 	return $self->get_control('tcmbTimeOfDay')->set_value( $type );
 }
+
+sub select_random_daytime
+{
+	my $self  = shift;
+	my $dtime = shift || '*';
+	
+	if ( $dtime eq "*" )
+	{
+		my $dtimes = [ 'Day', 'Night' ];
+		$dtime = $dtimes->[ int(rand(scalar @$dtimes)) ];
+	}
+	elsif ( $dtime =~ /,/ )
+	{
+		my $dtimes = [ split /,/, $dtime ];
+		$dtime = $dtimes->[ int(rand(scalar @$dtimes)) ];
+	}
+	
+	return $self->select_daytime( $dtime );
+}
+
 
 sub select_time {
 	my $self   = shift;
@@ -89,6 +111,26 @@ sub select_stock {
 	return $self->get_control('tcmbStockMechs')->set_value( $type );
 }
 
+
+sub select_random_stock
+{
+	my $self  = shift;
+	my $stock = shift || '*';
+	
+	if ( $stock eq "*" )
+	{
+		my $stocks = [ 'On', 'Off' ];
+		$stock = $stocks->[ int(rand(scalar @$stocks)) ];
+	}
+	elsif ( $stock =~ /,/ )
+	{
+		my $stocks = [ split /,/, $stock ];
+		$stock = $stocks->[ int(rand(scalar @$stocks)) ];
+	}
+	
+	return $self->select_stock( $stock );
+}
+
 sub select_radar {
 	my $self   = shift;
 	my $type   = shift;
@@ -101,6 +143,26 @@ sub select_radar {
 	return $self->get_control('tcmbRadar')->set_value( $type );
 }
 
+
+sub select_random_radar
+{
+	my $self  = shift;
+	my $radar = shift || '*';
+	
+	if ( $radar eq "*" )
+	{
+		my $radars = [ 'Advanced', 'Simple', 'Team Only', 'No Radar' ];
+		$radar = $radars->[ int(rand(scalar @$radars)) ];
+	}
+	elsif ( $radar =~ /,/ )
+	{
+		my $radars = [ split /,/, $radar ];
+		$radar = $radars->[ int(rand(scalar @$radars)) ];
+	}
+	
+	return $self->select_radar( $radar );
+}
+
 sub select_visibility {
 	my $self   = shift;
 	my $type   = shift;
@@ -111,6 +173,25 @@ sub select_visibility {
 	$type = 'Light Fog' if $type =~ /^l(ight)? *(fog)?$/i;
 
 	return $self->get_control('tcmbVisibility')->set_value( $type );
+}
+
+sub select_random_visibility
+{
+	my $self  = shift;
+	my $visibility = shift || '*';
+	
+	if ( $visibility eq "*" )
+	{
+		my $visibilitys = [ 'Default', 'Clear', 'Light Fog', 'Heavy Fog' ];
+		$visibility = $visibilitys->[ int(rand(scalar @$visibilitys)) ];
+	}
+	elsif ( $visibility =~ /,/ )
+	{
+		my $visibilitys = [ split /,/, $visibility ];
+		$visibility = $visibilitys->[ int(rand(scalar @$visibilitys)) ];
+	}
+	
+	return $self->select_visibility( $visibility );
 }
 
 sub select_frag_limit
