@@ -152,23 +152,33 @@
 		<!-- Bot Units, when editing, also edit corresponding bots in Autobot.xml -->
 		
 		<Unit>
-			<Match>^\*ATB\*</Match>
+			<Match>^ATB </Match>
 			<Name>Autobots</Name>
 		</Unit>
 
 		<Unit>
-			<Match>^\*DCT\*</Match>
+			<Match>^DCT </Match>
 			<Name>Decepticons</Name>
 		</Unit>
 		
 		<Unit>
-			<Match>^\*CMR\*</Match>
+			<Match>^CMR </Match>
 			<Name>Clan Mole Rat</Name>
 		</Unit>
 		
 		<Unit>
-			<Match>^\*CSV\*</Match>
+			<Match>^CSV </Match>
 			<Name>Clan Super Villains</Name>
+		</Unit>
+		
+		<Unit>
+			<Match>^SFI </Match>
+			<Name>Springfield Inhabitants</Name>
+		</Unit>
+		
+		<Unit>
+			<Match>^IRM </Match>
+			<Name>Iron Maidens</Name>
 		</Unit>
 		
 		<!-- Human Units -->
@@ -186,6 +196,11 @@
 		<Unit>
 			<Match>^CBS</Match>
 			<Name>Clan Blood Spirit</Name>
+		</Unit>
+		
+		<Unit>
+			<Match>\.falcon</Match>
+			<Name>Clan Jade Falcon</Name>
 		</Unit>
 		
 		<Unit>

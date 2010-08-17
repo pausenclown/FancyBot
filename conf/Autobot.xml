@@ -945,6 +945,162 @@
       <Variant>Black Lanner:*</Variant>
 	  <Variant>Cauldron Born:*</Variant>
     </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Iron Maiden</Name>
+      <Variant>*:*</Variant>
+    </Bot>	
+    <Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Moonchild</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+    <Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Wrathchild</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Mercenary</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Fallen Angel</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Nomad</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Clansman</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Wickerman</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Fugitive</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Apparition</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Trooper</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Clairvoyant</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Iron Maidens</Team>
+      <Name>Unbeliever</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Homer Simpson</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Marge Simpson</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Lisa Simpson</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Bart Simpson</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Maggie Simpson</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Ned Flanders</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Crusty The Clowns</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Sideshow Bob</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Clancey Wiggum</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Seymour Skinner</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Apu Nahasapeemapetilon</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Barney Gumble</Name>
+      <Variant>*:*</Variant>
+    </Bot>
+	<Bot>
+      <Level>9</Level>
+      <Team>Springfield Inhabitants</Team>
+      <Name>Troy McClure</Name>
+      <Variant>*:*</Variant>
+    </Bot>
   </Bots>
   <Teams>
     <Team>
@@ -962,6 +1118,14 @@
     <Team>
       <Name>Clan Super Villains</Name>
       <Tag>CSV</Tag>
+    </Team>
+    <Team>
+      <Name>Iron Maidens</Name>
+      <Tag>IRM</Tag>
+    </Team>
+    <Team>
+      <Name>Springfield Inhabitants</Name>
+      <Tag>SFI</Tag>
     </Team>
     <Team>
       <Name>DarkStar Alliance</Name>
