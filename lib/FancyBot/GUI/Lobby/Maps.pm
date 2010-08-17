@@ -1,6 +1,7 @@
 package FancyBot::GUI::Lobby::Maps;
 
 use Moose::Role;
+use Data::Dumper;
 
 sub map {
 	my $self   = shift;
@@ -10,13 +11,24 @@ sub map {
 sub maps {
 	my $self   = shift;
 	my $search = shift;
+	my @maps   = $self->get_control( 'mpbMaps')->get_list( $self->map, $search );
+
+	# Due to a glitch in the Tangle map it will add 4 bots when selected
+	# This breaks the bot handling code so strip it
+	@maps = grep { !/^tangle/i } @maps if $self->game_type eq "Team Battle";
 	
-	return $self->get_control( 'mpbMaps')->get_list( $self->map, $search );
+	return @maps;
 }
 
 sub select_map {
 	my $self   = shift;
 	my $search = shift;
+
+
+	# Due to a glitch in the Tangle map it will add 4 bots when selected
+	# This breaks the bot handling code so strip it
+	return 0 if $search =~/^tangle/i && $self->game_type eq "Team Battle";
+
 	print "SM $search\n";
 	my @candidates = $self->maps( $search );
 	
