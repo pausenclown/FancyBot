@@ -32,17 +32,20 @@ has control_map =>
 		cbHeatManagement             => 26,  cbFriendlyFire               => 27,  cbSplashDamage               => 28,
 		cbForceRespawn               => 29,  cbDeadMechsCantTalk          => 30,  cbDeadMechsCantSee           => 31, 
 		ctbChat                      => 79,  cmbMaxNumberOfPlayers        => 35,  cbLeaveSlotForHuman          => 37,  
-		cmbRadarMode                 => 43,	 tcbLockServer                => 53,  txtMaximumBotLevel           => 160,
-		tcmbGameTypes                => 55,	 mpbMaps                      => 57,  tcmbVisibility               => 59,
-		txtFragLimit                 => 64,	 tcbNumberOfWaves             => 65,  tcmbNumberOfWaves            => 66,
+		cmbRadarMode                 => 43,	 txtMaximumBotLevel           => 160, tcmbGameTypes                => 55,
+		mpbMaps                      => 57,  tcmbVisibility               => 59,  txtFragLimit                 => 64,	 
 		tcmbWeather                  => 72,	 tcmbTimeOfDay                => 73,  tcmbTimeLimit                => 74,
 		tcmbStockMechs               => 75,  tcmbMaxTonnage               => 76,  tcmbRadar                    => 77,
-		txtGameBotName               => 115, txtBotLevel                  => 116, cmbVariant                   => 117,
+		txtGameBotName               => 115, txtevel                      => 116, cmbVariant                   => 117,
 		cmbBotTeam                   => 118, cbFillGameWithBots           => 155, cbBotLimit                   => 156, 
 		txtBotLimit                  => 157, cbBotLevel                   => 158, txtMinimumBotLevel           => 159,
 		cbBotsOffAt                  => 161, txtBotsOffAt                 => 162, txtChat                      => 172,
-		tcmbMaxCBills                => 174, tcbFragLimit                 => 63,  txtTimeRemaining             => 150,
+		tcmbMaxCBills                => 174, txtTimeRemaining             => 150, tcmbNumberOfWaves            => 67,
 		txtCountdown                 => 149, lstOverwiew                  => 80,
+				
+		tcbFragLimit                 => [63, 'Frag Limit'],
+		tcbLockServer                => [53, 'Lock Server'],
+		tcbNumberOfWaves             => [65, '# of Waves'],
 		
 		btnQuit                      => [2, 'QUIT'],		btnHost                      => [8, 'HOST'],
 		btnBack                      => [52, 'BACK'],       btnEditRestrictions          => [33, 'EDIT RESTRICTIONS'],
@@ -170,7 +173,7 @@ sub create_control
 	}
 	if ( $control =~ /^tcb/ )
 	{
-		return $self->controls->{ $control } = FancyBot::GUI::Controls::TrickyCheckBox->new( name => $control, hwnd => $hwnd );
+		return $self->controls->{ $control } = FancyBot::GUI::Controls::TrickyCheckBox->new( name => $control, hwnd => $hwnd, caption => $self->get_window_caption( $control ) );
 	}
 	if ( $control =~ /^btn/ )
 	{

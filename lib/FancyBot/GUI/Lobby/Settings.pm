@@ -26,7 +26,7 @@ sub select_heat {
 sub select_lock {
 	my $self   = shift;
 	my $type   = shift;
-	
+	print "sELLOCK $type\n";
 	return $self->get_control('tcbLockServer')->set_value( $type );
 	
 	return 1;
@@ -220,14 +220,13 @@ sub select_waves
 	my $cmb   = $self->get_control( 'tcmbNumberOfWaves');
 	
 	$cb->set_value( 0 ), $cmb->disable, return 1
-		 if !$type || $type =~ /^(off|false|0)$/i;
+		 if !$type || $type =~ /^(off|false)$/i;
 
 
 	$cb->set_value( 1 ), $cmb->enable, return 1
-		if $type =~ /^(true|on|1)$/i;
+		if $type =~ /^(true|on)$/i;
 
-	
-	$cb->set_value( 1 ), $cmb->enable, $cmb->set_value( $type ); return 1;
+	$cb->set_value( 1 ), sleep(1), $cmb->enable, sleep(1), $cmb->set_value( $type ."W" ); return 1;
 }
 
 
