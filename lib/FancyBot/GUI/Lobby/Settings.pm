@@ -66,13 +66,13 @@ sub select_random_daytime
 sub select_time {
 	my $self   = shift;
 	my $type   = shift;
-
+	
 	$type = $1 if $type =~ /^(\d+)/;
 	$type = 30 unless $type =~ /^\d+/;
 	
-	$type = (grep { $type <= $_ } qw( 1 2 5 10 15 30 60 90 120 ))[-1];
-		
-	return $self->get_control('tcmbTimeLimit')->set_value( $type );
+	$type = (grep { $type >= $_ } qw( 1 2 5 10 15 30 60 90 120 ))[-1];
+	
+	return $self->get_control('tcmbTimeLimit')->set_value( $type . " min." );
 }
 
 sub select_tonnage {
@@ -85,7 +85,7 @@ sub select_tonnage {
 	
 	$type = (grep { $type >= $_ } qw( 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 ))[-1];
 		
-	return $self->get_control('tcmbMaxTonnage')->set_value( $type );
+	return $self->get_control('tcmbMaxTonnage')->set_value( $type . " Tons");
 }
 
 sub select_cbills {
@@ -98,7 +98,7 @@ sub select_cbills {
 	
 	$type = (grep { $type >= $_ } map { $_ * 1000000 } ( 2 .. 35 ))[-1];
 	
-	return $self->get_control('tcmbMaxCBills')->set_value( $type );
+	return $self->get_control('tcmbMaxCBills')->set_value( $type . " C - Bills" );
 }
 
 sub select_stock {

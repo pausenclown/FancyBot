@@ -29,7 +29,6 @@ sub select_map {
 	# This breaks the bot handling code so strip it
 	return 0 if $search =~/^tangle/i && $self->game_type eq "Team Battle";
 
-	print "SM $search\n";
 	my @candidates = $self->maps( $search );
 	
 	@candidates = grep { $_ eq $search } @candidates
@@ -46,12 +45,11 @@ sub select_random_map
 {
 	my $self = shift;
 	my $map  = shift || '*';
-	print "SRM $map\n";
+
 	if ( $map eq "*" )
 	{
 		my $maps = [ $self->maps ];
 		$map = $maps->[ int(rand(scalar @$maps)) ];
-		print "SRM! $map\n";
 	}
 	elsif ( $map =~ /,/ )
 	{
