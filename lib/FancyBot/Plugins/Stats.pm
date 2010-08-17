@@ -153,10 +153,13 @@ has events =>
 				unless ( $victim )
 				{
 					$bot->raise_event( 'turret_destroyed', { bot => $bot, player => $player } )
-						if $2 eq "a turret";
+						if $2 =~ /a turret/i;
 
 					$bot->raise_event( 'tank_destroyed', { bot => $bot, player => $player } )
-						if $2 eq "Demolisher";
+						if $2 =~ /demolisher/i;
+
+					$bot->raise_event( 'friendly_building_destroyed', { bot => $bot, player => $player } )
+						if $2 eq /a friedly building/i;
 						
 					return 1;
 				}
