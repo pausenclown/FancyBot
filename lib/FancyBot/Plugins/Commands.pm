@@ -47,7 +47,15 @@ has events =>
 			# Fetch the config info for the command from the bot, 
 			# step out if the command is not recognized.
 			my $cmd  = $bot->command( $args ) || return;
-			# print Dumper( $cmd );
+			print Dumper( $cmd );
+			
+			$bot->send_chatter("Cannot execute '". $cmd->{Name}. " while in-game. Stop the game first."),
+			return 1
+				if $bot->in_game && !$cmd->{InGame};
+				
+			$bot->send_chatter("Cannot execute '". $cmd->{Name}. " while in lobby. Start the game first."),
+			return 1
+				if !$bot->in_game && !$cmd->{InLobby};
 			
 			# Fetch a FancyBot::User Object from the bot
 			my $user = $bot->user( $args->{user} );

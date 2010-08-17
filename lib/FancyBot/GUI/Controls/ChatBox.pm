@@ -36,7 +36,6 @@ sub _send_value {
 	my $msg    = shift;
 	
 	FancyBot::GUI::WMSetText( $self->hwnd, $msg );
-		FancyBot::GUI::SendMessage( $self->hwnd, $EM_SETSEL, length($msg), length($msg));
 
 	while ( my $s = FancyBot::GUI::WMGetText( $self->hwnd ) ) {
 		print "!$s!\n";
