@@ -9,7 +9,7 @@ sub set_value
 	my $self   = shift;
 	my $text   = shift;
 	my $char   = shift || " ";
-	my $length = shift || 100;
+	my $length = shift || 90;
 
 	my $ohwnd  = FancyBot::GUI::GetForegroundWindow();
 	
@@ -36,8 +36,10 @@ sub _send_value {
 	my $msg    = shift;
 	
 	FancyBot::GUI::WMSetText( $self->hwnd, $msg );
+		FancyBot::GUI::SendMessage( $self->hwnd, $EM_SETSEL, length($msg), length($msg));
 
-	while ( FancyBot::GUI::WMGetText( $self->hwnd ) ) {
+	while ( my $s = FancyBot::GUI::WMGetText( $self->hwnd ) ) {
+		print "!$s!\n";
 		FancyBot::GUI::SetForegroundWindow( (FancyBot::GUI::FindWindowLike(0, 'MechWarrior 4 Mercenaries Win32Dedicated Server'))[0] );
 		FancyBot::GUI::SetFocus( $self->hwnd ); FancyBot::GUI::SendKeys("{END}{ENTER}");
 	}
