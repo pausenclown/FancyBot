@@ -47,7 +47,6 @@ has events =>
 			# Fetch the config info for the command from the bot, 
 			# step out if the command is not recognized.
 			my $cmd  = $bot->command( $args ) || return;
-			print Dumper( $cmd );
 			
 			$bot->send_chatter("Cannot execute '". $cmd->{Name}. " while in-game. Stop the game first."),
 			return 1

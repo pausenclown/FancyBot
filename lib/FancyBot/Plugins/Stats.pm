@@ -49,6 +49,17 @@ has events =>
 		'game_start' => sub 
 		{
 			my $bot    = shift->{bot} || die "No bot reference";
+
+			for my $player ( @{ $bot->connected_users_as_list } )
+			{
+				$player->kills_this_match( 0 );
+				$player->current_kill_streak( 0 );
+				$player->deaths_this_match( 0 );
+				$player->current_death_streak( 0 );
+				$player->times_joined_this_match( 0 );
+				$player->suicides_this_match( 0 );
+			}
+
 			return 1;
 		},
 		'game_stop' => sub 
@@ -159,7 +170,7 @@ has events =>
 						if $2 =~ /demolisher/i;
 
 					$bot->raise_event( 'friendly_building_destroyed', { bot => $bot, player => $player } )
-						if $2 eq /a friedly building/i;
+						if $2 =~ /a friedly building/i;
 						
 					return 1;
 				}

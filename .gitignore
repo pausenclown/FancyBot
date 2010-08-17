@@ -7,3 +7,4 @@ login/
 prof.out
 tmp/session
 tmp/session/*
+tmp/player*.*
