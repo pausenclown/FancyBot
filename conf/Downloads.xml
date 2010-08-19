@@ -1,0 +1,3054 @@
+<Downloads>
+    <MapPacks>
+        <MapPack>
+            <Name>NBT1</Name>
+            <Description>Netbattletech Map Pack, CD 1</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=NBT-CD1.exe</Source>
+            <Source>http://www.netbattletech.com/download/nbt-cd/NBT-CD1.exe</Source>
+        </MapPack><MapPack>
+            <Name>NBT2</Name>
+            <Description>Netbattletech Map Pack, CD 2</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=NBT-CD2.exe</Source>
+            <Source>http://www.netbattletech.com/download/nbt-cd/NBT-CD2.exe</Source>
+        </MapPack><MapPack>
+            <Name>BKV</Name>
+            <Description>Black Knight Map Pack</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=BKVMapPack.exe</Source>
+            <Source>http://www.mechwarriorleagues.com/download-files/maps/BKVMapPack.exe</Source>
+        </MapPack><MapPack>
+            <Name>MWL1</Name>
+            <Description>MechWarriorLeague Map Pack 1</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=MWLMapPack1.exe</Source>
+            <Source>http://www.mechwarriorleagues.com/download-files/maps/MWLMapPack1.exe</Source>
+        </MapPack><MapPack>
+            <Name>MWL2</Name>
+            <Description>MechWarriorLeague Map Pack 2</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=MWLMapPack2.exe</Source>
+            <Source>http://www.mechwarriorleagues.com/download-files/maps/MWLMapPack2.exe</Source>
+        </MapPack><MapPack>
+            <Name>MWL3</Name>
+            <Description>MechWarriorLeague Map Pack 3</Description>
+            <Source>http://www.mechwarrior4.net/Downloads/index.php?dir=MapPacksMercs/&amp;file=MWLMapPack3.exe</Source>
+            <Source>http://www.mechwarriorleagues.com/download-files/maps/MWLMapPack3.exe</Source>
+        </MapPack>
+    </MapPacks>
+    <Maps>
+        <Map>
+            <Name>2-Way</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/2-Way.exe&amp;file=2-Way.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Afghanistan</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Afghanistan.exe&amp;file=Afghanistan.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Alpha Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Alpha Mission.exe&amp;file=Alpha Mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Alpha One V1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Alpha_One V1.exe&amp;file=Alpha_One V1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Alpine Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AlpineHolds.exe&amp;file=AlpineHolds.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Alpine Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/alpine_pro_914.exe&amp;file=alpine_pro_914.exe</MW4NET>
+                <MEKTEK />
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Alpine</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Alpine.exe&amp;file=Alpine.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena2.exe&amp;file=AngelArena2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 3</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena3.exe&amp;file=AngelArena3.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 4</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena4.exe&amp;file=AngelArena4.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 5</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena5.exe&amp;file=AngelArena5.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 6</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena6.exe&amp;file=AngelArena6.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena 7</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena7.exe&amp;file=AngelArena7.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Angel Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AngelArena.exe&amp;file=AngelArena.exe</MW4NET>,
+            </Distributors>
+        </Map><Map>
+            <Name>Anvilhead</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Anvilhead.exe&amp;file=Anvilhead.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Apocalypse Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Apocalypse Arena.exe&amp;file=Apocalypse Arena.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Arabian Nights</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ArabianNights.exe&amp;file=ArabianNights.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Arctic Lake M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Arctic Lake 1M.exe&amp;file=Arctic Lake 1M.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Arctic Lake</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ArcticLake.exe&amp;file=ArcticLake.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Arctic Wasteland Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/arcticwastelandassault01.exe&amp;file=arcticwastelandassault01.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Arctic Wasteland</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ArcticWasteland.exe&amp;file=ArcticWasteland.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Arena Egypt</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Arena-Egypt.exe&amp;file=Arena-Egypt.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Arizona H20</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Arizona H20 FULL.exe&amp;file=Arizona H20 FULL.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Asgard</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/asgard.exe&amp;file=asgard.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Aspen</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Aspen Dev.exe&amp;file=Aspen Dev.exe</MW4NET>
+                <MWL1 />
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Astroid01</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Astroid01.exe&amp;file=Astroid01.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Avalon Pro Base</Name>
+            <Distributors>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Avalon Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Avalon Pro.exe&amp;file=Avalon Pro.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Avarice City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/AvariceCity.exe&amp;file=AvariceCity.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Alpine</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Alpine.exe&amp;file=BA Alpine.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Big City</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Blood Pit</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Broken Sky</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Claustrophobia</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Claustrophobia.exe&amp;file=BA Claustrophobia.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Concourse</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Concourse.exe&amp;file=BA Concourse.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Defiance Industries</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA DefianceIndustries.exe&amp;file=BA DefianceIndustries.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Defiance</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Defiance.exe&amp;file=BA Defiance.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Factory</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Factory.exe&amp;file=BA Factory.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Lost City 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Lostcity2.exe&amp;file=BA Lostcity2.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA NightStrike</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA NightStrike.exe&amp;file=BA NightStrike.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Oilspill</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Oilspill.exe&amp;file=BA Oilspill.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Royal Guard City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA RoyalGuardCity.exe&amp;file=BA RoyalGuardCity.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Ruined City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Ruinedcity.exe&amp;file=BA Ruinedcity.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Switchback</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA Switchback.exe&amp;file=BA Switchback.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>BA Urban Chaos</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BA UrbanChaos.exe&amp;file=BA UrbanChaos.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Babylon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Babylon.exe&amp;file=Babylon.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Banzai Boot Campv 2.2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BanzaiBootCampv2.exe&amp;file=BanzaiBootCampv2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Banzai Bootcamp 2.1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/banzaibootcamp2_v1.exe&amp;file=banzaibootcamp2_v1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 10</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField10.exe&amp;file=BattleField10.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 11</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField11.exe&amp;file=BattleField11.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField1.exe&amp;file=BattleField1.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField2.exe&amp;file=BattleField2.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 3</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField3.exe&amp;file=BattleField3.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 4</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField4.exe&amp;file=BattleField4.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 5</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField5.exe&amp;file=BattleField5.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 6</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField6.exe&amp;file=BattleField6.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 7</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField7.exe&amp;file=BattleField7.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 8</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField8.exe&amp;file=BattleField8.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Field 9</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BattleField9.exe&amp;file=BattleField9.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Battle Of St. William SPv6</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/battleofstwilliamSPv6.exe&amp;file=battleofstwilliamSPv6.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Betelgeuse 3</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Big Blue</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Big_Blue.exe&amp;file=Big_Blue.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Big City Dev</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BigCity Dev.exe&amp;file=BigCity Dev.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Big City</Name>
+            <Distributors>
+                <NBT1 />
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Big Islands</Name>
+            <Distributors>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Black Gorge</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/black_gorge1.2.exe&amp;file=black_gorge1.2.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Black Rock</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Blackrock.exe&amp;file=Blackrock.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Blood Pit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Bloodpit.exe&amp;file=Bloodpit.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Boreal Reach</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/boreal Reach.exe&amp;file=boreal Reach.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Braddoks Moon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Braddoks Moon v1.0.exe&amp;file=Braddoks Moon v1.0.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Brain Cache</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/brain_cache.exe&amp;file=brain_cache.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Brawler Pit 1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Brawlerpit01.exe&amp;file=Brawlerpit01.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Brawler Pit 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BrawlerPit2.exe&amp;file=BrawlerPit2.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Broken Sky Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BrokenSkyAssault.exe&amp;file=BrokenSkyAssault.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Broken Sky</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/BrokenSky.exe&amp;file=BrokenSky.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cantina Dev</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Cantina Dev.exe&amp;file=Cantina Dev.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cantina Siege</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cantina</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Canyon Dev</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Canyon Dev.exe&amp;file=Canyon Dev.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Canyon Hold</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CanyonHold.exe&amp;file=CanyonHold.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Canyon</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Capture &amp; Hold 1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Capture&amp;Hold1.exe&amp;file=Capture&amp;Hold1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Capture &amp; Hold 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Capture&amp;Hold2.exe&amp;file=Capture&amp;Hold2.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Capture &amp; Hold 3</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Capture&amp;Hold3.exe&amp;file=Capture&amp;Hold3.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Capture &amp; Hold 4</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Capture&amp;Hold4.exe&amp;file=Capture&amp;Hold4.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Capture &amp; Hold 5</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Capture&amp;Hold5.exe&amp;file=Capture&amp;Hold5.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Carse Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CarsePro.exe&amp;file=CarsePro.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Carse Raid</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CarseRaid.exe&amp;file=CarseRaid.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Carver Delta</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Casperia Valley v1.0</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Casperia Valley v1.0.exe&amp;file=Casperia Valley v1.0.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cavern</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/cavern_v1-hr.exe&amp;file=cavern_v1-hr.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>CBT factory</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/cbt factory.exe&amp;file=cbt factory.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Central Park</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CentralPark.exe&amp;file=CentralPark.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Century Moon V</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Century Moon V.exe&amp;file=Century Moon V.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cgi</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Chilly Willy</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ChillyWilly.exe&amp;file=ChillyWilly.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Circus Maximus II</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Circus Maximus</Name>
+            <Distributors>
+                <MEKTEK /><MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>City Park</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CityParkMercs.exe&amp;file=CityParkMercs.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cityscape</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Cityscape.exe&amp;file=Cityscape.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Coldfire L</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/coldfire_l01.exe&amp;file=coldfire_l01.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Coldfire</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Coliseum Legacy</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ColiseumLegacy.exe&amp;file=ColiseumLegacy.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Coliseum</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Coliseum.exe&amp;file=Coliseum.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Colossal Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/colossal-pro.exe&amp;file=colossal-pro.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Concourse CTF v4</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ConcourseCTF v4.exe&amp;file=ConcourseCTF v4.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Concourse Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Concourse Pro.exe&amp;file=Concourse Pro.exe</MW4NET>
+                <MEKTEK />
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Concourse</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Concourse.exe&amp;file=Concourse.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Copsik_Night 1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Copsik_Night1.exe&amp;file=Copsik_Night1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Copsik_Night</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Copsik_Night.exe&amp;file=Copsik_Night.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Cougar Canyon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/cougar_canyon1.1.exe&amp;file=cougar_canyon1.1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Crater Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Crater Base.exe&amp;file=Crater Base.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Cross Country Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/CrosscountryAssault.exe&amp;file=CrosscountryAssault.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Cross Country</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Crosscountry.exe&amp;file=Crosscountry.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Crossover</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Crossover.exe&amp;file=Crossover.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dark Fortress </Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Dark Fortress .exe&amp;file=Dark Fortress .exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Daybreak Desolation</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Daybreak Desolation 2.0.exe&amp;file=Daybreak Desolation 2.0.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Dead City</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Dead Sprint</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Dead_Sprint_finalB.exe&amp;file=Dead_Sprint_finalB.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Death Trap Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DeathTrapAssault.exe&amp;file=DeathTrapAssault.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Death Trap</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DeathTrap.exe&amp;file=DeathTrap.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Deathtrap Assault</Name>
+            <Distributors>
+            </Distributors>
+        </Map><Map>
+            <Name>Deep Freeze</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DeepFreeze.exe&amp;file=DeepFreeze.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Defiance Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DefianceHolds.exe&amp;file=DefianceHolds.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Defiance Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Defiance Pro.exe&amp;file=Defiance Pro.exe</MW4NET>
+                <MEKTEK />
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Defiance</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Defiance.exe&amp;file=Defiance.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Delta Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DeltaBase.exe&amp;file=DeltaBase.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Delta Cross</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV3-Delta_Cross.exe&amp;file=RV3-Delta_Cross.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Deseria</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Desert Rim</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DesertRim2.exe&amp;file=DesertRim2.exe</MW4NET>, <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Desert War</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/desertwar03.1.exe&amp;file=desertwar03.1.exe</MW4NET>
+                <MEKTEK />
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Desolation Ridge</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Desolation Ridge.exe&amp;file=Desolation Ridge.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Dirt Bowl Gold</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DirtBowlGold.exe&amp;file=DirtBowlGold.exe</MW4NET>, <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dirt Bowl</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DirtBowl.exe&amp;file=DirtBowl.exe</MW4NET>, <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Doha City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DohaCity.exe&amp;file=DohaCity.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Dragon's Head CTF</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/dragonsheadCTF.exe&amp;file=dragonsheadCTF.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dragon's Head McRugby</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/dragonsheadMR.exe&amp;file=dragonsheadMR.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dragon's Head</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/dragons_head_v.1.6.exe&amp;file=dragons_head_v.1.6.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Drakons Arena 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DrakonsArenaV2.exe&amp;file=DrakonsArenaV2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Drakons Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Drakon__s_Arena.exe&amp;file=Drakon__s_Arena.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Dry Creek 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DryCreek2.exe&amp;file=DryCreek2.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>DS Stadium Central</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/DS_StadiumCentral.exe&amp;file=DS_StadiumCentral.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Dustbin Raceway</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dustbowl</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Dwarf Star</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Dwarf_Star01.exe&amp;file=Dwarf_Star01.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Eightway</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Eightway.exe&amp;file=Eightway.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Endor Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/EndorAssault.exe&amp;file=EndorAssault.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Endor</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Endor.exe&amp;file=Endor.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Equinox</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Eridani Air Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/EridaniAirBase.exe&amp;file=EridaniAirBase.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Evergreen Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/EvergreenAssault.exe&amp;file=EvergreenAssault.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Evergreen</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/evergreen.exe&amp;file=evergreen.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Exford Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/exfordpro01.exe&amp;file=exfordpro01.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Factory</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Factory.exe&amp;file=Factory.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Flooded City - S</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/FloodedCity - S.exe&amp;file=FloodedCity - S.exe</MW4NET>, MekTek
+            </Distributors>
+        </Map><Map>
+            <Name>Flooded City Defense</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/FloodedCityDefense.exe&amp;file=FloodedCityDefense.exe</MW4NET>, MekTek, <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Flooded City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/FloodedCity.exe&amp;file=FloodedCity.exe</MW4NET>, MekTek
+            </Distributors>
+        </Map><Map>
+            <Name>FogBound Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/FogBoundHolds.exe&amp;file=FogBoundHolds.exe</MW4NET>, <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Fogbound</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Fogbound.exe&amp;file=Fogbound.exe</MW4NET>, MekTek>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Fort Apache</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/FortApacheV1.1.exe&amp;file=FortApacheV1.1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Fort Bonhill</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/fortbon04.exe&amp;file=fortbon04.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Frost Heave</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Frostbite Dev</Name>
+            <Distributors>
+                <MWL1 />
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Fullmoon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Fullmoon.exe&amp;file=Fullmoon.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Gagetown 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Gagetown2.exe&amp;file=Gagetown2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Gagetown 3</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Gagetown3.exe&amp;file=Gagetown3.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Gagetown</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Gagetown.exe&amp;file=Gagetown.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Gatorbait</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>GC Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/gc_arena_v4.exe&amp;file=gc_arena_v4.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Genesis</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/genesis1.1.exe&amp;file=genesis1.1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ghost Cat's Arena</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ghost Highway</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ghostpath</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ghostpath.exe&amp;file=ghostpath.exe</MW4NET>, <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Glacier Park</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Glacier Park 2004.exe&amp;file=Glacier Park 2004.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Gladiator Bowl</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Gladiator Bowl.exe&amp;file=Gladiator Bowl.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Gladiator Pit Legacy</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/GladiatorPitLegacy.exe&amp;file=GladiatorPitLegacy.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Gladiator Pit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Gladiatorpit.exe&amp;file=Gladiatorpit.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Golatha</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Golatha.exe&amp;file=Golatha.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Gothem McRugby</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Gothem</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/gothem1.exe&amp;file=gothem1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Green Paths - S</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/GreenPaths - S.exe&amp;file=GreenPaths - S.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Green Paths Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/GreenPathsAssault.exe&amp;file=GreenPathsAssault.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Green Paths</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/GreenPaths.exe&amp;file=GreenPaths.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Greenhaven</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/greenhaven(1).exe&amp;file=greenhaven(1).exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Griffon Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/GriffonBase.exe&amp;file=GriffonBase.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Halfpipe</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Halfpipe.exe&amp;file=Halfpipe.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Hall</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Hall.exe&amp;file=Hall.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Halloran Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HalloranPro.exe&amp;file=HalloranPro.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Halthon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Halthon.exe&amp;file=Halthon.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Harlech</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Harlech.exe&amp;file=Harlech.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Hesperus Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HesperusHolds.exe&amp;file=HesperusHolds.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Hesperus Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HesperusPro.exe&amp;file=HesperusPro.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>High Castle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/highcastle.exe&amp;file=highcastle.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>High Line</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HighLine.exe&amp;file=HighLine.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>High Plains River</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HighPlainsRiver.exe&amp;file=HighPlainsRiver.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Highlands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Highlands.exe&amp;file=Highlands.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Highline</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Hillfort</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/hillfort.exe&amp;file=hillfort.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Hogsback</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Hot Foot</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/HotFoot.exe&amp;file=HotFoot.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Hotfoot</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ice Cube</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/IceCube.exe&amp;file=IceCube.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Inca Islands Gold</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/IncaIslandsGold.exe&amp;file=IncaIslandsGold.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Inca Islands Silver</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/IncaIslandsSilver.exe&amp;file=IncaIslandsSilver.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Inca Islands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/IncaIslands.exe&amp;file=IncaIslands.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Inferno</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Inferno.exe&amp;file=Inferno.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Inner City</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Iron Mountain</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Ironmountain.exe&amp;file=Ironmountain.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Iron Mountain</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Ishiyama Skies</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Ishiyama_Skies.exe&amp;file=Ishiyama_Skies.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Ishiyama</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ishiyama.exe&amp;file=ishiyama.exe</MW4NET>, <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Jungle Jimi</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Jungle Jimi.exe&amp;file=Jungle Jimi.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Jungle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Jungle.exe&amp;file=Jungle.exe</MW4NET>, MekTek>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Junkpit</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Khorolis</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>KnT Octagon 1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/KnT_Octagon1.exe&amp;file=KnT_Octagon1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>KnT Octagon 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/KnT_Octagon2.exe&amp;file=KnT_Octagon2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Knt Octagon2</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lake Apache</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LakeApache.exe&amp;file=LakeApache.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lakefront</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lakeside Dev</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Lakeside Dev.exe&amp;file=Lakeside Dev.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lakeside Hold</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LakesideHold.exe&amp;file=LakesideHold.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lakeside</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lava Pit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LavaPit.exe&amp;file=LavaPit.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Lava Storm_v1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LavaStorm_v1.exe&amp;file=LavaStorm_v1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Leggers Booty</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LeggersBooty.exe&amp;file=LeggersBooty.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Leggers Booty</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lost City 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LostCity2.exe&amp;file=LostCity2.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lost Highway McRugby</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LostHighwayMcRugby.exe&amp;file=LostHighwayMcRugby.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lost Highway</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/lost_highway_v.1.2.exe&amp;file=lost_highway_v.1.2.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lost Island</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Lost_island_v1.exe&amp;file=Lost_island_v1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Lost</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Lost.exe&amp;file=Lost.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lunacy</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lunar Base - S</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LunarBase - S.exe&amp;file=LunarBase - S.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Lunar Base Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LunarBaseAssault.exe&amp;file=LunarBaseAssault.exe</MW4NET>, MekTek, <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Lunar Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LunarBase.exe&amp;file=LunarBase.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Lunar Light</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/LunarLight.exe&amp;file=LunarLight.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>M5Mercs</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/M5Mercs.exe&amp;file=M5Mercs.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Madre Pirate Assault</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Madre The Crater</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Mammouth Park</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mammouth Park.exe&amp;file=Mammouth Park.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Manorhouse Assault 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ManorhouseAssault2.exe&amp;file=ManorhouseAssault2.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Manorhouse Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ManorhouseAssault.exe&amp;file=ManorhouseAssault.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Manorhouse Siege</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ManorhouseSiege.exe&amp;file=ManorhouseSiege.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Manorhouse</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Manorhouse.exe&amp;file=Manorhouse.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>McRugby</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Mech Garnision</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mechgarnision.exe&amp;file=mechgarnision.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Mech Graveyard 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MechGraveyard_v2.exe&amp;file=MechGraveyard_v2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mech Storm Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MechStormArena.exe&amp;file=MechStormArena.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mechstorm Arena</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Mechworks</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Mek Bowl</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MekBowl.exe&amp;file=MekBowl.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mektek-Arena01.exe&amp;file=Mektek-Arena01.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ocean Shore</Name>
+            <Distributors>
+				<MEKTEK /> 
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mektek OceanShore.exe&amp;file=Mektek OceanShore.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mine HQ</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Mineral Farm</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MineralFarmMercs.exe&amp;file=MineralFarmMercs.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mining Corp.</Name>
+            <Distributors>
+                <MEKTEK />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MiningCorp.exe&amp;file=MiningCorp.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mission 2 Mars</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mission2Mars.exe&amp;file=Mission2Mars.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Mitla</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mitla.exe&amp;file=Mitla.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Moonbase</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Moss Valley</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MossValley.exe&amp;file=MossValley.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Mount Doom</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MountDooM.exe&amp;file=MountDooM.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Movie Map</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Movie_Map1.exe&amp;file=Movie_Map1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Alshain</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRAlshain.exe&amp;file=MRAlshain.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Badlands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRBadlands.exe&amp;file=MRBadlands.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR BloodPit Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_BloodPit_pro_v1[1].00_full.exe&amp;file=MR_BloodPit_pro_v1[1].00_full.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Carver Delta</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_CarverDelta.exe&amp;file=MR_CarverDelta.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Century Moon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_CenturyMoon.exe&amp;file=MR_CenturyMoon.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Cold Fury</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Cold_Fury.exe&amp;file=MR_Cold_Fury.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Darksteed River</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Darksteed_River.exe&amp;file=MR_Darksteed_River.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Death Valley</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_DeathValley.exe&amp;file=MR_DeathValley.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Delta Crossing_Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_DeltaCrossing_Pro.exe&amp;file=MR_DeltaCrossing_Pro.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Devils Coast</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_DevilsCoast.exe&amp;file=MR_DevilsCoast.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Gorge</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mr_Gorge.exe&amp;file=Mr_Gorge.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Grand Canyon</Name>
+			<Distributors>
+				<MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Grasslands Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Grasslands_Mission.exe&amp;file=MR_Grasslands_Mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Grasslands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Grasslands.exe&amp;file=MR_Grasslands.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Graus Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_graus_mission.exe&amp;file=mr_graus_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Graus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRGraus.exe&amp;file=MRGraus.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Hawaii</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_hawaii_full.exe&amp;file=mr_hawaii_full.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Hespersus Mine Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_hespersus_mine_mission.exe&amp;file=mr_hespersus_mine_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Hespersus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRHespersus.exe&amp;file=MRHespersus.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Kufstein Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_kufstein_mission.exe&amp;file=mr_kufstein_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Kufstein</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRKufstein.exe&amp;file=MRKufstein.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Lava Fortress Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_LavaFortressPro_full.exe&amp;file=mr_LavaFortressPro_full.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Lava Fortress</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_LavaFortress.exe&amp;file=MR_LavaFortress.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR LavaFortress Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_LavaFortress_mission.exe&amp;file=mr_LavaFortress_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Mesa</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Mesa.exe&amp;file=MR_Mesa.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Ocean Shore</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_OceanShore.exe&amp;file=MR_OceanShore.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Pyramids Pro</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Pyramids</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_Pyramids_full.exe&amp;file=mr_Pyramids_full.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Roswell</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Roswell.exe&amp;file=MR_Roswell.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Salem</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Mr_Salem.exe&amp;file=Mr_Salem.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Strip Mine Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_StripMine_mission.exe&amp;file=MR_StripMine_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Strip Mine</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_StripMine_Full.exe&amp;file=MR_StripMine_Full.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Stripmine</Name>
+            <Distributors>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR Valley of Death</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MR_Valley_of_Death.exe&amp;file=MR_Valley_of_Death.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MR Yamarovka Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MRYamarovkaPro.exe&amp;file=MRYamarovkaPro.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>MR_Yamarovka Pro Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mr_yamarovka_pro_mission.exe&amp;file=mr_yamarovka_pro_mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MST Fort Apache</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mst-fort-apache-v1.exe&amp;file=mst-fort-apache-v1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MST Fort I-tude</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mst-fort-I-tude-v3.exe&amp;file=mst-fort-I-tude-v3.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MST Snowy Valley</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MST-Snowy-Valley.exe&amp;file=MST-Snowy-Valley.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MST Stormy Hills</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MST-StormyHills.exe&amp;file=MST-StormyHills.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MST Stormy Water</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MST-StormyWater.exe&amp;file=MST-StormyWater.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MST Stormy-Crossing</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MST-Stormy-Crossing.exe&amp;file=MST-Stormy-Crossing.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MST Stormy</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MST-Stormy.exe&amp;file=MST-Stormy.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MT CTF 01</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mt-ctf-01.exe&amp;file=mt-ctf-01.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MT Eden</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MT_Eden_Install.exe&amp;file=MT_Eden_Install.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MT Inferno</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MT-Inferno.exe&amp;file=MT-Inferno.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MT Orbit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/MT-Orbit.exe&amp;file=MT-Orbit.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Muphrid Wastelands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Muphrid_Wastelands.exe&amp;file=Muphrid_Wastelands.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>MW3 Lava Pit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mw3-lavapit.exe&amp;file=mw3-lavapit.exe</MW4NET>
+                <MEKTEK />
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>MWL Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/mwl_arena_v23_complete.exe&amp;file=mwl_arena_v23_complete.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Arrowhead</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Arrowhead.exe&amp;file=NB Arrowhead.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Asteroids-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Asteroids-m.exe&amp;file=NB Asteroids-m.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Asteroids</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Asteroids.exe&amp;file=NB Asteroids.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Badlands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Badlands.exe&amp;file=NB Badlands.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Battle Front-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB BattleFront-M.exe&amp;file=NB BattleFront-M.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Battle Front</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB BattleFront.exe&amp;file=NB BattleFront.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Bear Trap</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Beartrap.exe&amp;file=NB Beartrap.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Cerberus-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Cerberus-m.exe&amp;file=NB Cerberus-m.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Cerberus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Cerberus.exe&amp;file=NB Cerberus.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Divided-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Divided-m.exe&amp;file=NB Divided-m.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Divided</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Divided.exe&amp;file=NB Divided.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Dodona-R</Name>
+            <Distributors>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Ephesus-DR</Name>
+            <Distributors>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Krakatau-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Krakatau-m.exe&amp;file=NB Krakatau-m.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Krakatau</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Krakatau.exe&amp;file=NB Krakatau.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Mannedorf</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Mannedorf.exe&amp;file=NB Mannedorf.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Max Throttle-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB MaxThrottle-M.exe&amp;file=NB MaxThrottle-M.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Max Throttle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB MaxThrottle.exe&amp;file=NB MaxThrottle.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Plains-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Plains-M.exe&amp;file=NB Plains-M.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Plains</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Plains.exe&amp;file=NB Plains.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB River Side</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB RiverSide.exe&amp;file=NB RiverSide.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Solar Desert 2-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB SolarDesert2-M.exe&amp;file=NB SolarDesert2-M.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Solar Desert 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB SolarDesert2.exe&amp;file=NB SolarDesert2.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Tetsuhara-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Tetsuhara-M.exe&amp;file=NB Tetsuhara-M.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Tetsuhara</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB Tetsuhara.exe&amp;file=NB Tetsuhara.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Warriors Fortune-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB WarFortune-M.exe&amp;file=NB WarFortune-M.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>NB Warriors Fortune</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NB WarFortune.exe&amp;file=NB WarFortune.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>New Arizona</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/newarizona.exe&amp;file=newarizona.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>New Gothem</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/NewGothem.exe&amp;file=NewGothem.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>New Venice</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/New Venice1.5.exe&amp;file=New Venice1.5.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Nexus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Nexus_final.exe&amp;file=Nexus_final.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Nova's Valley</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Nuke Winter</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/nukewinter.exe&amp;file=nukewinter.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Oasis</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/oasis.exe&amp;file=oasis.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Oilspill</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Oilspill.exe&amp;file=Oilspill.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Olympus McRugby</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/OlympusMcRugby.exe&amp;file=OlympusMcRugby.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Olympus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/OlympusV1.exe&amp;file=OlympusV1.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Orbital Decay</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/OrbitalDecay.exe&amp;file=OrbitalDecay.exe</MW4NET>
+                <MWL1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Orbital Decay_L</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/orbitaldecay_L01.exe&amp;file=orbitaldecay_L01.exe</MW4NET>
+                <MWL1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Orion Arena 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/OrionArenaV2.exe&amp;file=OrionArenaV2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Orion Arena</Name>
+            <Distributors>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Overlord Rundown</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Overlord Rundown.exe&amp;file=Overlord Rundown.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Palace Gates 3</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/PalaceGates32.exe&amp;file=PalaceGates32.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Palace Gates</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Palais FDF_Map</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/PalaisFDF_Map.exe&amp;file=PalaisFDF_Map.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Paradise Hold 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ParadiseHold2.exe&amp;file=ParadiseHold2.exe</MW4NET>
+                <MEKTEK />, >
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Paradise Hold</Name>
+            <Distributors>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Paradise Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/paradise_pro01.exe&amp;file=paradise_pro01.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Paradise</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Paradise.exe&amp;file=Paradise.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Parkhenge</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Parkhenge.exe&amp;file=Parkhenge.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>PC Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/PCArena.exe&amp;file=PCArena.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Pheng</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/pheng01.exe&amp;file=pheng01.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Phobos</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Phobos.exe&amp;file=Phobos.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Pier 18</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Pier18.exe&amp;file=Pier18.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Polar Tundra</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Polar Tundra.exe&amp;file=Polar Tundra.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Port Dirac</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/PortDirac.exe&amp;file=PortDirac.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Psychedelic Star</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Pyramid City 01</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/pyramid_city01.exe&amp;file=pyramid_city01.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Pyramid City </Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Pyramid City .exe&amp;file=Pyramid City .exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Quake Arena 1.2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/QuakeArenainstallv1.2.exe&amp;file=QuakeArenainstallv1.2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Quarry RC</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/QuarryRCv1-3.exe&amp;file=QuarryRCv1-3.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Range 44</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Range44.exe&amp;file=Range44.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Red Planet</Name>
+            <Distributors>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Red PlanetV1</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RedPlanetV1.exe&amp;file=RedPlanetV1.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Resistance Clash</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ResistanceClash.exe&amp;file=ResistanceClash.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Resupply CTF</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ResupplyCTFv3.exe&amp;file=ResupplyCTFv3.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU JumpJet</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMUJumpJet.exe&amp;file=RGMUJumpJet.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU Main</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMUMain.exe&amp;file=RGMUMain.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU Paraide</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMUParaide.exe&amp;file=RGMUParaide.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU Practice</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMUPractice.exe&amp;file=RGMUPractice.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU Range</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMUrange.exe&amp;file=RGMUrange.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RGMU RecuitTest</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RGMURecuitTest.exe&amp;file=RGMURecuitTest.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Ridgerunner</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Ridgerunner v1.0.exe&amp;file=Ridgerunner v1.0.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>River Canyon</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/rivercanyon01.exe&amp;file=rivercanyon01.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Rolling Desert</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RollingDesert.exe&amp;file=RollingDesert.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Royalguard Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RoyalguardPro.exe&amp;file=RoyalguardPro.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Royalguard</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RoyalGuard.exe&amp;file=RoyalGuard.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Rubble Giant</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RubbleGiant.exe&amp;file=RubbleGiant.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Rubble Pile</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RubblePile.exe&amp;file=RubblePile.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Rubble</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ruchbah Garrison</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ruchbah_garrison.exe&amp;file=ruchbah_garrison.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Ruined City Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RuinedcityHolds.exe&amp;file=RuinedcityHolds.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Ruined City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Ruinedcity.exe&amp;file=Ruinedcity.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Rush Hour</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Rush_Hour_final.exe&amp;file=Rush_Hour_final.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>RV1 Deseria</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV1-Deseria.exe&amp;file=RV1-Deseria.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RV2 Frost Heave</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV2-Frost_Heave.exe&amp;file=RV2-Frost_Heave.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RV3 Delta Cross CM Missions Bundle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV3-DeltaCrossCMMissionsBundle-03Jan2005.exe&amp;file=RV3-DeltaCrossCMMissionsBundle-03Jan2005.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RV3 Delta Cross</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV3-Delta_Cross.exe&amp;file=RV3-Delta_Cross.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RV4 Dustbin</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV4-Dustbin.exe&amp;file=RV4-Dustbin.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>RV4 MS Desert CM Missions Bundle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/RV4-MSDesert02CMMissionsBundle-10Jan2005.exe&amp;file=RV4-MSDesert02CMMissionsBundle-10Jan2005.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Sahara Speedway</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Sahara_Speedway_v3.1.exe&amp;file=Sahara_Speedway_v3.1.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sand Dunes Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/sanddunes_pro01.exe&amp;file=sanddunes_pro01.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sand Dunes</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SandDunes.exe&amp;file=SandDunes.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>SandStorm</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SandStorm021104.exe&amp;file=SandStorm021104.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Scrub</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Seafront 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Seafront2.exe&amp;file=Seafront2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Seafront</Name>
+            <Distributors>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn A</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawnA.exe&amp;file=SentinelDawnA.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn B</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawnB.exe&amp;file=SentinelDawnB.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn C</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawnC.exe&amp;file=SentinelDawnC.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn D</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawnD.exe&amp;file=SentinelDawnD.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn E</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawnE.exe&amp;file=SentinelDawnE.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawn_Mission_4X.exe&amp;file=SentinelDawn_Mission_4X.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Sentinel Dawn</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SentinelDawn.exe&amp;file=SentinelDawn.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Shoreline Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/ShorelineHolds.exe&amp;file=ShorelineHolds.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Shoreline</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Shoreline.exe&amp;file=Shoreline.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Slobber</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/slobber.exe&amp;file=slobber.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Slobberknocker</Name>
+            <Distributors>
+                <MEKTEK /><MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Smoke Jaguar Arena</Name>
+            <Distributors>
+                <MEKTEK /><MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snake River McRugby</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SnakeRiverMcRugby.exe&amp;file=SnakeRiverMcRugby.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snake River</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SnakeRiverV1.exe&amp;file=SnakeRiverV1.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snipers Haven</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SnipersHaven.exe&amp;file=SnipersHaven.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Snow Drift</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Snow_Drift_v2.exe&amp;file=Snow_Drift_v2.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snow Maze KnT</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SnowMaze_KnT.exe&amp;file=SnowMaze_KnT.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Snow Maze</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Snow Maze 2005.exe&amp;file=Snow Maze 2005.exe</MW4NET>
+                <MEKTEK />
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snowbound</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Snowbound.exe&amp;file=Snowbound.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snowbowl</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/snowbowl01.exe&amp;file=snowbowl01.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Snowjob</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>SoE-Empirion City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SoE-EmpirionCity.exe&amp;file=SoE-EmpirionCity.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>SoE-Kampf Arena 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SoE-KampfArena_V2.exe&amp;file=SoE-KampfArena_V2.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Solaris Interplanetary</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Solaris_Int_final.exe&amp;file=Solaris_Int_final.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Spaceport Siege</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Spaceport</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>SR Avalon Badlands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/sr_avalon_badlands.exe&amp;file=sr_avalon_badlands.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>SR Avass</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/sr_avass_mercs.exe&amp;file=sr_avass_mercs.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>SR Volcanic Tundra</Name>
+            <Distributors>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>SR VT</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/sr_vt_release.exe&amp;file=sr_vt_release.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Strata Caster</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Strata_Caster1.19.exe&amp;file=Strata_Caster1.19.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Stripmine</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Stripmine.exe&amp;file=Stripmine.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Subterra</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/subterra.exe&amp;file=subterra.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Summer Tundra</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SummerTundra.exe&amp;file=SummerTundra.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Switchback Holds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/SwitchbackHolds.exe&amp;file=SwitchbackHolds.exe</MW4NET>
+                <MEKTEK />
+                <MWL3 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Switchback</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Switchback.exe&amp;file=Switchback.exe</MW4NET>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>T4H Prime</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/T4H_Prime.exe&amp;file=T4H_Prime.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Tabletop-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tabletop-m.exe&amp;file=Tabletop-m.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tabletop</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tabletop01.exe&amp;file=Tabletop01.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Talon Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TalonPro.exe&amp;file=TalonPro.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Talon Siege</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TalonSiege.exe&amp;file=TalonSiege.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tangle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tangle.exe&amp;file=Tangle.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Target Range</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/target_range01.exe&amp;file=target_range01.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Taurus City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/tauruscity.exe&amp;file=tauruscity.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Technologicque Park</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Technologicque_Park.exe&amp;file=Technologicque_Park.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Testing Grounds-M</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TestingGrounds-M.exe&amp;file=TestingGrounds-M.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Testing Grounds</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TestingGrounds.exe&amp;file=TestingGrounds.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Thark CTF</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TharkCTFv5.exe&amp;file=TharkCTFv5.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>The Chasm</Name>
+            <Distributors>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>The Grid</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/The Grid.exe&amp;file=The Grid.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>The Tower</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/The Tower.exe&amp;file=The Tower.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Thorin Flatlands</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Thorin_Flatlands.exe&amp;file=Thorin_Flatlands.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Thorin Wasteland</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Thorin_Wasteland.exe&amp;file=Thorin_Wasteland.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Thorin</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Thorin.exe&amp;file=Thorin.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Timberline Dev</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Timberline Dev.exe&amp;file=Timberline Dev.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Timberline</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Titan Base</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Titan Base.exe&amp;file=Titan Base.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Titan</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Titan.exe&amp;file=Titan.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Toxic City mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Toxicity mission.exe&amp;file=Toxicity mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Toxic City</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Toxicity.exe&amp;file=Toxicity.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Toxic Spires</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/toxic_spires1.6.exe&amp;file=toxic_spires1.6.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Trails CTF</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TrailsCTF v2.exe&amp;file=TrailsCTF v2.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Trench War</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TrenchWar.exe&amp;file=TrenchWar.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tropical</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tropical.exe&amp;file=Tropical.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tropicana</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tropicana_final.exe&amp;file=Tropicana_final.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>TS Downtown</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Downtown.exe&amp;file=Downtown.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>TS Inferno</Name>
+            <Distributors>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>TS Port Dirac</Name>
+            <Distributors>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>TS Titan</Name>
+            <Distributors>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tumbleweed Assault</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TumbleweedAssault.exe&amp;file=TumbleweedAssault.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tumbleweed Pro</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/tumbleweedpro01.exe&amp;file=tumbleweedpro01.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Tumbleweed Pro</Name>
+            <Distributors>
+                <MEKTEK /><MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tumbleweed</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Tumbleweed.exe&amp;file=Tumbleweed.exe</MW4NET>
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Tunnel Thunder</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TunnelThunder.exe&amp;file=TunnelThunder.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>Turf Toe</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TurfToe.exe&amp;file=TurfToe.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Twisted Earth</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/TwistedEarth.exe&amp;file=TwistedEarth.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Twisted Metal</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Twisted_Metal.exe&amp;file=Twisted_Metal.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>U-500 Speedway</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/U-500_v2.1.exe&amp;file=U-500_v2.1.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Umbrella Desert</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/umbrelladesert.exe&amp;file=umbrelladesert.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Urban Wreck</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/UrbanWreck.exe&amp;file=UrbanWreck.exe</MW4NET>
+                <MEKTEK />
+            </Distributors>
+        </Map><Map>
+            <Name>VBase</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Vengeance Square</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VengeanceSquare.exe&amp;file=VengeanceSquare.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Versuvus</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/versuvus.exe&amp;file=versuvus.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>VL Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VLArena.exe&amp;file=VLArena.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Chalkdust</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-Chalkdust.exe&amp;file=VOS-Chalkdust.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Fortress</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-Fortress.exe&amp;file=VOS-Fortress.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Greenhouse</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-Greenhouse.exe&amp;file=VOS-Greenhouse.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Lava Cross</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-Lavacross.exe&amp;file=VOS-Lavacross.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Red Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-Redarena.exe&amp;file=VOS-Redarena.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Solaris City Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-SolarisCityArena.exe&amp;file=VOS-SolarisCityArena.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>VOS Solaris City Spaceport</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/VOS-SolarisCity-Spaceport.exe&amp;file=VOS-SolarisCity-Spaceport.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Warriors Fortune</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/warfortunr.exe&amp;file=warfortunr.exe</MW4NET>, >
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Warzone CTF</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Warzone_CTF.exe&amp;file=Warzone_CTF.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Wasteland MissionInstallerv1.4</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WastelandMissionInstallerv1.4.exe&amp;file=WastelandMissionInstallerv1.4.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Water Bowl</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WaterBowl.exe&amp;file=WaterBowl.exe</MW4NET>
+                <MWL3 />
+            </Distributors>
+        </Map><Map>
+            <Name>Water Pit</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WaterPit.exe&amp;file=WaterPit.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Wet Dream 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WetDream2.exe&amp;file=WetDream2.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Wetlands 2</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Wetlands2.exe&amp;file=Wetlands2.exe</MW4NET>
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Wetlands</Name>
+            <Distributors>
+                <MEKTEK />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Winter War</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/winterwar03.0.3.1.exe&amp;file=winterwar03.0.3.1.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Winterland</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/winterland.exe&amp;file=winterland.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>Wolf Trial Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Wolf trial mission.exe&amp;file=Wolf trial mission.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Wolf Trial Mountain Full</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/Wolf Trial Mountain Full.exe&amp;file=Wolf Trial Mountain Full.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Wolfsfang Castle</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/wolfsfangcastle.exe&amp;file=wolfsfangcastle.exe</MW4NET>
+            </Distributors>
+        </Map><Map>
+            <Name>Wonka Arena</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WonkaArena.exe&amp;file=WonkaArena.exe</MW4NET>
+                <MEKTEK />
+                <MWL2 />
+            </Distributors>
+        </Map><Map>
+            <Name>Wotans Fjord</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/wotansfjord.exe&amp;file=wotansfjord.exe</MW4NET>
+                <MWL2 />
+                <NBT1 />
+            </Distributors>
+        </Map><Map>
+            <Name>WX Astroid Mission</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps/WX_Astroid mission.exe&amp;file=WX_Astroid mission.exe</MW4NET>
+            </Distributors>
+        </Map>
+    </Maps>
+    <Extensions>
+        <Extension>
+            <Name>MW4 Monitor</Name>
+            <Distributors>
+                <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=EvilBot/&amp;file=MW4Monitor%201.7.7.zip</MW4NET>	
+            </Distributors>
+        </Extension>
+        <Extension>
+            <Name>MW4 Monitor Source Code ( Unsupported )</Name>
+            <Distributors>
+                <MECHLAB>http://www.mechlab.net/files/MW4Monitor.7z</MECHLAB>	
+            </Distributors>
+        </Extension>
+        <Extension>
+            <Name>FancyBot</Name>
+            <Distributors>
+                <GITHUB>http://github.com/downloads/pausenclown/FancyBot/FancyBot-Latest.exe</GITHUB>	
+            </Distributors>
+        </Extension>
+    </Extensions>
+</Downloads>
