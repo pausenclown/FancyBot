@@ -3028,20 +3028,99 @@
         </Map>
     </Maps>
     <Extensions>
-        <Extension>
+		<Extension>
+            <Name>MTX Client 1.0.3.5</Name>
+			<Description>The MTX Client ensures all software released by MekTek.net is up to date.</Description>
+            <Distributors>
+                <MEKTEK>http://mtxgear.mektek.net/mtx/beta/SetupMTX1.0.3.5.exe</MEKTEK>
+            </Distributors>
+        </Extension><Extension>
+            <Name>MTX Extract and Patch Utility 0.0.1.5</Name>
+			<Description>MTX File Extract and Patch Utility. Provides an easy patching mechanism.</Description>
+            <Distributors>
+                <MEKTEK>http://mtxgear.mektek.net/mtx/beta/SetupMTXExtract0.0.1.5.exe</MEKTEK>
+            </Distributors>
+        </Extension><Extension>
+			<Name>Mercenaries MTX-Patch .0025 to .0026</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.51.03.01.0025.to.51.03.01.0026.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries WIN-Patch .0025 to .0026</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mekpak31.0026(0025)-final.exe.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries MTX-Patch .0024 to .0025</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.51.03.01.0024.to.51.03.01.0025.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries WIN-Patch .0024 to .0025</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mekpak31.0025(0024)-final.exe.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries MTX-Patch .0023 to .0024</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.51.03.01.0023.to.51.03.01.0024-fix.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries WIN-Patch .0023 to .0024</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mekpak31.0024(0023).exe.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries MTX-Patch .0022 to .0023</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.51.03.01.0022.to.51.03.01.0023.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries WIN-Patch .0022 to .0023</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mekpak31.0023(0022)-final.exe.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries MTX-Patch .0021 to .0022</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.51.03.01.0021.to.51.03.01.0022.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries WIN-Patch .0021 to .0022</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mekpak31.0022(0021).exe.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
+			<Name>Mercenaries MTX-Install .0021</Name>
+			<Description></Description>
+			<Distributors>
+				<MEKTEK>http://www.mektek.net/mw4free/torrents/files/mechwarrior4mercenaries.all.to.51.03.01.0021.mtx.torrent</MEKTEK>
+			</Distributors>
+		</Extension><Extension>
             <Name>MW4 Monitor</Name>
+			<Description>Mercs User Extension to control the builtin Dedicated Server, also known as EvilBot. Dates from 2005. Not supported.</Description>
             <Distributors>
                 <MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=EvilBot/&amp;file=MW4Monitor%201.7.7.zip</MW4NET>	
             </Distributors>
-        </Extension>
-        <Extension>
+        </Extension><Extension>
             <Name>MW4 Monitor Source Code ( Unsupported )</Name>
+			<Description>Complete Sourcecode of the MW4 Monitor, includes SDK.</Description>
             <Distributors>
                 <MECHLAB>http://www.mechlab.net/files/MW4Monitor.7z</MECHLAB>	
             </Distributors>
-        </Extension>
-        <Extension>
+        </Extension><Extension>
             <Name>FancyBot</Name>
+			<Description>*BETA* Mercs User Extension to control the builtin Dedicated Server. Dates from 2010. Actively supported and developed.</Description>
             <Distributors>
                 <GITHUB>http://github.com/downloads/pausenclown/FancyBot/FancyBot-Latest.exe</GITHUB>	
             </Distributors>
