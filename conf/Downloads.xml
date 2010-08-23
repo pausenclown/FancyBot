@@ -38,6 +38,7 @@
 			<Source>http://www.mechwarriorleagues.com/download-files/maps/MWLMapPack3.exe</Source>
 		</MapPack>
 	</MapPacks>
+	
 	<Maps>
 		<Map>
 			<Name>2-Way</Name>
@@ -84,6 +85,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Alpine.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Angel Arena 2</Name>
@@ -237,25 +239,7 @@
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BA_Alpine.exe</MW4NET>
 				<MEKTEK />
-			</Distributors>
-		</Map><Map>
-			<Name>BA Big City</Name>
-			<Type>Exe</Type>
-			<Distributors>
-				<MEKTEK />
-			</Distributors>
-		</Map><Map>
-			<Name>BA Blood Pit</Name>
-			<Type>Exe</Type>
-			<Distributors>
-				<MEKTEK />
-			</Distributors>
-		</Map><Map>
-			<Name>BA Broken Sky</Name>
-			<Type>Exe</Type>
-			<Distributors>
-				<MEKTEK />
-			</Distributors>
+			</Distributors>		
 		</Map><Map>
 			<Name>BA Claustrophobia</Name>
 			<Type>Exe</Type>
@@ -437,7 +421,8 @@
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField9.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
-		</Map><Map>
+		</Map>
+		<Map>
 			<Name>Battle Of St. William SPv6</Name>
 			<Type>Exe</Type>
 			<Distributors>
@@ -495,6 +480,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Bloodpit.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -588,13 +574,6 @@
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
-			<Name>Capture &amp; Hold 1</Name>
-			<Type>Exe</Type>
-			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold1.exe</MW4NET>
-				<MWL1 />
-			</Distributors>
-		</Map><Map>
 			<Name>Capture &amp; Hold 2</Name>
 			<Type>Exe</Type>
 			<Distributors>
@@ -658,7 +637,7 @@
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
-			<Name>CBT factory</Name>
+			<Name>CBT Factory</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=cbt%20factory.exe</MW4NET>
@@ -702,7 +681,8 @@
 			<Name>Circus Maximus</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MEKTEK /><MWL1 />
+				<MEKTEK />
+				<MWL1 />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -745,6 +725,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Coliseum.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -775,6 +756,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Concourse.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -855,6 +837,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DeathTrapAssault.exe</MW4NET>
+				<MEKTEK />
 				<MWL3 />
 			</Distributors>
 		</Map><Map>
@@ -883,7 +866,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Defiance%20Pro.exe</MW4NET>
-				<MEKTEK />
+				<MEKTEK /> 
 				<MWL1 />
 				<NBT1 />
 			</Distributors>
@@ -892,6 +875,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Defiance.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -918,7 +902,8 @@
 			<Name>Desert Rim</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DesertRim2.exe</MW4NET>, <MWL1 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DesertRim2.exe</MW4NET>
+				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Desert War</Name>
@@ -929,6 +914,7 @@
 				<MWL1 />
 				<NBT1 />
 			</Distributors>
+			
 		</Map><Map>
 			<Name>Desolation Ridge</Name>
 			<Type>Exe</Type>
@@ -939,13 +925,15 @@
 			<Name>Dirt Bowl Gold</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DirtBowlGold.exe</MW4NET>, <MWL1 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DirtBowlGold.exe</MW4NET>
+				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Dirt Bowl</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DirtBowl.exe</MW4NET>, <MWL1 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=DirtBowl.exe</MW4NET>
+				<MWL1 />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1083,37 +1071,44 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Factory.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Flooded City - S</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCity%20- S.exe</MW4NET>, MekTek
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCity%20- S.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Flooded City Defense</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCityDefense.exe</MW4NET>, MekTek, <MWL3 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCityDefense.exe</MW4NET>
+				<MEKTEK />
+				<MWL3 />
 			</Distributors>
 		</Map><Map>
 			<Name>Flooded City</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCity.exe</MW4NET>, MekTek
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FloodedCity.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>FogBound Holds</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FogBoundHolds.exe</MW4NET>, <MWL3 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=FogBoundHolds.exe</MW4NET>
+				<MWL3 />
 			</Distributors>
 		</Map><Map>
 			<Name>Fogbound</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Fogbound.exe</MW4NET>, MekTek>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Fogbound.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1206,7 +1201,8 @@
 			<Name>Ghostpath</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ghostpath.exe</MW4NET>, <MWL3 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ghostpath.exe</MW4NET>
+				<MWL3 />
 			</Distributors>
 		</Map><Map>
 			<Name>Glacier Park</Name>
@@ -1232,6 +1228,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Gladiatorpit.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1464,7 +1461,8 @@
 			<Name>Ishiyama</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ishiyama.exe</MW4NET>, <MWL1 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ishiyama.exe</MW4NET>
+				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Jungle Jimi</Name>
@@ -1476,7 +1474,8 @@
 			<Name>Jungle</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Jungle.exe</MW4NET>, MekTek>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Jungle.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1622,7 +1621,9 @@
 			<Name>Lunar Base Assault</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=LunarBaseAssault.exe</MW4NET>, MekTek, <MWL3 />
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=LunarBaseAssault.exe</MW4NET>
+				<MWL3 />
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Lunar Base</Name>
@@ -1675,6 +1676,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ManorhouseAssault.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1689,6 +1691,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Manorhouse.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -1709,6 +1712,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=MechGraveyard_v2.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Mech Storm Arena</Name>
@@ -1729,7 +1733,9 @@
 				<MEKTEK />
 				<NBT1 />
 			</Distributors>
-		</Map><Map>
+		</Map>
+		
+		<Map>
 			<Name>Mek Bowl</Name>
 			<Type>Exe</Type>
 			<Distributors>
@@ -1737,7 +1743,7 @@
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
-			<Name>Arena</Name>
+			<Name>MekTek Arena</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Mektek-Arena01.exe</MW4NET>
@@ -1748,7 +1754,6 @@
 			<Name>Ocean Shore</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MEKTEK /> 
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Mektek%20OceanShore.exe</MW4NET>
 			</Distributors>
 		</Map><Map>
@@ -2388,6 +2393,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Oilspill.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -2462,7 +2468,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=ParadiseHold2.exe</MW4NET>
-				<MEKTEK />, >
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -2476,15 +2482,16 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=paradise_pro01.exe</MW4NET>
-				<MEKTEK />
 				<MWL2 />
 				<NBT1 />
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Paradise</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Paradise.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Parkhenge</Name>
@@ -2685,6 +2692,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=RubblePile.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -2779,6 +2787,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=SandDunes.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -2868,6 +2877,7 @@
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Shoreline.exe</MW4NET>
 				<NBT1 />
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Slobber</Name>
@@ -2879,13 +2889,15 @@
 			<Name>Slobberknocker</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MEKTEK /><MWL2 />
+				<MEKTEK />
+				<MWL2 />
 			</Distributors>
 		</Map><Map>
 			<Name>Smoke Jaguar Arena</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MEKTEK /><MWL2 />
+				<MEKTEK />
+				<MWL2 />
 			</Distributors>
 		</Map><Map>
 			<Name>Snake River McRugby</Name>
@@ -3238,6 +3250,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Tropical.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -3289,12 +3302,14 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=tumbleweedpro01.exe</MW4NET>
+				<MEKTEK />
 			</Distributors>
 		</Map><Map>
 			<Name>Tumbleweed Pro</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MEKTEK /><MWL2 />
+				<MEKTEK />
+				<MWL2 />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -3302,6 +3317,7 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Tumbleweed.exe</MW4NET>
+				<MEKTEK />
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -3438,7 +3454,7 @@
 			<Name>Warriors Fortune</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=warfortunr.exe</MW4NET>, >
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=warfortunr.exe</MW4NET>
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
@@ -3446,7 +3462,6 @@
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Warzone_CTF.exe</MW4NET>
-				<MEKTEK />
 				<MWL2 />
 				<NBT1 />
 			</Distributors>
