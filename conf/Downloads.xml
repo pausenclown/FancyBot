@@ -349,13 +349,13 @@
 				<NBT1 />
 			</Distributors>
 		</Map><Map>
-			<Name>Banzai Boot Campv 2.2</Name>
+			<Name>Banzai Bootcamp v2.2</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BanzaiBootCampv2.exe</MW4NET>
 			</Distributors>
 		</Map><Map>
-			<Name>Banzai Bootcamp 2.1</Name>
+			<Name>Banzai Bootcamp v2.1</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=banzaibootcamp2_v1.exe</MW4NET>
@@ -375,63 +375,63 @@
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 1</Name>
+			<Name>Battle Field 01</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField1.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 2</Name>
+			<Name>Battle Field 02</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField2.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 3</Name>
+			<Name>Battle Field 03</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField3.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 4</Name>
+			<Name>Battle Field 04</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField4.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 5</Name>
+			<Name>Battle Field 05</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField5.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 6</Name>
+			<Name>Battle Field 06</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField6.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 7</Name>
+			<Name>Battle Field 07</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField7.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 8</Name>
+			<Name>Battle Field 08</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField8.exe</MW4NET>
 				<MEKTEK />
 			</Distributors>
 		</Map><Map>
-			<Name>Battle Field 9</Name>
+			<Name>Battle Field 09</Name>
 			<Type>Exe</Type>
 			<Distributors>
 				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=BattleField9.exe</MW4NET>
@@ -591,35 +591,35 @@
 			<Name>Capture &amp; Hold 1</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture&amp;Hold1.exe</MW4NET>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold1.exe</MW4NET>
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Capture &amp; Hold 2</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture&amp;Hold2.exe</MW4NET>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold2.exe</MW4NET>
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Capture &amp; Hold 3</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture&amp;Hold3.exe</MW4NET>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold3.exe</MW4NET>
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Capture &amp; Hold 4</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture&amp;Hold4.exe</MW4NET>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold4.exe</MW4NET>
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
 			<Name>Capture &amp; Hold 5</Name>
 			<Type>Exe</Type>
 			<Distributors>
-				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture&amp;Hold5.exe</MW4NET>
+				<MW4NET>http://www.mechwarrior4.net/Downloads/index.php?dir=Maps&amp;file=Capture%26Hold5.exe</MW4NET>
 				<MWL1 />
 			</Distributors>
 		</Map><Map>
