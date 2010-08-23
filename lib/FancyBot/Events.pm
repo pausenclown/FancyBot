@@ -9,8 +9,8 @@ has listeners =>
 	is      => 'ro',
 	default => sub {{}};
 
-# Flag showing wether a game is running or not
-has in_game => 
+# Flag showing wether a game was running when we where last looking
+has was_in_game => 
 	isa     => 'Bool',
 	is      => 'rw',
 	default => 0;
@@ -99,12 +99,12 @@ sub do_events
 		my $ingame = $self->screen->in_game;
 		
 		$self->raise_event( 'game_stop', { bot => $self } )
-			if $self->in_game && !$ingame;
+			if $self->was_in_game && !$ingame;
 		
 		$self->raise_event( 'game_start', { bot => $self } )
-			if ( !$self->in_game && $ingame );
+			if ( !$self->was_in_game && $ingame );
 
-		$self->in_game( $ingame ? 1 : 0 );
+		$self->was_in_game( $ingame ? 1 : 0 );
 
 		for my $msg ( $self->screen->new_chatter )
 		{
